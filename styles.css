@@ -482,8 +482,8 @@ main {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: center 8%;
-  transform: scale(1.65);
+  object-position: center 18%;
+  transform: scale(1.28);
   border-radius: var(--radius);
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow);
@@ -494,7 +494,7 @@ main {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center 20%;
   border-radius: 50%;
   border: 3px solid rgba(61, 158, 255, 0.35);
   margin-bottom: 1.25rem;
@@ -1310,8 +1310,8 @@ main {
   .hero-profile img {
     max-width: 100%;
     border-radius: 14px;
-    object-position: center 7%;
-    transform: scale(1.58);
+    object-position: center 18%;
+    transform: scale(1.24);
   }
 
   .hero {

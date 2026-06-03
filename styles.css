@@ -482,8 +482,7 @@ main {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: center 18%;
-  transform: scale(1.28);
+  object-position: center 22%;
   border-radius: var(--radius);
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow);
@@ -1310,8 +1309,7 @@ main {
   .hero-profile img {
     max-width: 100%;
     border-radius: 14px;
-    object-position: center 18%;
-    transform: scale(1.24);
+    object-position: center 22%;
   }
 
   .hero {

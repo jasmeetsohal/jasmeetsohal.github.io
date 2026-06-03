@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "meta": {
-    "title": "Jasmeet Singh — Senior Engineer · 8 Years · Angular 18+ & AI",
-    "description": "Hire a senior full-stack engineer with 8 years shipping for U.S. and global clients—Node.js, Angular 18+, production RAG, and MVPs that convert. 4+ years on modern Angular. Remote · C3 AI certified."
+    "title": "Jasmeet Singh — Senior Engineer · 8 Years · Full-stack & AI",
+    "description": "Hire a senior full-stack engineer with 8 years shipping for U.S. and global clients—Node.js, TypeScript, production RAG, and MVPs that convert. Remote · C3 AI certified."
   },
   "nav": {
     "work": "Work",
@@ -18,8 +18,8 @@
     "eyebrow": "Trusted by U.S. fintech & enterprise teams · 8 years in production",
     "roleLine": "Senior Software Engineer · Full-stack & AI",
     "title": "Your next release ships on time—",
-    "titleEm": "backend, Angular 18+, and AI included",
-    "tagline": "I help founders and engineering leads turn roadmaps into revenue-ready software: scalable APIs, polished Angular 18+ frontends, and RAG systems that actually work in production—not demos that stall your fundraise.",
+    "titleEm": "backend, frontends, and AI included",
+    "tagline": "I help founders and engineering leads turn roadmaps into revenue-ready software: scalable APIs, polished product frontends, and RAG systems that actually work in production—not demos that stall your fundraise.",
     "location": "Bangalore · Overlap with U.S. & EU",
     "availability": "Full-time remote · Contract · Fractional",
     "ctaPrimary": "Start a conversation",
@@ -28,11 +28,11 @@
   },
   "statsDisplay": [
     { "num": "8", "label": "Years shipping software" },
-    { "num": "4+", "label": "Years Angular 18+" },
+    { "num": "C3", "label": "AI certified" },
     { "num": "U.S.", "label": "Enterprise & fintech clients" },
     { "num": "RAG", "label": "Live in production" }
   ],
-  "proofStrip": ["Fintech & insurance", "Angular 18+ product UIs", "Enterprise RAG / LLM", "Oil & gas · EU startup scale-up"],
+  "proofStrip": ["Fintech & insurance", "Enterprise product UIs", "Enterprise RAG / LLM", "Oil & gas · EU startup scale-up"],
   "value": {
     "heading": "Why clients hire me",
     "subheading": "You get a senior owner—not a backlog ticket. Clear updates, honest estimates, and code your team can maintain after I roll off.",
@@ -43,7 +43,7 @@
       },
       {
         "title": "Full-stack clarity",
-        "description": "8 years across backend and Angular 18+—one engineer who aligns APIs, UI, and data so nothing falls through the cracks."
+        "description": "8 years across backend and product frontends—one engineer who aligns APIs, UI, and data so nothing falls through the cracks."
       },
       {
         "title": "AI that earns trust",
@@ -65,7 +65,7 @@
       },
       {
         "title": "MVP & full-stack build",
-        "description": "Nest.js/Node APIs plus Angular 18+ UI, auth, data layer, and CI/CD—ready for pilot customers."
+        "description": "Nest.js/Node APIs plus modern UI, auth, data layer, and CI/CD—ready for pilot customers."
       },
       {
         "title": "AI / RAG integration",
@@ -78,7 +78,7 @@
     "Node.js",
     "Nest.js",
     "TypeScript",
-    "Angular 18+",
+    "Angular",
     "Python",
     "RAG / LLM",
     "PostgreSQL",
@@ -115,7 +115,7 @@
       "tag": "Enterprise",
       "problem": "Global engineering needed maintainable microservices and modern UIs on a multi-region program.",
       "role": "Senior software engineer",
-      "stack": "Angular 18+ · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
+      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
       "outcome": "Optimization microservices and Angular frontends shipped with CI/CD on a program spanning regions and vendors."
     }
   ],
@@ -150,8 +150,8 @@
   },
   "about": {
     "heading": "About me",
-    "p1": "I'm the engineer clients call when the deadline is real and the stack is messy—someone who owns backend, Angular 18+, and AI delivery, speaks plainly to non-technical stakeholders, and leaves systems your team can run without me.",
-    "p2": "{years} years in production across fintech, logistics, oil & gas, and AI platforms—including {angularYears} years on Angular 18+ for enterprise UIs. C3 AI certified · M.Sc. IT (GPA 3.7) · Employee of the Month · Hacktoberfest contributor.",
+    "p1": "I'm the engineer clients call when the deadline is real and the stack is messy—someone who owns backend, frontends, and AI delivery, speaks plainly to non-technical stakeholders, and leaves systems your team can run without me.",
+    "p2": "{years} years in production across fintech, logistics, oil & gas, and AI platforms. C3 AI certified · M.Sc. IT (GPA 3.7) · Employee of the Month · Hacktoberfest contributor.",
     "languagesHeading": "Languages",
     "spoken": ["English (fluent)", "Hindi (native)", "Punjabi (native)", "Spanish (beginner)"],
     "currentlyHeading": "Now",

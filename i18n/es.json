@@ -1,8 +1,8 @@
 {
   "lang": "es",
   "meta": {
-    "title": "Jasmeet Singh — Ingeniero Senior · 8 Años · Angular 18+ e IA",
-    "description": "Contrata un ingeniero senior full-stack con 8 años entregando a clientes de EE. UU. y globales—Node.js, Angular 18+, RAG en producción y MVPs listos para mercado. 4+ años en Angular moderno. Remoto · C3 AI certificado."
+    "title": "Jasmeet Singh — Ingeniero Senior · 8 Años · Full-stack e IA",
+    "description": "Contrata un ingeniero senior full-stack con 8 años entregando a clientes de EE. UU. y globales—Node.js, TypeScript, RAG en producción y MVPs listos para mercado. Remoto · C3 AI certificado."
   },
   "nav": {
     "work": "Proyectos",
@@ -19,8 +19,8 @@
     "eyebrow": "Equipos fintech y enterprise en EE. UU. · 8 años en producción",
     "roleLine": "Ingeniero de Software Senior · Full-stack e IA",
     "title": "Tu próximo release sale a tiempo—",
-    "titleEm": "backend, Angular 18+ e IA incluidos",
-    "tagline": "Ayudo a founders y engineering leads a convertir roadmaps en software listo para ingresos: APIs escalables, frontends Angular 18+ pulidos y sistemas RAG que funcionan en producción—no demos que frenan tu ronda.",
+    "titleEm": "backend, frontends e IA incluidos",
+    "tagline": "Ayudo a founders y engineering leads a convertir roadmaps en software listo para ingresos: APIs escalables, frontends de producto pulidos y sistemas RAG que funcionan en producción—no demos que frenan tu ronda.",
     "location": "Bangalore · Horario compatible con EE. UU. y UE",
     "availability": "Remoto tiempo completo · Contrato · Fraccional",
     "ctaPrimary": "Iniciar conversación",
@@ -29,11 +29,11 @@
   },
   "statsDisplay": [
     { "num": "8", "label": "Años entregando software" },
-    { "num": "4+", "label": "Años Angular 18+" },
+    { "num": "C3", "label": "IA certificado" },
     { "num": "EE. UU.", "label": "Clientes enterprise y fintech" },
     { "num": "RAG", "label": "En producción" }
   ],
-  "proofStrip": ["Fintech y seguros", "UIs Angular 18+", "RAG / LLM enterprise", "Oil & gas · startup UE"],
+  "proofStrip": ["Fintech y seguros", "UIs de producto enterprise", "RAG / LLM enterprise", "Oil & gas · startup UE"],
   "value": {
     "heading": "Por qué me contratan",
     "subheading": "Obtienes un owner senior—no un ticket en el backlog. Actualizaciones claras, estimaciones honestas y código que tu equipo mantiene después.",
@@ -44,7 +44,7 @@
       },
       {
         "title": "Claridad full-stack",
-        "description": "8 años en backend y Angular 18+—un ingeniero alinea APIs, UI y datos sin huecos."
+        "description": "8 años en backend y frontends de producto—un ingeniero alinea APIs, UI y datos sin huecos."
       },
       {
         "title": "IA con confianza",
@@ -66,7 +66,7 @@
       },
       {
         "title": "MVP y build full-stack",
-        "description": "APIs Nest.js/Node más UI Angular 18+, auth, datos y CI/CD—listo para pilotos."
+        "description": "APIs Nest.js/Node más UI moderna, auth, datos y CI/CD—listo para pilotos."
       },
       {
         "title": "Integración AI / RAG",
@@ -79,7 +79,7 @@
     "Node.js",
     "Nest.js",
     "TypeScript",
-    "Angular 18+",
+    "Angular",
     "Python",
     "RAG / LLM",
     "PostgreSQL",
@@ -116,7 +116,7 @@
       "tag": "Enterprise",
       "problem": "Ingeniería global necesitaba microservicios mantenibles y UIs modernas en programa multi-región.",
       "role": "Ingeniero de software senior",
-      "stack": "Angular 18+ · Node.js · TypeScript · PostgreSQL · Microservicios · Docker · ArgoCD",
+      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservicios · Docker · ArgoCD",
       "outcome": "Microservicios de optimización y frontends Angular entregados con CI/CD en programa multi-región."
     }
   ],
@@ -151,8 +151,8 @@
   },
   "about": {
     "heading": "Sobre mí",
-    "p1": "Soy el ingeniero al que llaman cuando la fecha es real y el stack es complejo—alguien que asume backend, Angular 18+ e IA, habla claro con stakeholders no técnicos y deja sistemas que tu equipo opera sin mí.",
-    "p2": "{years} años en producción en fintech, logística, oil & gas y plataformas de IA—incluyendo {angularYears} años en Angular 18+ para UIs enterprise. C3 AI certificado · M.Sc. IT (GPA 3.7) · Empleado del mes · Hacktoberfest.",
+    "p1": "Soy el ingeniero al que llaman cuando la fecha es real y el stack es complejo—alguien que asume backend, frontends e IA, habla claro con stakeholders no técnicos y deja sistemas que tu equipo opera sin mí.",
+    "p2": "{years} años en producción en fintech, logística, oil & gas y plataformas de IA. C3 AI certificado · M.Sc. IT (GPA 3.7) · Empleado del mes · Hacktoberfest.",
     "languagesHeading": "Idiomas",
     "spoken": ["Inglés (fluido)", "Hindi (nativo)", "Punjabi (nativo)", "Español (principiante)"],
     "currentlyHeading": "Ahora",

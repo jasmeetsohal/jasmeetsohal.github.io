@@ -116,8 +116,7 @@ async function applyLocale(lang) {
   document.documentElement.lang = lang;
 
   const years = config.yearsExperience || "8";
-  const angularYears = config.angularYears || "4+";
-  const vars = { years, angularYears };
+  const vars = { years };
   const mailto = mailtoLink();
 
   document.title = t.meta.title;

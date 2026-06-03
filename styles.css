@@ -387,13 +387,13 @@ main {
 
 .hero-bg {
   position: absolute;
-  inset: 0;
+  inset: -8px;
   background-size: cover;
   /* Keep the travel figure on the left; open water/sky sits behind the profile card */
   background-position: 28% 42%;
   background-repeat: no-repeat;
-  transform: scale(1.03);
-  filter: saturate(1.08) brightness(1.05);
+  transform: scale(1.06);
+  filter: blur(6px) saturate(1.06) brightness(1.04);
 }
 
 .hero-overlay {
@@ -449,6 +449,7 @@ main {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 28px 56px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
 }
 
 .profile-ring {
@@ -481,8 +482,9 @@ main {
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  /* Full-body photo — crop to head & shoulders for the hero card */
-  object-position: center 14%;
+  /* Full-body photo — zoomed to head & shoulders */
+  object-position: center 6%;
+  transform: scale(1.22);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow);
@@ -1309,7 +1311,8 @@ main {
   .hero-profile img {
     max-width: 100%;
     border-radius: 16px;
-    object-position: center 12%;
+    object-position: center 5%;
+    transform: scale(1.18);
   }
 
   .hero {

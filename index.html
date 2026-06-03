@@ -53,17 +53,35 @@
     </header>
 
     <main id="main-content">
-      <section class="hero" id="top" aria-labelledby="hero-title">
+      <section class="hero" id="top" aria-labelledby="hero-title-block">
         <div class="hero-bg" id="hero-bg" aria-hidden="true"></div>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-inner">
           <div class="hero-content">
-            <p class="eyebrow" id="hero-eyebrow"></p>
-            <p class="hero-role" id="hero-role"></p>
-            <h1>
-              <span id="hero-title" class="hero-title-main"></span>
-              <em id="hero-title-em"></em>
-            </h1>
+            <div class="profile-header">
+              <figure class="hero-avatar">
+                <img
+                  id="profile-image"
+                  src="images/profile.png"
+                  alt="Jasmeet Singh"
+                  width="280"
+                  height="280"
+                  loading="eager"
+                />
+                <span class="avatar-status" id="avatar-status" aria-hidden="true"></span>
+              </figure>
+              <div class="profile-identity">
+                <h1 id="hero-title-block">
+                  <span id="hero-title" class="hero-title-main"></span>
+                  <span class="hero-title-sub" id="hero-title-em"></span>
+                </h1>
+                <p class="profile-handle" id="hero-handle">
+                  <a href="https://github.com/jasmeetsohal" target="_blank" rel="noopener noreferrer">@jasmeetsohal</a>
+                </p>
+                <p class="hero-role" id="hero-role"></p>
+                <p class="profile-bio eyebrow" id="hero-eyebrow"></p>
+              </div>
+            </div>
             <p class="lead" id="hero-tagline"></p>
             <div class="hero-meta">
               <span class="pill" id="hero-location"></span>
@@ -83,12 +101,6 @@
               <div class="stat" id="stat-4"></div>
             </div>
           </div>
-          <figure class="hero-profile">
-            <div class="profile-frame">
-              <div class="profile-ring" aria-hidden="true"></div>
-              <img id="profile-image" src="images/profile.png" alt="Jasmeet Singh" width="768" height="1024" loading="eager" />
-            </div>
-          </figure>
         </div>
       </section>
 

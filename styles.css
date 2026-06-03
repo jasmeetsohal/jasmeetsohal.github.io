@@ -389,7 +389,7 @@ main {
   position: relative;
   margin: 0 -1.5rem 0;
   padding: 5rem 1.5rem 3.5rem;
-  min-height: min(88vh, 920px);
+  min-height: min(72vh, 780px);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -424,51 +424,115 @@ main {
   width: 100%;
   max-width: var(--max);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr minmax(160px, 220px);
-  gap: 2.5rem;
-  align-items: center;
 }
 
 .hero-content {
   min-width: 0;
 }
 
-.hero-profile {
+/* GitHub-style profile header: round avatar + name block */
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.hero-avatar {
+  position: relative;
+  flex-shrink: 0;
   margin: 0;
-  justify-self: end;
-  align-self: center;
-  width: 100%;
-  max-width: 200px;
 }
 
-.profile-frame {
-  position: relative;
-  width: 100%;
-  padding: 0.35rem;
-  border-radius: var(--radius-lg);
-  background: rgba(11, 14, 20, 0.5);
-  border: 1px solid var(--border);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: var(--shadow-sm);
-  overflow: hidden;
-}
-
-.profile-ring {
-  display: none;
-}
-
-.hero-profile img {
-  position: relative;
-  z-index: 1;
+.hero-avatar img {
   display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: calc(var(--radius-lg) - 4px);
-  border: none;
-  box-shadow: none;
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 32%;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  box-shadow: 0 0 0 4px rgba(7, 8, 12, 0.6);
+}
+
+.avatar-status {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #3fb950;
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 1px rgba(63, 185, 80, 0.35);
+}
+
+.profile-identity {
+  flex: 1;
+  min-width: 0;
+  padding-top: 0.35rem;
+}
+
+.profile-identity h1 {
+  font-family: var(--sans);
+  font-size: clamp(1.65rem, 4vw, 2rem);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-title-main {
+  display: block;
+  color: var(--text);
+}
+
+.hero-title-sub {
+  display: block;
+  font-size: 0.92em;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.profile-handle {
+  margin: 0 0 0.65rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.profile-handle a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.profile-handle a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.profile-identity .hero-role {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.profile-bio {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--text-subtle);
+}
+
+.profile-bio::before {
+  display: none;
 }
 
 .about-profile {
@@ -484,11 +548,7 @@ main {
 }
 
 .hero-role {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text);
-  margin: 0 0 0.5rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .hero-resume-line {
@@ -545,38 +605,12 @@ main {
   background: var(--border-strong);
 }
 
-.hero h1 {
-  font-family: var(--display);
-  font-size: clamp(2.75rem, 7vw, 4.25rem);
-  font-weight: 600;
-  line-height: 1.08;
-  margin: 0 0 1.5rem;
-  letter-spacing: -0.02em;
-  max-width: none;
-}
-
-.hero-title-main {
-  display: block;
-  color: var(--text);
-}
-
 .hero-proof-line {
   font-size: 0.92rem;
   color: var(--gold);
   margin: -1rem 0 1.5rem;
   max-width: 32rem;
   font-weight: 500;
-}
-
-.hero h1 em {
-  display: block;
-  font-style: italic;
-  font-weight: 400;
-  color: var(--accent);
-  font-size: 0.52em;
-  margin-top: 0.4em;
-  max-width: none;
-  opacity: 0.9;
 }
 
 .lead {
@@ -1267,25 +1301,20 @@ main {
 }
 
 @media (max-width: 900px) {
-  .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
   }
 
-  .hero-profile {
-    justify-self: center;
-    order: -1;
-    max-width: 180px;
+  .profile-identity {
+    padding-top: 0;
   }
 
-  .profile-frame {
-    padding: 0.35rem;
-  }
-
-  .hero-profile img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 14px;
+  .hero-avatar img {
+    width: 132px;
+    height: 132px;
   }
 
   .hero {

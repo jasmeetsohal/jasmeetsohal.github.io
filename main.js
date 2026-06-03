@@ -160,12 +160,28 @@ async function applyLocale(lang) {
     <a href="#contact">${escapeHtml(t.nav.contact)}</a>
   `;
 
-  const roleEl = document.getElementById("hero-role");
-  if (roleEl && t.hero.roleLine) roleEl.textContent = t.hero.roleLine;
-
   document.getElementById("hero-eyebrow").textContent = interpolate(t.hero.eyebrow, vars);
-  document.getElementById("hero-title").textContent = t.hero.title;
-  document.getElementById("hero-title-em").textContent = t.hero.titleEm;
+  document.getElementById("hero-title").textContent = config.name;
+
+  const titleSub = document.getElementById("hero-title-em");
+  if (titleSub) {
+    titleSub.textContent = t.hero.roleLine || "";
+    titleSub.hidden = !t.hero.roleLine;
+  }
+
+  const roleEl = document.getElementById("hero-role");
+  if (roleEl) {
+    roleEl.textContent = [t.hero.title, t.hero.titleEm].filter(Boolean).join(" ");
+  }
+
+  const heroHandle = document.getElementById("hero-handle");
+  if (heroHandle && config.github) {
+    const user = config.github.replace(/\/$/, "").split("/").pop() || "";
+    heroHandle.innerHTML = `<a href="${escapeHtml(config.github)}" target="_blank" rel="noopener noreferrer">@${escapeHtml(user)}</a>`;
+  }
+
+  const avatarStatus = document.getElementById("avatar-status");
+  if (avatarStatus) avatarStatus.setAttribute("title", t.openBadge);
   document.getElementById("hero-tagline").textContent = t.hero.tagline;
   document.getElementById("hero-location").textContent = t.hero.location;
   document.getElementById("hero-availability").textContent = t.hero.availability;

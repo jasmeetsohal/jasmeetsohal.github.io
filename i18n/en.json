@@ -1,25 +1,77 @@
 {
   "lang": "en",
   "meta": {
-    "title": "Jasmeet Singh — Senior Software Engineer",
-    "description": "Senior Software Engineer with 7+ years in backend architecture, microservices, RAG pipelines, and fintech. Node.js, TypeScript, Python, AWS, Azure. Remote-ready for international teams. Certified C3 AI Developer."
+    "title": "Jasmeet Singh — Senior Engineer for Startups & Global Teams",
+    "description": "Hire a senior engineer who ships Node.js backends, RAG pipelines, and MVPs for startups and international companies. 7+ years · U.S. clients · Remote · C3 AI certified."
   },
   "nav": {
     "work": "Work",
+    "why": "Why me",
     "experience": "Experience",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "hire": "Let's talk"
   },
+  "openBadge": "Open to opportunities",
   "hero": {
-    "eyebrow": "Bangalore · Remote · {years} years · C3 AI Certified",
-    "title": "Senior Software Engineer",
-    "titleEm": "backend & microservices for global product teams",
-    "tagline": "I build and scale Node.js / TypeScript backends and production RAG pipelines for fintech, logistics, oil & gas, and AI platforms — currently leading delivery for U.S. clients, with clear communication across time zones.",
-    "location": "Bangalore, India (IST, UTC+5:30)",
-    "availability": "Open to remote full-time & contracts — U.S., EU, UK, LATAM (flexible overlap)",
-    "ctaPrimary": "Get in touch",
-    "ctaSecondary": "View selected work"
+    "eyebrow": "Available for startups & international teams · {years} yrs · Remote",
+    "title": "I ship production backends",
+    "titleEm": "and AI features global teams can rely on",
+    "tagline": "Senior engineer for startups and scale-ups that need speed without chaos—Node.js, TypeScript, Python, RAG pipelines, and clear async communication across U.S., EU, and APAC time zones.",
+    "location": "Bangalore · Overlap with U.S. & EU hours",
+    "availability": "Remote full-time · Contract · Fractional (2–3 days/week)",
+    "ctaPrimary": "Start a conversation",
+    "ctaSecondary": "See case studies",
+    "proofLine": "Trusted on fintech, AI, and industrial programs for U.S. & European clients"
   },
+  "stats": {
+    "years": "Years shipping",
+    "clients": "U.S. client work",
+    "ai": "C3 AI certified",
+    "startup": "Startup exp."
+  },
+  "proofStrip": ["Fintech & insurance", "Enterprise RAG / LLM", "Oil & gas SaaS", "Swedish startup scale-up"],
+  "value": {
+    "heading": "Why teams reach out",
+    "subheading": "What you get when you work with me—not another ticket-taker.",
+    "items": [
+      {
+        "title": "Startup speed",
+        "description": "MVPs, features, and fixes delivered with scope clarity—weekly demos, no surprise scope creep."
+      },
+      {
+        "title": "Production discipline",
+        "description": "Tests, CI/CD, observability, and APIs built to stay up—not demo code that breaks in prod."
+      },
+      {
+        "title": "AI that ships",
+        "description": "Real RAG pipelines in production: ingestion, retrieval, LLM orchestration—not slide-deck AI."
+      },
+      {
+        "title": "Global collaboration",
+        "description": "Fluent English, async-first updates, and overlap with U.S./EU hours from IST."
+      }
+    ]
+  },
+  "offers": {
+    "heading": "Ways we can work together",
+    "subheading": "Flexible models for early-stage startups and international product teams.",
+    "items": [
+      {
+        "title": "Senior embed",
+        "description": "Join your squad 2–5 days/week—architecture, code review, and hands-on shipping."
+      },
+      {
+        "title": "MVP & backend build",
+        "description": "Greenfield APIs, auth, data layer, and deploy pipeline in weeks."
+      },
+      {
+        "title": "AI / RAG integration",
+        "description": "Add grounded Q&A, search, or agents on your docs and product data."
+      }
+    ]
+  },
+  "skillsLabel": "Core stack",
   "skills": [
     "Node.js",
     "Nest.js",
@@ -32,17 +84,16 @@
     "AWS",
     "Azure",
     "Docker",
-    "Kubernetes",
-    "Angular",
-    "React"
+    "Kubernetes"
   ],
   "work": {
-    "heading": "Selected work",
-    "subheading": "Recent platforms from fintech, AI, and industrial clients — aligned with my resume."
+    "heading": "Proof of work",
+    "subheading": "Real systems for regulated and high-stakes domains—where reliability matters."
   },
   "projects": [
     {
       "title": "IApp — Fintech insurance platform",
+      "tag": "Fintech · U.S.",
       "problem": "Insurance operations needed reliable claims management and auditing workflows at scale.",
       "role": "Senior backend engineer (Codvo.ai · U.S. client)",
       "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
@@ -50,76 +101,79 @@
     },
     {
       "title": "NeIO — Enterprise RAG pipeline",
-      "problem": "Enterprise teams needed grounded AI answers over internal documents and operational data—not unreliable generic chatbot responses.",
+      "tag": "AI · Featured",
+      "problem": "Enterprise teams needed grounded AI answers over internal documents—not unreliable generic chatbots.",
       "role": "Senior backend engineer (Codvo.ai)",
-      "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · vector retrieval · React · ArgoCD · Jest",
-      "outcome": "Designed and delivered a production RAG pipeline: document ingestion, chunking, embedding, retrieval, and LLM orchestration via secure APIs—with tests and GitOps deployment."
+      "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · vector retrieval · ArgoCD",
+      "outcome": "Production RAG pipeline: ingestion, chunking, embedding, retrieval, and LLM orchestration via secure APIs—with tests and GitOps."
     },
     {
       "title": "Baker Hughes — Oil & gas optimization",
-      "problem": "Industrial optimization required maintainable microservices and strong frontend–backend coordination.",
+      "tag": "Enterprise",
+      "problem": "Industrial optimization required maintainable microservices and cross-team delivery at global scale.",
       "role": "Senior software engineer",
       "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
-      "outcome": "Shipped microservices for optimization workflows with CI/CD and cross-team delivery on a global program."
+      "outcome": "Shipped optimization microservices with CI/CD on a multi-region engineering program."
     }
   ],
   "experience": {
-    "heading": "Professional experience",
+    "heading": "Track record",
     "roles": [
       {
         "company": "Codvo.ai",
         "title": "Senior Software Engineer",
         "period": "Sep 2023 – Present",
-        "detail": "Remote · Leading backend and RAG/AI pipelines for U.S. clients in finance and oil & gas. Certified C3 AI Developer; customer-facing requirements and delivery."
+        "detail": "Remote · Backend & RAG/AI for U.S. clients (finance, oil & gas). Customer calls, requirements, delivery. Mentoring juniors."
       },
       {
         "company": "Turbotic",
         "title": "Software Engineer",
         "period": "Oct 2021 – Aug 2023",
-        "detail": "Swedish startup · System architecture and APIs for automation orchestration (UiPath, Blue Prism, Automation Anywhere)."
+        "detail": "Swedish startup · Architecture & APIs for automation orchestration (UiPath, Blue Prism, Automation Anywhere)."
       },
       {
         "company": "Grazitti Interactive",
         "title": "Software Engineer",
         "period": "Feb 2020 – Sep 2021",
-        "detail": "SearchUnify · API crawlers, ElasticSearch optimization, monolith-to-microservices migration."
+        "detail": "SearchUnify · API crawlers, ElasticSearch, monolith-to-microservices migration."
       },
       {
         "company": "Bursys",
         "title": "Software Engineer",
         "period": "Jan 2018 – Feb 2020",
-        "detail": "Logistics & oil & gas · Node/Java APIs, WebSockets, AWS ECS, C/C++ address validation addons."
+        "detail": "Logistics & oil & gas · Node/Java APIs, WebSockets, AWS ECS."
       }
     ]
   },
   "about": {
-    "heading": "About",
-    "p1": "Senior Software Engineer with {years} years in backend architecture, microservices, RAG/LLM pipelines, and full-stack delivery across fintech, logistics, oil & gas, and AI-driven platforms. Expert in Node.js, TypeScript, Python, Nest.js, PostgreSQL, AWS, and Azure.",
-    "p2": "Certified C3 AI Developer with experience in team leadership, system design, and customer engagement. M.Sc. Information Technology (GPA 3.7). Employee of the Month (March 2019); Hacktoberfest contributor.",
+    "heading": "About me",
+    "p1": "I'm the engineer founders and engineering leads call when they need a senior pair of hands—someone who owns backend and AI delivery end-to-end, talks to stakeholders, and leaves the codebase better than they found it.",
+    "p2": "{years} years across fintech, logistics, oil & gas, and AI platforms. Certified C3 AI Developer. M.Sc. IT (GPA 3.7). Employee of the Month · Hacktoberfest contributor.",
     "languagesHeading": "Languages",
     "spoken": ["English (fluent)", "Hindi (native)", "Punjabi (native)", "Spanish (beginner)"],
-    "currentlyHeading": "Currently",
+    "currentlyHeading": "Now",
     "remoteLabel": "Senior engineer @ Codvo.ai",
     "educationHeading": "Education",
     "education": [
-      "M.Sc. Information Technology — SCD Govt. College, Ludhiana (2015–2017), GPA 3.7",
-      "BCA Computer Applications — KLSD College, Ludhiana (2012–2015), GPA 3.3"
+      "M.Sc. Information Technology — SCD Govt. College (GPA 3.7)",
+      "BCA Computer Applications — KLSD College (GPA 3.3)"
     ]
   },
   "contact": {
-    "heading": "Let's work together",
-    "subheading": "Open to senior engineering roles and remote consulting for international startups and enterprises.",
+    "heading": "Ready when you are",
+    "subheading": "Tell me what you're building—I'll reply within 24 hours with honest fit and next steps.",
+    "promise": "No recruiters-only spam · Direct conversation · NDA-friendly",
     "email": "Email",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "resume": "Resume",
     "resumeValue": "Download PDF →",
     "whatsapp": "WhatsApp",
-    "whatsappValue": "Message →",
-    "linkedinValue": "Profile →",
-    "githubValue": "Repositories →"
+    "whatsappValue": "Quick message →",
+    "linkedinValue": "Connect →",
+    "githubValue": "38+ repos →"
   },
-  "footer": "Available for international remote opportunities.",
+  "footer": "Building for startups and teams worldwide.",
   "langSwitch": {
     "label": "Language",
     "en": "English",

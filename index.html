@@ -24,11 +24,16 @@
   </head>
   <body>
     <div class="bg-grid" aria-hidden="true"></div>
+    <div class="open-banner" id="open-banner">
+      <span class="open-dot" aria-hidden="true"></span>
+      <span id="open-badge-text"></span>
+    </div>
 
     <header class="site-header">
       <a class="logo" href="#top" id="logo-name">Jasmeet Singh</a>
       <nav class="nav" aria-label="Primary" id="main-nav"></nav>
       <div class="header-actions">
+        <a class="btn btn-header" href="#contact" id="header-hire-cta"></a>
         <div class="lang-switch" role="group" aria-labelledby="lang-label">
           <span class="lang-label" id="lang-label">Language</span>
           <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
@@ -48,10 +53,11 @@
           <div class="hero-content">
             <p class="eyebrow" id="hero-eyebrow"></p>
             <h1>
-              <span id="hero-title"></span>
+              <span id="hero-title" class="hero-title-main"></span>
               <em id="hero-title-em"></em>
             </h1>
             <p class="lead" id="hero-tagline"></p>
+            <p class="hero-proof-line" id="hero-proof-line"></p>
             <div class="hero-meta">
               <span class="pill" id="hero-location"></span>
               <span class="pill pill-accent" id="hero-availability"></span>
@@ -61,10 +67,23 @@
               <a class="btn btn-ghost" href="#work" id="hero-cta-secondary"></a>
               <a class="btn btn-ghost" href="Jasmeet-Singh-Resume.pdf" id="hero-cta-resume" download></a>
             </div>
-            <div class="hero-stats" aria-hidden="true">
-              <div class="stat"><span class="stat-num" id="stat-years">7+</span><span class="stat-label" data-i18n-stat="years">Years</span></div>
-              <div class="stat"><span class="stat-num">U.S.</span><span class="stat-label" data-i18n-stat="clients">Clients</span></div>
-              <div class="stat"><span class="stat-num">C3</span><span class="stat-label" data-i18n-stat="ai">AI Certified</span></div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-num" id="stat-years">7+</span>
+                <span class="stat-label" data-i18n-stat="years">Years</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">U.S.</span>
+                <span class="stat-label" data-i18n-stat="clients">Clients</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">C3</span>
+                <span class="stat-label" data-i18n-stat="ai">AI</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">SE</span>
+                <span class="stat-label" data-i18n-stat="startup">Startup</span>
+              </div>
             </div>
           </div>
           <figure class="hero-profile">
@@ -73,7 +92,28 @@
         </div>
       </section>
 
-      <section class="skills-band" aria-label="Technologies">
+      <section class="proof-strip" aria-label="Domains">
+        <ul class="proof-list" id="proof-list"></ul>
+      </section>
+
+      <section class="section" id="why-me">
+        <header class="section-head section-head-center">
+          <h2 id="value-heading"></h2>
+          <p id="value-subheading"></p>
+        </header>
+        <div class="value-grid" id="value-grid"></div>
+      </section>
+
+      <section class="section section-panel" id="offers">
+        <header class="section-head section-head-center">
+          <h2 id="offers-heading"></h2>
+          <p id="offers-subheading"></p>
+        </header>
+        <div class="offers-grid" id="offers-grid"></div>
+      </section>
+
+      <section class="skills-band" aria-labelledby="skills-label">
+        <p class="skills-label" id="skills-label"></p>
         <ul class="skills-list" id="skills-list"></ul>
       </section>
 
@@ -113,11 +153,17 @@
       </section>
 
       <section class="section section-cta" id="contact">
-        <h2 id="contact-heading"></h2>
-        <p id="contact-subheading"></p>
+        <div class="cta-panel">
+          <h2 id="contact-heading"></h2>
+          <p id="contact-subheading"></p>
+          <p class="contact-promise" id="contact-promise"></p>
+          <a class="btn btn-primary btn-large" href="#" id="contact-main-cta"></a>
+        </div>
         <div class="contact-grid" id="contact-grid"></div>
       </section>
     </main>
+
+    <a class="floating-cta" href="#contact" id="floating-cta" aria-label="Contact"></a>
 
     <footer class="site-footer">
       <p>© <span id="year"></span> <span id="footer-name">Jasmeet Singh</span> — <span id="footer-text"></span></p>

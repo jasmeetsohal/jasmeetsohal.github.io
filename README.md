@@ -32,7 +32,7 @@ Open http://localhost:8080 — try `?lang=es` for Spanish.
 1. Create a GitHub repo named **`jasmeetsohal.github.io`**
 2. Push this folder to the **`main`** branch
 3. GitHub → **Settings → Pages → Source**: Deploy from branch **`main`**, folder **`/ (root)`**
-4. Site live at `https://jasmeetsohal.github.io`
+4. Site live at **https://jasmeetsohal.github.io** (also try `?lang=es` for Spanish)
 
 ### Option B — Project site (`username.github.io/portfolio`)
 

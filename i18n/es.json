@@ -1,25 +1,77 @@
 {
   "lang": "es",
   "meta": {
-    "title": "Jasmeet Singh — Ingeniero de Software Senior",
-    "description": "Ingeniero de Software Senior con más de 7 años en arquitectura backend, microservicios, pipelines RAG y fintech. Node.js, TypeScript, Python, AWS, Azure. Remoto para equipos internacionales. Desarrollador C3 AI certificado."
+    "title": "Jasmeet Singh — Ingeniero Senior para Startups y Equipos Globales",
+    "description": "Contrata un ingeniero senior que entrega backends Node.js, pipelines RAG y MVPs para startups y empresas internacionales. 7+ años · Clientes EE. UU. · Remoto · C3 AI certificado."
   },
   "nav": {
     "work": "Proyectos",
+    "why": "Por qué yo",
     "experience": "Experiencia",
     "about": "Sobre mí",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "hire": "Hablemos"
   },
+  "openBadge": "Abierto a oportunidades",
   "hero": {
-    "eyebrow": "Bangalore · Remoto · {years} años · C3 AI certificado",
-    "title": "Ingeniero de Software Senior",
-    "titleEm": "backend y microservicios para equipos globales",
-    "tagline": "Desarrollo y escalo backends en Node.js / TypeScript y pipelines RAG en producción para fintech, logística, petróleo y gas y plataformas de IA — liderando entregas para clientes en EE. UU., con comunicación clara entre zonas horarias.",
-    "location": "Bangalore, India (IST, UTC+5:30)",
-    "availability": "Abierto a tiempo completo remoto y contratos — EE. UU., UE, Reino Unido, LATAM (horarios flexibles)",
-    "ctaPrimary": "Contactar",
-    "ctaSecondary": "Ver proyectos destacados"
+    "eyebrow": "Disponible para startups y equipos internacionales · {years} años · Remoto",
+    "title": "Entrego backends en producción",
+    "titleEm": "y funciones de IA en las que equipos globales confían",
+    "tagline": "Ingeniero senior para startups y scale-ups que necesitan velocidad sin caos—Node.js, TypeScript, Python, pipelines RAG y comunicación asíncrona clara entre zonas EE. UU., UE y APAC.",
+    "location": "Bangalore · Solapamiento con horarios EE. UU. y UE",
+    "availability": "Tiempo completo remoto · Contrato · Fraccional (2–3 días/semana)",
+    "ctaPrimary": "Iniciar conversación",
+    "ctaSecondary": "Ver casos de estudio",
+    "proofLine": "Fintech, IA e industria para clientes en EE. UU. y Europa"
   },
+  "stats": {
+    "years": "Años entregando",
+    "clients": "Trabajo con EE. UU.",
+    "ai": "C3 AI certificado",
+    "startup": "Exp. startup"
+  },
+  "proofStrip": ["Fintech y seguros", "RAG / LLM enterprise", "SaaS oil & gas", "Startup sueca en crecimiento"],
+  "value": {
+    "heading": "Por qué me contactan",
+    "subheading": "Lo que obtienes al trabajar conmigo—no otro ejecutor de tickets.",
+    "items": [
+      {
+        "title": "Velocidad startup",
+        "description": "MVPs, features y fixes con alcance claro—demos semanales, sin scope creep sorpresa."
+      },
+      {
+        "title": "Disciplina en producción",
+        "description": "Pruebas, CI/CD, observabilidad y APIs que siguen en pie—no código demo que rompe en prod."
+      },
+      {
+        "title": "IA que se despliega",
+        "description": "Pipelines RAG reales: ingesta, recuperación, orquestación LLM—no IA de presentación."
+      },
+      {
+        "title": "Colaboración global",
+        "description": "Inglés fluido, actualizaciones async-first y solapamiento con horarios EE. UU./UE desde IST."
+      }
+    ]
+  },
+  "offers": {
+    "heading": "Formas de trabajar juntos",
+    "subheading": "Modelos flexibles para startups en fase inicial y equipos de producto internacionales.",
+    "items": [
+      {
+        "title": "Senior integrado",
+        "description": "Únete a tu squad 2–5 días/semana—arquitectura, code review y entrega hands-on."
+      },
+      {
+        "title": "MVP y backend",
+        "description": "APIs greenfield, auth, capa de datos y pipeline de deploy en semanas."
+      },
+      {
+        "title": "Integración AI / RAG",
+        "description": "Q&A fundamentado, búsqueda o agentes sobre tus documentos y datos de producto."
+      }
+    ]
+  },
+  "skillsLabel": "Stack principal",
   "skills": [
     "Node.js",
     "Nest.js",
@@ -32,94 +84,96 @@
     "AWS",
     "Azure",
     "Docker",
-    "Kubernetes",
-    "Angular",
-    "React"
+    "Kubernetes"
   ],
   "work": {
-    "heading": "Proyectos destacados",
-    "subheading": "Plataformas recientes en fintech, IA e industria — alineadas con mi currículum."
+    "heading": "Trabajo demostrable",
+    "subheading": "Sistemas reales en dominios regulados y de alto impacto—donde la fiabilidad importa."
   },
   "projects": [
     {
       "title": "IApp — Plataforma fintech de seguros",
-      "problem": "Operaciones de seguros necesitaban flujos fiables de gestión de reclamaciones y auditoría a escala.",
+      "tag": "Fintech · EE. UU.",
+      "problem": "Operaciones de seguros necesitaban flujos fiables de reclamaciones y auditoría a escala.",
       "role": "Ingeniero backend senior (Codvo.ai · cliente EE. UU.)",
       "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
-      "outcome": "Servicios backend para reclamaciones y auditoría; despliegues en producción con pipelines containerizados."
+      "outcome": "Servicios backend para reclamaciones y auditoría; despliegues en producción containerizados."
     },
     {
       "title": "NeIO — Pipeline RAG enterprise",
-      "problem": "Equipos enterprise necesitaban respuestas de IA fundamentadas en documentos internos y datos operativos—not chatbots genéricos poco fiables.",
+      "tag": "IA · Destacado",
+      "problem": "Equipos enterprise necesitaban respuestas de IA fundamentadas en documentos internos—not chatbots genéricos.",
       "role": "Ingeniero backend senior (Codvo.ai)",
-      "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · recuperación vectorial · React · ArgoCD · Jest",
-      "outcome": "Diseñé y entregué un pipeline RAG en producción: ingesta, fragmentación, embeddings, recuperación y orquestación LLM vía APIs seguras, con pruebas y despliegue GitOps."
+      "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · recuperación vectorial · ArgoCD",
+      "outcome": "Pipeline RAG en producción: ingesta, fragmentación, embeddings, recuperación y orquestación LLM vía APIs seguras."
     },
     {
       "title": "Baker Hughes — Optimización oil & gas",
-      "problem": "La optimización industrial requería microservicios mantenibles y coordinación frontend–backend.",
+      "tag": "Enterprise",
+      "problem": "Optimización industrial requería microservicios mantenibles y entrega global entre equipos.",
       "role": "Ingeniero de software senior",
       "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservicios · Docker · ArgoCD",
-      "outcome": "Microservicios para flujos de optimización con CI/CD en un programa global."
+      "outcome": "Microservicios de optimización con CI/CD en un programa de ingeniería multi-región."
     }
   ],
   "experience": {
-    "heading": "Experiencia profesional",
+    "heading": "Trayectoria",
     "roles": [
       {
         "company": "Codvo.ai",
         "title": "Ingeniero de Software Senior",
         "period": "Sep 2023 – Presente",
-        "detail": "Remoto · Backend y pipelines RAG/IA para clientes en EE. UU. (finanzas y oil & gas). Desarrollador C3 AI certificado; requisitos y entrega con el cliente."
+        "detail": "Remoto · Backend y RAG/IA para clientes EE. UU. (finanzas, oil & gas). Llamadas con cliente, requisitos, entrega. Mentoría."
       },
       {
         "company": "Turbotic",
         "title": "Ingeniero de Software",
         "period": "Oct 2021 – Ago 2023",
-        "detail": "Startup sueca · Arquitectura y APIs para orquestación de automatización (UiPath, Blue Prism, Automation Anywhere)."
+        "detail": "Startup sueca · Arquitectura y APIs para orquestación de automatización."
       },
       {
         "company": "Grazitti Interactive",
         "title": "Ingeniero de Software",
         "period": "Feb 2020 – Sep 2021",
-        "detail": "SearchUnify · Crawlers API, optimización ElasticSearch, migración de monolito a microservicios."
+        "detail": "SearchUnify · Crawlers API, ElasticSearch, migración a microservicios."
       },
       {
         "company": "Bursys",
         "title": "Ingeniero de Software",
         "period": "Ene 2018 – Feb 2020",
-        "detail": "Logística y oil & gas · APIs Node/Java, WebSockets, AWS ECS, addons C/C++ para validación de direcciones."
+        "detail": "Logística y oil & gas · APIs Node/Java, WebSockets, AWS ECS."
       }
     ]
   },
   "about": {
     "heading": "Sobre mí",
-    "p1": "Ingeniero de Software Senior con {years} años en arquitectura backend, microservicios, pipelines RAG/LLM y entrega full-stack en fintech, logística, oil & gas y plataformas con IA. Experto en Node.js, TypeScript, Python, Nest.js, PostgreSQL, AWS y Azure.",
-    "p2": "Desarrollador C3 AI certificado con liderazgo de equipo, diseño de sistemas y contacto con clientes. M.Sc. en Tecnologías de la Información (GPA 3.7). Empleado del mes (marzo 2019); contribuidor Hacktoberfest.",
+    "p1": "Soy el ingeniero al que acuden founders y engineering leads cuando necesitan manos senior de verdad—alguien que asume backend e IA de punta a punta, habla con stakeholders y deja el código mejor.",
+    "p2": "{years} años en fintech, logística, oil & gas y plataformas de IA. Desarrollador C3 AI certificado. M.Sc. IT (GPA 3.7). Empleado del mes · Hacktoberfest.",
     "languagesHeading": "Idiomas",
     "spoken": ["Inglés (fluido)", "Hindi (nativo)", "Punjabi (nativo)", "Español (principiante)"],
-    "currentlyHeading": "Actualmente",
+    "currentlyHeading": "Ahora",
     "remoteLabel": "Ingeniero senior @ Codvo.ai",
     "educationHeading": "Formación",
     "education": [
-      "M.Sc. Tecnologías de la Información — SCD Govt. College, Ludhiana (2015–2017), GPA 3.7",
-      "BCA Aplicaciones Informáticas — KLSD College, Ludhiana (2012–2015), GPA 3.3"
+      "M.Sc. Tecnologías de la Información — SCD Govt. College (GPA 3.7)",
+      "BCA Aplicaciones Informáticas — KLSD College (GPA 3.3)"
     ]
   },
   "contact": {
-    "heading": "Trabajemos juntos",
-    "subheading": "Abierto a roles senior y consultoría remota para startups y empresas internacionales.",
+    "heading": "Cuando quieras, aquí estoy",
+    "subheading": "Cuéntame qué estás construyendo—respondo en 24 horas con encaje honesto y próximos pasos.",
+    "promise": "Sin spam de solo recruiters · Conversación directa · Compatible con NDA",
     "email": "Correo",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "resume": "Currículum",
     "resumeValue": "Descargar PDF →",
     "whatsapp": "WhatsApp",
-    "whatsappValue": "Mensaje →",
-    "linkedinValue": "Perfil →",
-    "githubValue": "Repositorios →"
+    "whatsappValue": "Mensaje rápido →",
+    "linkedinValue": "Conectar →",
+    "githubValue": "38+ repos →"
   },
-  "footer": "Disponible para oportunidades remotas internacionales.",
+  "footer": "Construyendo para startups y equipos en todo el mundo.",
   "langSwitch": {
     "label": "Idioma",
     "en": "English",

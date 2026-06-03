@@ -224,9 +224,22 @@
     "about": "Sobre mí"
   },
   "footer": "8 años construyendo para startups y equipos en todo el mundo.",
+  "profileImageAlt": "Foto de perfil de {name}",
+  "projectLabels": {
+    "problem": "Problema",
+    "role": "Rol",
+    "outcome": "Resultado"
+  },
   "langSwitch": {
     "label": "Idioma",
     "en": "English",
-    "es": "Español"
+    "es": "Español",
+    "de": "Deutsch",
+    "fr": "Français",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "it": "Italiano",
+    "pt": "Português",
+    "ja": "日本語"
   }
 }

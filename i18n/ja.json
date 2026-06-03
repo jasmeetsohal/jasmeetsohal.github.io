@@ -1,0 +1,245 @@
+{
+  "lang": "ja",
+  "meta": {
+    "title": "Jasmeet Singh — シニアエンジニア · 8年 · フルスタック & AI",
+    "description": "米国・グローバル向けに8年間デリバリーしてきたシニアフルスタックエンジニア—Node.js、TypeScript、本番RAG、市場投入可能なMVP。リモート · C3 AI認定。"
+  },
+  "nav": {
+    "work": "実績",
+    "why": "選ばれる理由",
+    "services": "サービス",
+    "experience": "経歴",
+    "about": "プロフィール",
+    "contact": "連絡",
+    "hire": "お話ししましょう"
+  },
+  "skipLink": "本文へスキップ",
+  "openBadge": "新規クライアント受付中 · リモート",
+  "profileImageAlt": "{name}のプロフィール写真",
+  "projectLabels": {
+    "problem": "課題",
+    "role": "役割",
+    "outcome": "成果"
+  },
+  "hero": {
+    "eyebrow": "米国フィンテック・エンタープライズチームの信頼 · 本番8年",
+    "roleLine": "シニアソフトウェアエンジニア · フルスタック & AI",
+    "title": "次のリリースを期限内に—",
+    "titleEm": "バックエンド、フロント、AIまで一貫対応",
+    "tagline": "創業者やエンジニアリングリードのロードマップを収益化可能なソフトウェアへ。スケーラブルなAPI、磨かれたプロダクトUI、本番で動くRAG—資金調達を止めるデモではありません。",
+    "location": "バンガロール · 米国・EUと時間帯調整可",
+    "availability": "フルリモート · 契約 · フラクショナル",
+    "ctaPrimary": "相談を始める",
+    "ctaSecondary": "実績を見る",
+    "resumeLink": "履歴書をダウンロード (PDF)"
+  },
+  "heroBadges": [
+    "8年の経験",
+    "C3 AI認定",
+    "freeCodeCamp認定",
+    "米国・グローバルクライアント"
+  ],
+  "statsDisplay": [
+    { "num": "8", "label": "ソフトウェア提供年数" },
+    { "num": "C3", "label": "AI認定" },
+    { "num": "米国", "label": "エンタープライズ・フィンテック" },
+    { "num": "RAG", "label": "本番稼働" }
+  ],
+  "proofStrip": ["フィンテック・保険", "エンタープライズUI", "エンタープライズ RAG / LLM", "Oil & gas · EUスタートアップ"],
+  "value": {
+    "heading": "クライアントが選ぶ理由",
+    "subheading": "バックログのチケットではなくシニアオーナー。明確な進捗、正直な見積もり、離脱後もチームが保守できるコード。",
+    "items": [
+      {
+        "title": "市場投入の加速",
+        "badge": "スピード",
+        "description": "MVPと重要機能を数週間で。投資家・ステークホルダーに説明できるスコープ。"
+      },
+      {
+        "title": "フルスタックの一貫性",
+        "badge": "フルスタック",
+        "description": "8年のバックエンドとプロダクトフロント—API、UI、データを一人で整合。"
+      },
+      {
+        "title": "信頼できるAI",
+        "badge": "本番AI",
+        "description": "根拠ある回答、ガードレール、オブザーバビリティ—法務・プロダクトも承認しやすい本番RAG。"
+      },
+      {
+        "title": "グローバルチーム向け",
+        "badge": "リモート",
+        "description": "流暢な英語、タイムゾーンを尊重する非同期、エージェンシー層なしの直接コミュニケーション。"
+      }
+    ]
+  },
+  "offers": {
+    "heading": "フェーズに合った契約形態",
+    "subheading": "シードMVPからエンタープライズ近代化まで—ランウェイと期限に合うモデル。",
+    "items": [
+      {
+        "title": "シニア組み込み",
+        "badge": "柔軟",
+        "description": "週2〜5日でスクワッドに参加：アーキテクチャ、レビュー、チームと並走するデリバリー。"
+      },
+      {
+        "title": "MVP・フルスタック構築",
+        "badge": "MVP",
+        "description": "Nest.js/Node APIとモダンUI、認証、データ層、CI/CD—パイロット顧客向け。"
+      },
+      {
+        "title": "AI / RAG統合",
+        "badge": "RAG / LLM",
+        "description": "社内ドキュメント上の検索・Q&A・エージェント—コンプライアンス向け評価付き。"
+      }
+    ]
+  },
+  "certifications": {
+    "heading": "資格",
+    "subheading": "freeCodeCamp.orgで検証可能",
+    "verifyLabel": "証明書を見る",
+    "items": [
+      {
+        "title": "JavaScript Algorithms and Data Structures",
+        "issuer": "freeCodeCamp",
+        "date": "2018年8月",
+        "slug": "javascript-algorithms-and-data-structures"
+      },
+      {
+        "title": "Back End Development and APIs",
+        "issuer": "freeCodeCamp",
+        "date": "2018年10月",
+        "slug": "back-end-development-and-apis"
+      }
+    ]
+  },
+  "skillsLabel": "スタックへの貢献",
+  "skills": [
+    "Node.js",
+    "Nest.js",
+    "TypeScript",
+    "Angular",
+    "Python",
+    "RAG / LLM",
+    "PostgreSQL",
+    "MongoDB",
+    "Microservices",
+    "AWS",
+    "Azure",
+    "Docker",
+    "Kubernetes"
+  ],
+  "work": {
+    "heading": "クライアントが確認する実績",
+    "subheading": "規制業界と高リスクな納品—ダウンタイムが信頼とコストに直結する領域。"
+  },
+  "projects": [
+    {
+      "title": "Baker Hughes — Oil & gas最適化",
+      "tag": "エンタープライズ",
+      "problem": "グローバルエンジニアリングがマルチリージョンで保守可能なマイクロサービスとモダンUIを必要とした。",
+      "role": "シニアソフトウェアエンジニア",
+      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
+      "outcome": "最適化マイクロサービスとAngularフロントをCI/CDで複数地域・ベンダーにまたがり提供。"
+    },
+    {
+      "title": "NeIO — エンタープライズRAGパイプライン",
+      "tag": "AI · 注目",
+      "problem": "社内ナレッジに対する信頼できる回答が必要—顧客前で幻覚するチャットボットではない。",
+      "role": "シニアバックエンドエンジニア (Codvo.ai)",
+      "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · vector retrieval · ArgoCD",
+      "outcome": "本番RAG E2E：インジェスト、チャンキング、検索、LLM API、テストとGitOps。"
+    },
+    {
+      "title": "IApp — フィンテック保険プラットフォーム",
+      "tag": "フィンテック · 米国",
+      "problem": "保険オペレーションがスケールでのクレーム・監査を必要—コンプライアンスと固定ローンチ日。",
+      "role": "シニアバックエンドエンジニア (Codvo.ai · 米国クライアント)",
+      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
+      "outcome": "クレーム・監査フローのバックエンド本番稼働。クライアント監査可能なコンテナパイプライン。"
+    }
+  ],
+  "experience": {
+    "heading": "8年のデリバリー",
+    "roles": [
+      {
+        "company": "Codvo.ai",
+        "title": "シニアソフトウェアエンジニア",
+        "period": "2023年9月 – 現在",
+        "badge": "現職",
+        "detail": "リモート · 米国クライアント向けバックエンド、RAG/AI、ステークホルダー連携（金融、oil & gas）。本番リリース。ジュニアメンター。"
+      },
+      {
+        "company": "Turbotic",
+        "title": "ソフトウェアエンジニア",
+        "period": "2021年10月 – 2023年8月",
+        "badge": "EUスタートアップ",
+        "detail": "スウェーデンスタートアップ · 自動化オーケストレーションのアーキテクチャとAPI。"
+      },
+      {
+        "company": "Grazitti Interactive",
+        "title": "ソフトウェアエンジニア",
+        "period": "2020年2月 – 2021年9月",
+        "badge": "検索 & API",
+        "detail": "SearchUnify · APIクローラー、ElasticSearch、モノリスからマイクロサービスへ。"
+      },
+      {
+        "company": "Bursys",
+        "title": "ソフトウェアエンジニア",
+        "period": "2018年1月 – 2020年2月",
+        "badge": "エンタープライズ",
+        "detail": "物流・oil & gas · Node/Java API、WebSockets、AWS ECS—8年キャリアの基盤。"
+      }
+    ]
+  },
+  "about": {
+    "heading": "プロフィール",
+    "p1": "期限が現実的でスタックが複雑なときに呼ばれるエンジニア—バックエンド、フロント、AIを一貫して担い、非技術ステークホルダーにも分かりやすく、離脱後もチームが運用できるシステムを残します。",
+    "p2": "フィンテック、物流、oil & gas、AIプラットフォームで本番{years}年。C3 AI認定 · M.Sc. IT (GPA 3.7) · 社員表彰 · Hacktoberfest。",
+    "languagesHeading": "言語",
+    "spoken": ["英語（流暢）", "ヒンディー語（母語）", "パンジャーブ語（母語）", "スペイン語（初級）"],
+    "currentlyHeading": "現在",
+    "credentialBadges": ["リモート", "C3 AI", "freeCodeCamp", "M.Sc. IT"],
+    "remoteLabel": "シニアエンジニア @ Codvo.ai",
+    "educationHeading": "学歴",
+    "education": [
+      "M.Sc. Information Technology — SCD Govt. College (GPA 3.7)",
+      "BCA Computer Applications — KLSD College (GPA 3.3)"
+    ]
+  },
+  "contact": {
+    "heading": "作っているものを教えてください",
+    "subheading": "タイムラインとスタックを共有ください—24時間以内にフィット、スコープ、最初のステップを正直にお返しします。",
+    "gridLabel": "こちらでも",
+    "promise": "営業トークなし · NDA可 · 実装するエンジニアと直接",
+    "email": "メール",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "resume": "履歴書",
+    "resumeValue": "PDFをダウンロード →",
+    "whatsapp": "WhatsApp",
+    "whatsappValue": "短いメッセージ →",
+    "linkedinValue": "つながる →",
+    "githubValue": "38+ リポジトリ →"
+  },
+  "sectionTags": {
+    "why": "採用理由",
+    "offers": "サービス",
+    "work": "ポートフォリオ",
+    "credentials": "資格",
+    "experience": "経歴",
+    "about": "プロフィール"
+  },
+  "footer": "世界中のスタートアップとチームのために8年間構築。",
+  "langSwitch": {
+    "label": "言語",
+    "en": "English",
+    "es": "Español",
+    "de": "Deutsch",
+    "fr": "Français",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "it": "Italiano",
+    "pt": "Português",
+    "ja": "日本語"
+  }
+}

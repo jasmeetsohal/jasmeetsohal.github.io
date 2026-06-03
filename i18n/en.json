@@ -9,8 +9,15 @@
     "why": "Why me",
     "services": "Services",
     "experience": "Experience",
+    "about": "About",
     "contact": "Contact",
     "hire": "Let's talk"
+  },
+  "profileImageAlt": "Profile photo of {name}",
+  "projectLabels": {
+    "problem": "Problem",
+    "role": "Role",
+    "outcome": "Outcome"
   },
   "skipLink": "Skip to content",
   "openBadge": "Available for new clients · Remote",
@@ -226,6 +233,13 @@
   "langSwitch": {
     "label": "Language",
     "en": "English",
-    "es": "Español"
+    "es": "Español",
+    "de": "Deutsch",
+    "fr": "Français",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "it": "Italiano",
+    "pt": "Português",
+    "ja": "日本語"
   }
 }

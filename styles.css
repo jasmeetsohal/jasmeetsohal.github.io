@@ -297,27 +297,26 @@ a:hover {
   clip: rect(0, 0, 0, 0);
 }
 
-.lang-btn {
+.lang-select {
   font-family: var(--sans);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  padding: 0.4rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.45rem 1.75rem 0.45rem 0.65rem;
   border: none;
   border-radius: 999px;
-  background: transparent;
-  color: var(--text-muted);
+  background: var(--surface-hover)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238b919e' d='M3 4.5 6 7.5 9 4.5'/%3E%3C/svg%3E")
+    no-repeat right 0.5rem center;
+  color: var(--text);
   cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
+  appearance: none;
+  max-width: 9.5rem;
 }
 
-.lang-btn:hover {
+.lang-select:hover,
+.lang-select:focus-visible {
   color: var(--text);
-}
-
-.lang-btn.is-active {
-  background: var(--surface-hover);
-  color: var(--text);
+  outline: none;
   box-shadow: inset 0 0 0 1px var(--border-strong);
 }
 

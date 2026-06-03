@@ -1,5 +1,28 @@
-const SUPPORTED = ["en", "es"];
+const SUPPORTED = ["en", "es", "de", "fr", "nl", "pl", "it", "pt", "ja"];
 const STORAGE_KEY = "portfolio-lang";
+
+const BROWSER_LANG_PREFIXES = [
+  ["ja", "ja"],
+  ["pt", "pt"],
+  ["pl", "pl"],
+  ["nl", "nl"],
+  ["de", "de"],
+  ["fr", "fr"],
+  ["it", "it"],
+  ["es", "es"],
+];
+
+const LANG_NATIVE_NAMES = {
+  en: "English",
+  es: "Español",
+  de: "Deutsch",
+  fr: "Français",
+  nl: "Nederlands",
+  pl: "Polski",
+  it: "Italiano",
+  pt: "Português",
+  ja: "日本語",
+};
 
 const config = await fetch("./config.json").then((r) => {
   if (!r.ok) throw new Error("config.json missing");
@@ -15,8 +38,21 @@ function detectLanguage() {
   if (stored && SUPPORTED.includes(stored)) return stored;
 
   const browser = (navigator.language || "en").toLowerCase();
-  if (browser.startsWith("es")) return "es";
+  for (const [prefix, code] of BROWSER_LANG_PREFIXES) {
+    if (browser.startsWith(prefix)) return code;
+  }
   return "en";
+}
+
+function initLangSelect() {
+  const select = document.getElementById("lang-select");
+  if (!select || select.options.length) return;
+  SUPPORTED.forEach((code) => {
+    const opt = document.createElement("option");
+    opt.value = code;
+    opt.textContent = LANG_NATIVE_NAMES[code] || code;
+    select.appendChild(opt);
+  });
 }
 
 async function loadLocale(lang) {
@@ -56,11 +92,10 @@ function mailtoLink() {
 
 let currentLang = detectLanguage();
 
-function applyImages(lang) {
-  const profileAlt =
-    lang === "es"
-      ? `Foto de perfil de ${config.name}`
-      : `Profile photo of ${config.name}`;
+function applyImages(t) {
+  const profileAlt = t.profileImageAlt
+    ? interpolate(t.profileImageAlt, { name: config.name })
+    : `Profile photo of ${config.name}`;
 
   const heroBg = document.getElementById("hero-bg");
   if (heroBg && config.heroBackground) {
@@ -233,10 +268,11 @@ async function applyLocale(lang) {
   document.getElementById("work-heading").textContent = t.work.heading;
   document.getElementById("work-subheading").textContent = t.work.subheading;
 
-  const labels =
-    lang === "es"
-      ? { problem: "Problema", role: "Rol", outcome: "Resultado" }
-      : { problem: "Problem", role: "Role", outcome: "Outcome" };
+  const labels = t.projectLabels || {
+    problem: "Problem",
+    role: "Role",
+    outcome: "Outcome",
+  };
 
   document.getElementById("projects").innerHTML = t.projects
     .map((p) => {
@@ -418,11 +454,8 @@ async function applyLocale(lang) {
     </a>
   `;
 
-  document.querySelectorAll(".lang-btn").forEach((btn) => {
-    const isActive = btn.getAttribute("data-lang") === lang;
-    btn.classList.toggle("is-active", isActive);
-    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
-  });
+  const langSelect = document.getElementById("lang-select");
+  if (langSelect) langSelect.value = lang;
 
   if (t.sectionTags) {
     document.querySelectorAll("[data-section-tag]").forEach((el) => {
@@ -431,7 +464,7 @@ async function applyLocale(lang) {
     });
   }
 
-  applyImages(lang);
+  applyImages(t);
 
   const url = new URL(window.location.href);
   url.searchParams.set("lang", lang);
@@ -441,12 +474,15 @@ async function applyLocale(lang) {
   initNavSpy();
 }
 
-document.querySelectorAll(".lang-btn").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const lang = btn.getAttribute("data-lang");
-    if (lang && lang !== currentLang) applyLocale(lang);
+initLangSelect();
+
+const langSelectEl = document.getElementById("lang-select");
+if (langSelectEl) {
+  langSelectEl.addEventListener("change", () => {
+    const lang = langSelectEl.value;
+    if (lang && lang !== currentLang && SUPPORTED.includes(lang)) applyLocale(lang);
   });
-});
+}
 
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.getElementById("main-nav");

@@ -463,7 +463,7 @@ main {
   max-width: 300px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 38%;
+  object-position: center 18%;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow), var(--shadow-glow);

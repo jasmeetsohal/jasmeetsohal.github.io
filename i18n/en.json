@@ -1,84 +1,84 @@
 {
   "lang": "en",
   "meta": {
-    "title": "Jasmeet Singh — Senior Engineer for Startups & Global Teams",
-    "description": "Hire a senior engineer who ships Node.js backends, RAG pipelines, and MVPs for startups and international companies. 7+ years · U.S. clients · Remote · C3 AI certified."
+    "title": "Jasmeet Singh — Senior Engineer · 8 Years · Angular 18+ & AI",
+    "description": "Hire a senior full-stack engineer with 8 years shipping for U.S. and global clients—Node.js, Angular 18+, production RAG, and MVPs that convert. 4+ years on modern Angular. Remote · C3 AI certified."
   },
   "nav": {
     "work": "Work",
     "why": "Why me",
     "services": "Services",
     "experience": "Experience",
-    "about": "About",
     "contact": "Contact",
     "hire": "Let's talk"
   },
   "skipLink": "Skip to content",
-  "openBadge": "Open to opportunities",
+  "openBadge": "Available for new clients · Remote",
   "hero": {
-    "eyebrow": "Open to startups & global teams · Remote",
-    "roleLine": "Senior Software Engineer",
-    "title": "I ship production backends",
-    "titleEm": "and AI systems teams trust",
-    "tagline": "Node.js, TypeScript, Python, and production RAG—for startups and international product teams that need a senior engineer who communicates clearly and delivers.",
-    "location": "Bangalore · U.S. & EU hours overlap",
+    "eyebrow": "Trusted by U.S. fintech & enterprise teams · 8 years in production",
+    "roleLine": "Senior Software Engineer · Full-stack & AI",
+    "title": "Your next release ships on time—",
+    "titleEm": "backend, Angular 18+, and AI included",
+    "tagline": "I help founders and engineering leads turn roadmaps into revenue-ready software: scalable APIs, polished Angular 18+ frontends, and RAG systems that actually work in production—not demos that stall your fundraise.",
+    "location": "Bangalore · Overlap with U.S. & EU",
     "availability": "Full-time remote · Contract · Fractional",
-    "ctaPrimary": "Email me",
-    "ctaSecondary": "View projects",
+    "ctaPrimary": "Start a conversation",
+    "ctaSecondary": "See proof of work",
     "resumeLink": "Download résumé (PDF)"
   },
   "statsDisplay": [
-    { "num": "7+", "label": "Years experience" },
-    { "num": "U.S.", "label": "Client delivery" },
-    { "num": "RAG", "label": "Shipped to prod" },
-    { "num": "C3", "label": "AI certified" }
+    { "num": "8", "label": "Years shipping software" },
+    { "num": "4+", "label": "Years Angular 18+" },
+    { "num": "U.S.", "label": "Enterprise & fintech clients" },
+    { "num": "RAG", "label": "Live in production" }
   ],
-  "proofStrip": ["Fintech & insurance", "Enterprise RAG / LLM", "Oil & gas SaaS", "Swedish startup scale-up"],
+  "proofStrip": ["Fintech & insurance", "Angular 18+ product UIs", "Enterprise RAG / LLM", "Oil & gas · EU startup scale-up"],
   "value": {
-    "heading": "Why teams reach out",
-    "subheading": "What you get when you work with me—not another ticket-taker.",
+    "heading": "Why clients hire me",
+    "subheading": "You get a senior owner—not a backlog ticket. Clear updates, honest estimates, and code your team can maintain after I roll off.",
     "items": [
       {
-        "title": "Startup speed",
-        "description": "MVPs, features, and fixes delivered with scope clarity—weekly demos, no surprise scope creep."
+        "title": "Faster time-to-market",
+        "description": "MVPs and critical features in weeks, with scope you can defend to investors and stakeholders."
       },
       {
-        "title": "Production discipline",
-        "description": "Tests, CI/CD, observability, and APIs built to stay up—not demo code that breaks in prod."
+        "title": "Full-stack clarity",
+        "description": "8 years across backend and Angular 18+—one engineer who aligns APIs, UI, and data so nothing falls through the cracks."
       },
       {
-        "title": "AI that ships",
-        "description": "Real RAG pipelines in production: ingestion, retrieval, LLM orchestration—not slide-deck AI."
+        "title": "AI that earns trust",
+        "description": "Production RAG with grounded answers, guardrails, and observability—so legal and product can sign off, not just engineering."
       },
       {
-        "title": "Global collaboration",
-        "description": "Fluent English, async-first updates, and overlap with U.S./EU hours from IST."
+        "title": "Built for global teams",
+        "description": "Fluent English, async updates that respect your timezone, and direct access—no agency layers or surprise handoffs."
       }
     ]
   },
   "offers": {
-    "heading": "Ways we can work together",
-    "subheading": "Flexible models for early-stage startups and international product teams.",
+    "heading": "Engagements that fit your stage",
+    "subheading": "From seed-stage MVPs to enterprise modernization—pick the model that matches your runway and deadline.",
     "items": [
       {
         "title": "Senior embed",
-        "description": "Join your squad 2–5 days/week—architecture, code review, and hands-on shipping."
+        "description": "2–5 days/week inside your squad: architecture, reviews, and shipping alongside your team."
       },
       {
-        "title": "MVP & backend build",
-        "description": "Greenfield APIs, auth, data layer, and deploy pipeline in weeks."
+        "title": "MVP & full-stack build",
+        "description": "Nest.js/Node APIs plus Angular 18+ UI, auth, data layer, and CI/CD—ready for pilot customers."
       },
       {
         "title": "AI / RAG integration",
-        "description": "Add grounded Q&A, search, or agents on your docs and product data."
+        "description": "Search, Q&A, or agents on your docs and product data—with evaluation and rollout your compliance team can trust."
       }
     ]
   },
-  "skillsLabel": "Core stack",
+  "skillsLabel": "What I bring to your stack",
   "skills": [
     "Node.js",
     "Nest.js",
     "TypeScript",
+    "Angular 18+",
     "Python",
     "RAG / LLM",
     "PostgreSQL",
@@ -90,43 +90,43 @@
     "Kubernetes"
   ],
   "work": {
-    "heading": "Proof of work",
-    "subheading": "Real systems for regulated and high-stakes domains—where reliability matters."
+    "heading": "Proof clients ask about",
+    "subheading": "Regulated domains and high-stakes delivery—where downtime costs money and reputation."
   },
   "projects": [
     {
       "title": "IApp — Fintech insurance platform",
       "tag": "Fintech · U.S.",
-      "problem": "Insurance operations needed reliable claims management and auditing workflows at scale.",
+      "problem": "Insurance operations needed reliable claims and auditing at scale—with compliance pressure and fixed launch dates.",
       "role": "Senior backend engineer (Codvo.ai · U.S. client)",
       "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
-      "outcome": "Delivered backend services for claims and audit flows; production deployments with containerized pipelines."
+      "outcome": "Backend services for claims and audit flows live in production; containerized pipelines and releases the client could audit."
     },
     {
       "title": "NeIO — Enterprise RAG pipeline",
       "tag": "AI · Featured",
-      "problem": "Enterprise teams needed grounded AI answers over internal documents—not unreliable generic chatbots.",
+      "problem": "Enterprise teams needed trustworthy answers over internal knowledge—not another chatbot that hallucinates in front of customers.",
       "role": "Senior backend engineer (Codvo.ai)",
       "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · vector retrieval · ArgoCD",
-      "outcome": "Production RAG pipeline: ingestion, chunking, embedding, retrieval, and LLM orchestration via secure APIs—with tests and GitOps."
+      "outcome": "End-to-end RAG in production: ingestion, chunking, retrieval, and LLM APIs with tests and GitOps—ready for real user load."
     },
     {
       "title": "Baker Hughes — Oil & gas optimization",
       "tag": "Enterprise",
-      "problem": "Industrial optimization required maintainable microservices and cross-team delivery at global scale.",
+      "problem": "Global engineering needed maintainable microservices and modern UIs on a multi-region program.",
       "role": "Senior software engineer",
-      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
-      "outcome": "Shipped optimization microservices with CI/CD on a multi-region engineering program."
+      "stack": "Angular 18+ · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
+      "outcome": "Optimization microservices and Angular frontends shipped with CI/CD on a program spanning regions and vendors."
     }
   ],
   "experience": {
-    "heading": "Track record",
+    "heading": "8 years of delivery",
     "roles": [
       {
         "company": "Codvo.ai",
         "title": "Senior Software Engineer",
         "period": "Sep 2023 – Present",
-        "detail": "Remote · Backend & RAG/AI for U.S. clients (finance, oil & gas). Customer calls, requirements, delivery. Mentoring juniors."
+        "detail": "Remote · Backend, RAG/AI, and stakeholder delivery for U.S. clients (finance, oil & gas). Customer calls, requirements, production releases. Mentoring juniors."
       },
       {
         "company": "Turbotic",
@@ -144,14 +144,14 @@
         "company": "Bursys",
         "title": "Software Engineer",
         "period": "Jan 2018 – Feb 2020",
-        "detail": "Logistics & oil & gas · Node/Java APIs, WebSockets, AWS ECS."
+        "detail": "Logistics & oil & gas · Node/Java APIs, WebSockets, AWS ECS—foundation of 8-year track record."
       }
     ]
   },
   "about": {
     "heading": "About me",
-    "p1": "I'm the engineer founders and engineering leads call when they need a senior pair of hands—someone who owns backend and AI delivery end-to-end, talks to stakeholders, and leaves the codebase better than they found it.",
-    "p2": "{years} years across fintech, logistics, oil & gas, and AI platforms. Certified C3 AI Developer. M.Sc. IT (GPA 3.7). Employee of the Month · Hacktoberfest contributor.",
+    "p1": "I'm the engineer clients call when the deadline is real and the stack is messy—someone who owns backend, Angular 18+, and AI delivery, speaks plainly to non-technical stakeholders, and leaves systems your team can run without me.",
+    "p2": "{years} years in production across fintech, logistics, oil & gas, and AI platforms—including {angularYears} years on Angular 18+ for enterprise UIs. C3 AI certified · M.Sc. IT (GPA 3.7) · Employee of the Month · Hacktoberfest contributor.",
     "languagesHeading": "Languages",
     "spoken": ["English (fluent)", "Hindi (native)", "Punjabi (native)", "Spanish (beginner)"],
     "currentlyHeading": "Now",
@@ -163,10 +163,10 @@
     ]
   },
   "contact": {
-    "heading": "Ready when you are",
-    "subheading": "Tell me what you're building. I'll reply within 24 hours.",
+    "heading": "Tell me what you're building",
+    "subheading": "Share your timeline and stack—I'll reply within 24 hours with an honest take on fit, scope, and first steps.",
     "gridLabel": "Also find me on",
-    "promise": "Direct conversation · NDA-friendly · No spam",
+    "promise": "No sales fluff · NDA-friendly · You talk to the engineer who does the work",
     "email": "Email",
     "linkedin": "LinkedIn",
     "github": "GitHub",
@@ -178,13 +178,13 @@
     "githubValue": "38+ repos →"
   },
   "sectionTags": {
-    "why": "Expertise",
+    "why": "Why hire me",
     "offers": "Services",
     "work": "Portfolio",
     "experience": "Experience",
     "about": "About"
   },
-  "footer": "Building for startups and teams worldwide.",
+  "footer": "8 years building for startups and teams worldwide.",
   "langSwitch": {
     "label": "Language",
     "en": "English",

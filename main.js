@@ -115,8 +115,9 @@ async function applyLocale(lang) {
   localStorage.setItem(STORAGE_KEY, lang);
   document.documentElement.lang = lang;
 
-  const years = config.yearsExperience || "7+";
-  const vars = { years };
+  const years = config.yearsExperience || "8";
+  const angularYears = config.angularYears || "4+";
+  const vars = { years, angularYears };
   const mailto = mailtoLink();
 
   document.title = t.meta.title;

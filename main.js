@@ -37,6 +37,31 @@ function escapeHtml(text) {
 
 let currentLang = detectLanguage();
 
+function applyImages(lang) {
+  const profileAlt =
+    lang === "es"
+      ? `Foto de perfil de ${config.name}`
+      : `Profile photo of ${config.name}`;
+
+  const heroBg = document.getElementById("hero-bg");
+  if (heroBg && config.heroBackground) {
+    heroBg.style.backgroundImage = `url("${config.heroBackground}")`;
+  }
+
+  for (const id of ["profile-image", "about-profile-image"]) {
+    const img = document.getElementById(id);
+    if (img && config.profileImage) {
+      img.src = config.profileImage;
+      img.alt = profileAlt;
+    }
+  }
+
+  const ogImage = document.getElementById("og-image");
+  if (ogImage && config.profileImage) {
+    ogImage.content = new URL(config.profileImage, window.location.href).href;
+  }
+}
+
 async function applyLocale(lang) {
   const t = await loadLocale(lang);
   currentLang = lang;
@@ -189,6 +214,8 @@ async function applyLocale(lang) {
     btn.classList.toggle("is-active", isActive);
     btn.setAttribute("aria-pressed", isActive ? "true" : "false");
   });
+
+  applyImages(lang);
 
   const url = new URL(window.location.href);
   url.searchParams.set("lang", lang);

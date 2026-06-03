@@ -30,8 +30,8 @@
   "heroBadges": [
     "8 años de experiencia",
     "C3 AI certificado",
-    "Clientes EE. UU. y globales",
-    "Full-stack · IA"
+    "freeCodeCamp certificado",
+    "Clientes EE. UU. y globales"
   ],
   "statsDisplay": [
     { "num": "8", "label": "Años entregando software" },
@@ -84,6 +84,25 @@
         "title": "Integración AI / RAG",
         "badge": "RAG / LLM",
         "description": "Búsqueda, Q&A o agentes sobre tus documentos, con evaluación que compliance puede validar."
+      }
+    ]
+  },
+  "certifications": {
+    "heading": "Certificaciones",
+    "subheading": "Credenciales verificables en freeCodeCamp.org",
+    "verifyLabel": "Ver certificado",
+    "items": [
+      {
+        "title": "Algoritmos y estructuras de datos en JavaScript",
+        "issuer": "freeCodeCamp",
+        "date": "Ago 2018",
+        "slug": "javascript-algorithms-and-data-structures"
+      },
+      {
+        "title": "Desarrollo back-end y APIs",
+        "issuer": "freeCodeCamp",
+        "date": "Oct 2018",
+        "slug": "back-end-development-and-apis"
       }
     ]
   },
@@ -173,7 +192,7 @@
     "languagesHeading": "Idiomas",
     "spoken": ["Inglés (fluido)", "Hindi (nativo)", "Punjabi (nativo)", "Español (principiante)"],
     "currentlyHeading": "Ahora",
-    "credentialBadges": ["Remoto", "C3 AI certificado", "M.Sc. IT"],
+    "credentialBadges": ["Remoto", "C3 AI certificado", "freeCodeCamp", "M.Sc. IT"],
     "remoteLabel": "Ingeniero senior @ Codvo.ai",
     "educationHeading": "Formación",
     "education": [
@@ -200,6 +219,7 @@
     "why": "Por qué contratarme",
     "offers": "Servicios",
     "work": "Portafolio",
+    "credentials": "Certificaciones",
     "experience": "Experiencia",
     "about": "Sobre mí"
   },

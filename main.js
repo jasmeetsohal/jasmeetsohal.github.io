@@ -275,6 +275,31 @@ async function applyLocale(lang) {
     .map((s) => `<li>${badgeHtml(s, "skill")}</li>`)
     .join("");
 
+  if (t.certifications) {
+    document.getElementById("credentials-heading").textContent =
+      t.certifications.heading;
+    document.getElementById("credentials-subheading").textContent =
+      t.certifications.subheading;
+
+    const fccUser = config.freeCodeCampUsername || "jasmeetsohal";
+    const verifyLabel = t.certifications.verifyLabel || "View certificate";
+
+    document.getElementById("cert-grid").innerHTML = t.certifications.items
+      .map(
+        (cert, i) => `
+    <article class="cert-card">
+      <div class="cert-card-head">
+        ${badgeHtml(cert.issuer, "gold")}
+        <span class="cert-date">${escapeHtml(cert.date)}</span>
+      </div>
+      <h3>${escapeHtml(cert.title)}</h3>
+      <a class="cert-verify" href="https://www.freecodecamp.org/certification/${escapeHtml(fccUser)}/${escapeHtml(cert.slug)}" target="_blank" rel="noopener noreferrer">${escapeHtml(verifyLabel)} →</a>
+    </article>
+  `
+      )
+      .join("");
+  }
+
   document.getElementById("value-heading").textContent = t.value.heading;
   document.getElementById("value-subheading").textContent = t.value.subheading;
   document.getElementById("value-grid").innerHTML = t.value.items

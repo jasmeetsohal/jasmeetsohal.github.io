@@ -1009,9 +1009,80 @@ main {
   padding: 0;
 }
 
-.skills-band {
-  padding: 3rem 0 4.5rem;
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  padding: 1.35rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition:
+    border-color 0.25s var(--ease),
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease);
+}
+
+.cert-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.cert-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.cert-date {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+  letter-spacing: 0.04em;
+}
+
+.cert-card h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cert-verify {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.cert-verify:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#credentials .section-head {
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+}
+
+.skills-band {
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+}
+
+#credentials {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .skills-list {

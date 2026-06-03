@@ -29,8 +29,8 @@
   "heroBadges": [
     "8 years experience",
     "C3 AI certified",
-    "U.S. & global clients",
-    "Full-stack · AI"
+    "freeCodeCamp certified",
+    "U.S. & global clients"
   ],
   "statsDisplay": [
     { "num": "8", "label": "Years shipping software" },
@@ -83,6 +83,25 @@
         "title": "AI / RAG integration",
         "badge": "RAG / LLM",
         "description": "Search, Q&A, or agents on your docs and product data—with evaluation and rollout your compliance team can trust."
+      }
+    ]
+  },
+  "certifications": {
+    "heading": "Certifications",
+    "subheading": "Verified credentials you can click through to freeCodeCamp.org",
+    "verifyLabel": "View certificate",
+    "items": [
+      {
+        "title": "JavaScript Algorithms and Data Structures",
+        "issuer": "freeCodeCamp",
+        "date": "Aug 2018",
+        "slug": "javascript-algorithms-and-data-structures"
+      },
+      {
+        "title": "Back End Development and APIs",
+        "issuer": "freeCodeCamp",
+        "date": "Oct 2018",
+        "slug": "back-end-development-and-apis"
       }
     ]
   },
@@ -172,7 +191,7 @@
     "languagesHeading": "Languages",
     "spoken": ["English (fluent)", "Hindi (native)", "Punjabi (native)", "Spanish (beginner)"],
     "currentlyHeading": "Now",
-    "credentialBadges": ["Remote", "C3 AI certified", "M.Sc. IT"],
+    "credentialBadges": ["Remote", "C3 AI certified", "freeCodeCamp", "M.Sc. IT"],
     "remoteLabel": "Senior engineer @ Codvo.ai",
     "educationHeading": "Education",
     "education": [
@@ -199,6 +218,7 @@
     "why": "Why hire me",
     "offers": "Services",
     "work": "Portfolio",
+    "credentials": "Certifications",
     "experience": "Experience",
     "about": "About"
   },

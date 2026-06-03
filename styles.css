@@ -389,7 +389,8 @@ main {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: 62% 32%;
+  /* Keep the travel figure on the left; open water/sky sits behind the profile card */
+  background-position: 28% 42%;
   background-repeat: no-repeat;
   transform: scale(1.03);
   filter: saturate(1.08) brightness(1.05);
@@ -398,13 +399,20 @@ main {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    105deg,
-    rgba(5, 6, 10, 0.9) 0%,
-    rgba(5, 6, 10, 0.72) 36%,
-    rgba(5, 6, 10, 0.38) 58%,
-    rgba(5, 6, 10, 0.12) 100%
-  );
+  background:
+    linear-gradient(
+      105deg,
+      rgba(5, 6, 10, 0.92) 0%,
+      rgba(5, 6, 10, 0.78) 38%,
+      rgba(5, 6, 10, 0.45) 58%,
+      rgba(5, 6, 10, 0.2) 78%,
+      rgba(5, 6, 10, 0.35) 100%
+    ),
+    radial-gradient(
+      ellipse 340px 420px at 88% 48%,
+      rgba(5, 6, 10, 0.55) 0%,
+      transparent 72%
+    );
 }
 
 .hero-inner {
@@ -414,7 +422,7 @@ main {
   max-width: var(--max);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr minmax(200px, 300px);
+  grid-template-columns: 1fr minmax(220px, 280px);
   gap: 2.5rem;
   align-items: center;
 }
@@ -426,11 +434,21 @@ main {
 .hero-profile {
   margin: 0;
   justify-self: end;
+  align-self: center;
+  width: 100%;
+  max-width: 280px;
 }
 
 .profile-frame {
   position: relative;
-  max-width: 300px;
+  width: 100%;
+  padding: 0.65rem;
+  border-radius: calc(var(--radius-lg) + 6px);
+  background: rgba(8, 12, 20, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 28px 56px rgba(0, 0, 0, 0.45);
 }
 
 .profile-ring {
@@ -461,13 +479,13 @@ main {
   z-index: 1;
   display: block;
   width: 100%;
-  max-width: 300px;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
-  object-position: center 18%;
+  /* Full-body photo — crop to head & shoulders for the hero card */
+  object-position: center 14%;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-strong);
-  box-shadow: var(--shadow), var(--shadow-glow);
+  box-shadow: var(--shadow);
 }
 
 .about-profile {
@@ -1279,13 +1297,19 @@ main {
   }
 
   .hero-profile {
-    justify-self: start;
+    justify-self: center;
     order: -1;
+    max-width: 220px;
+  }
+
+  .profile-frame {
+    padding: 0.5rem;
   }
 
   .hero-profile img {
-    max-width: 200px;
+    max-width: 100%;
     border-radius: 16px;
+    object-position: center 12%;
   }
 
   .hero {
@@ -1294,7 +1318,22 @@ main {
   }
 
   .hero-bg {
-    background-position: center 28%;
+    background-position: 50% 22%;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 6, 10, 0.78) 0%,
+        rgba(5, 6, 10, 0.72) 42%,
+        rgba(5, 6, 10, 0.5) 100%
+      ),
+      radial-gradient(
+        ellipse 280px 320px at 50% 18%,
+        rgba(5, 6, 10, 0.5) 0%,
+        transparent 70%
+      );
   }
 
   .hero-overlay {

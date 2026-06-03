@@ -120,10 +120,18 @@ async function applyLocale(lang) {
   const mailto = mailtoLink();
 
   document.title = t.meta.title;
-  document.getElementById("doc-title").textContent = t.meta.title;
-  document.getElementById("meta-description").content = t.meta.description;
-  document.getElementById("og-title").content = t.meta.title;
-  document.getElementById("og-description").content = t.meta.description;
+
+  const docTitle = document.getElementById("doc-title");
+  if (docTitle) docTitle.textContent = t.meta.title;
+
+  const metaDesc = document.getElementById("meta-description");
+  if (metaDesc) metaDesc.setAttribute("content", t.meta.description);
+
+  const ogTitle = document.getElementById("og-title");
+  if (ogTitle) ogTitle.setAttribute("content", t.meta.title);
+
+  const ogDesc = document.getElementById("og-description");
+  if (ogDesc) ogDesc.setAttribute("content", t.meta.description);
 
   const skip = document.getElementById("skip-link");
   if (skip && t.skipLink) skip.textContent = t.skipLink;
@@ -364,7 +372,13 @@ if (menuToggle && nav) {
   });
 }
 
-await applyLocale(currentLang);
+try {
+  await applyLocale(currentLang);
+} catch (err) {
+  console.error("Portfolio failed to load locale content:", err);
+  document.body.classList.add("is-ready");
+  document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
+}
 
 const revealEls = document.querySelectorAll(".reveal");
 if (revealEls.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

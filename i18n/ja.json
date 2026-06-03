@@ -40,12 +40,29 @@
     "米国・グローバルクライアント"
   ],
   "statsDisplay": [
-    { "num": "8", "label": "ソフトウェア提供年数" },
-    { "num": "C3", "label": "AI認定" },
-    { "num": "米国", "label": "エンタープライズ・フィンテック" },
-    { "num": "RAG", "label": "本番稼働" }
+    {
+      "num": "8",
+      "label": "ソフトウェア提供年数"
+    },
+    {
+      "num": "C3",
+      "label": "AI認定"
+    },
+    {
+      "num": "米国",
+      "label": "エンタープライズ・フィンテック"
+    },
+    {
+      "num": "RAG",
+      "label": "本番稼働"
+    }
   ],
-  "proofStrip": ["フィンテック・保険", "エンタープライズUI", "エンタープライズ RAG / LLM", "Oil & gas · EUスタートアップ"],
+  "proofStrip": [
+    "フィンテック・保険",
+    "エンタープライズUI",
+    "エンタープライズ RAG / LLM",
+    "石油・ガス · EUスタートアップ"
+  ],
   "value": {
     "heading": "クライアントが選ぶ理由",
     "subheading": "バックログのチケットではなくシニアオーナー。明確な進捗、正直な見積もり、離脱後もチームが保守できるコード。",
@@ -99,13 +116,13 @@
     "verifyLabel": "証明書を見る",
     "items": [
       {
-        "title": "JavaScript Algorithms and Data Structures",
+        "title": "JavaScriptアルゴリズムとデータ構造",
         "issuer": "freeCodeCamp",
         "date": "2018年8月",
         "slug": "javascript-algorithms-and-data-structures"
       },
       {
-        "title": "Back End Development and APIs",
+        "title": "バックエンド開発とAPI",
         "issuer": "freeCodeCamp",
         "date": "2018年10月",
         "slug": "back-end-development-and-apis"
@@ -134,71 +151,40 @@
   },
   "projects": [
     {
-      "title": "Baker Hughes — Oil & gas最適化",
-      "tag": "エンタープライズ",
-      "problem": "グローバルエンジニアリングがマルチリージョンで保守可能なマイクロサービスとモダンUIを必要とした。",
-      "role": "シニアソフトウェアエンジニア",
-      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
-      "outcome": "最適化マイクロサービスとAngularフロントをCI/CDで複数地域・ベンダーにまたがり提供。"
-    },
-    {
-      "title": "NeIO — エンタープライズRAGパイプライン",
-      "tag": "AI · 注目",
-      "problem": "社内ナレッジに対する信頼できる回答が必要—顧客前で幻覚するチャットボットではない。",
-      "role": "シニアバックエンドエンジニア (Codvo.ai)",
-      "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · vector retrieval · ArgoCD",
-      "outcome": "本番RAG E2E：インジェスト、チャンキング、検索、LLM API、テストとGitOps。"
-    },
-    {
-      "title": "IApp — フィンテック保険プラットフォーム",
-      "tag": "フィンテック · 米国",
-      "problem": "保険オペレーションがスケールでのクレーム・監査を必要—コンプライアンスと固定ローンチ日。",
-      "role": "シニアバックエンドエンジニア (Codvo.ai · 米国クライアント)",
-      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
-      "outcome": "クレーム・監査フローのバックエンド本番稼働。クライアント監査可能なコンテナパイプライン。"
+      "title": "Baker Hughes — 石油・ガス最適化"
     }
   ],
   "experience": {
     "heading": "8年のデリバリー",
     "roles": [
       {
-        "company": "Codvo.ai",
-        "title": "シニアソフトウェアエンジニア",
-        "period": "2023年9月 – 現在",
-        "badge": "現職",
-        "detail": "リモート · 米国クライアント向けバックエンド、RAG/AI、ステークホルダー連携（金融、oil & gas）。本番リリース。ジュニアメンター。"
+        "detail": "リモート · 米国クライアント向けバックエンド、RAG/AI、ステークホルダー連携（金融、石油・ガス）。本番リリース。ジュニアメンター。"
       },
+      {},
+      {},
       {
-        "company": "Turbotic",
-        "title": "ソフトウェアエンジニア",
-        "period": "2021年10月 – 2023年8月",
-        "badge": "EUスタートアップ",
-        "detail": "スウェーデンスタートアップ · 自動化オーケストレーションのアーキテクチャとAPI。"
-      },
-      {
-        "company": "Grazitti Interactive",
-        "title": "ソフトウェアエンジニア",
-        "period": "2020年2月 – 2021年9月",
-        "badge": "検索 & API",
-        "detail": "SearchUnify · APIクローラー、ElasticSearch、モノリスからマイクロサービスへ。"
-      },
-      {
-        "company": "Bursys",
-        "title": "ソフトウェアエンジニア",
-        "period": "2018年1月 – 2020年2月",
-        "badge": "エンタープライズ",
-        "detail": "物流・oil & gas · Node/Java API、WebSockets、AWS ECS—8年キャリアの基盤。"
+        "detail": "物流・石油・ガス · Node/Java API、WebSockets、AWS ECS—8年キャリアの基盤。"
       }
     ]
   },
   "about": {
     "heading": "プロフィール",
     "p1": "期限が現実的でスタックが複雑なときに呼ばれるエンジニア—バックエンド、フロント、AIを一貫して担い、非技術ステークホルダーにも分かりやすく、離脱後もチームが運用できるシステムを残します。",
-    "p2": "フィンテック、物流、oil & gas、AIプラットフォームで本番{years}年。C3 AI認定 · M.Sc. IT (GPA 3.7) · 社員表彰 · Hacktoberfest。",
+    "p2": "フィンテック、物流、石油・ガス、AIプラットフォームで本番{years}年。C3 AI認定 · M.Sc. IT (GPA 3.7) · 社員表彰 · Hacktoberfest。",
     "languagesHeading": "言語",
-    "spoken": ["英語（流暢）", "ヒンディー語（母語）", "パンジャーブ語（母語）", "スペイン語（初級）"],
+    "spoken": [
+      "英語（流暢）",
+      "ヒンディー語（母語）",
+      "パンジャーブ語（母語）",
+      "スペイン語（初級）"
+    ],
     "currentlyHeading": "現在",
-    "credentialBadges": ["リモート", "C3 AI", "freeCodeCamp", "M.Sc. IT"],
+    "credentialBadges": [
+      "リモート",
+      "C3 AI",
+      "freeCodeCamp",
+      "M.Sc. IT"
+    ],
     "remoteLabel": "シニアエンジニア @ Codvo.ai",
     "educationHeading": "学歴",
     "education": [

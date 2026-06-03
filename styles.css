@@ -23,6 +23,9 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --section-space: 5rem;
+  --open-banner-h: 2.25rem;
+  --site-header-h: 3.75rem;
+  --sticky-top: calc(var(--open-banner-h) + var(--site-header-h) + 0.35rem);
 }
 
 *,
@@ -33,7 +36,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5.5rem;
+  scroll-padding-top: var(--sticky-top);
   color-scheme: dark;
 }
 
@@ -166,14 +169,14 @@ a:hover {
 
 .site-header {
   position: sticky;
-  top: 0.65rem;
+  top: var(--open-banner-h);
   z-index: 200;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   max-width: calc(var(--max) + 2rem);
-  margin: 0.65rem auto 0.25rem;
+  margin: 0.35rem auto 0.25rem;
   padding: 0.7rem 1.1rem;
   background: rgba(7, 8, 12, 0.72);
   backdrop-filter: blur(16px) saturate(1.1);
@@ -189,7 +192,7 @@ a:hover {
 }
 
 .site-header.is-scrolled {
-  top: 0.5rem;
+  top: var(--open-banner-h);
   padding: 0.55rem 1rem;
   background: rgba(7, 8, 12, 0.94);
   border-color: var(--border-strong);
@@ -1457,7 +1460,7 @@ main {
   .nav {
     display: none;
     position: fixed;
-    top: 90px;
+    top: var(--sticky-top);
     left: 0;
     right: 0;
     flex-direction: column;

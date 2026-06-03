@@ -145,7 +145,15 @@ function initNavSpy() {
   navScrollHandler = () => {
     const { navLinks, sections } = getState();
     if (!sections.length) return;
-    const scrollY = window.scrollY + 140;
+    const bannerH =
+      parseFloat(
+        getComputedStyle(document.documentElement).getPropertyValue("--open-banner-h")
+      ) || 36;
+    const headerH =
+      parseFloat(
+        getComputedStyle(document.documentElement).getPropertyValue("--site-header-h")
+      ) || 60;
+    const scrollY = window.scrollY + bannerH + headerH + 24;
     let current = sections[0];
     for (const item of sections) {
       if (item.section.offsetTop <= scrollY) current = item;
@@ -471,7 +479,20 @@ async function applyLocale(lang) {
   history.replaceState({}, "", url);
 
   document.body.classList.add("is-ready");
+  syncStickyOffsets();
   initNavSpy();
+}
+
+function syncStickyOffsets() {
+  const banner = document.getElementById("open-banner");
+  const header = document.querySelector(".site-header");
+  const root = document.documentElement;
+  if (banner) {
+    root.style.setProperty("--open-banner-h", `${banner.offsetHeight}px`);
+  }
+  if (header) {
+    root.style.setProperty("--site-header-h", `${header.offsetHeight}px`);
+  }
 }
 
 initLangSelect();
@@ -495,6 +516,8 @@ if (menuToggle && nav) {
     if (e.target.matches("a")) nav.classList.remove("is-open");
   });
 }
+
+window.addEventListener("resize", syncStickyOffsets);
 
 try {
   await applyLocale(currentLang);

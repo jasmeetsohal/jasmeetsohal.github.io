@@ -1,8 +1,8 @@
 {
   "lang": "de",
   "meta": {
-    "title": "Jasmeet Singh — Senior Engineer · 8 Jahre · Full-stack & KI",
-    "description": "Senior Full-stack Engineer mit 8 Jahren Erfahrung für US- und globale Kunden—Node.js, TypeScript, produktionsreife RAG-Systeme und MVPs. Remote · C3 AI zertifiziert."
+    "title": "Jasmeet Singh — Senior-Entwickler · 8 Jahre · Full-stack & KI",
+    "description": "Senior Full-stack-Entwickler mit 8 Jahren Erfahrung für US- und globale Kunden—Node.js, TypeScript, produktionsreife RAG-Systeme und MVPs. Fernarbeit · C3 AI zertifiziert."
   },
   "nav": {
     "work": "Projekte",
@@ -14,7 +14,7 @@
     "hire": "Kontakt aufnehmen"
   },
   "skipLink": "Zum Inhalt springen",
-  "openBadge": "Verfügbar für neue Aufträge · Remote",
+  "openBadge": "Verfügbar für neue Aufträge · Fernarbeit",
   "profileImageAlt": "Profilfoto von {name}",
   "projectLabels": {
     "problem": "Problem",
@@ -23,12 +23,12 @@
   },
   "hero": {
     "eyebrow": "Vertraut von US-Fintech- & Enterprise-Teams · 8 Jahre in Produktion",
-    "roleLine": "Senior Software Engineer · Full-stack & KI",
+    "roleLine": "Senior Softwareentwickler · Full-stack & KI",
     "title": "Ihr nächstes Release kommt pünktlich—",
     "titleEm": "Backend, Frontends und KI inklusive",
     "tagline": "Ich helfe Gründern und Engineering-Leads, Roadmaps in umsatzfähige Software zu verwandeln: skalierbare APIs, ausgereifte Produkt-Frontends und RAG-Systeme, die in Produktion funktionieren—keine Demos, die Ihre Finanzierung bremsen.",
     "location": "Bangalore · Zeitfenster für USA & EU",
-    "availability": "Vollzeit remote · Vertrag · Fractional",
+    "availability": "Vollzeit remote · Vertrag · Teilzeit-Einsatz",
     "ctaPrimary": "Gespräch starten",
     "ctaSecondary": "Referenzprojekte ansehen",
     "resumeLink": "Lebenslauf herunterladen (PDF)"
@@ -45,10 +45,10 @@
     { "num": "US", "label": "Enterprise- & Fintech-Kunden" },
     { "num": "RAG", "label": "Live in Produktion" }
   ],
-  "proofStrip": ["Fintech & Versicherung", "Enterprise-Produkt-UIs", "Enterprise RAG / LLM", "Oil & Gas · EU-Startup"],
+  "proofStrip": ["Fintech & Versicherung", "Enterprise-Produkt-UIs", "Enterprise-RAG / LLM", "Öl & Gas · EU-Startup"],
   "value": {
     "heading": "Warum Kunden mich beauftragen",
-    "subheading": "Sie bekommen einen Senior Owner—kein Backlog-Ticket. Klare Updates, ehrliche Schätzungen und Code, den Ihr Team nach meinem Roll-off wartet.",
+    "subheading": "Sie bekommen einen erfahrenen Verantwortlichen—kein Backlog-Ticket. Klare Updates, ehrliche Schätzungen und Code, den Ihr Team nach meinem Ausscheiden wartet.",
     "items": [
       {
         "title": "Schneller am Markt",
@@ -57,27 +57,27 @@
       },
       {
         "title": "Full-stack-Klarheit",
-        "badge": "Full-stack",
+        "badge": "Vollstack",
         "description": "8 Jahre Backend und Produkt-Frontends—ein Engineer, der APIs, UI und Daten abstimmt."
       },
       {
         "title": "KI mit Vertrauen",
         "badge": "Produktions-KI",
-        "description": "Produktions-RAG mit fundierten Antworten, Guardrails und Observability—für Legal und Product."
+        "description": "Produktions-RAG mit fundierten Antworten, Leitplanken und Observability—für Recht und Produkt."
       },
       {
         "title": "Für globale Teams gebaut",
-        "badge": "Remote-first",
+        "badge": "Remote",
         "description": "Fließend Englisch, asynchrone Updates in Ihrer Zeitzone, direkter Zugang—ohne Agentur-Ebenen."
       }
     ]
   },
   "offers": {
     "heading": "Engagements für Ihre Phase",
-    "subheading": "Vom Seed-MVP bis zur Enterprise-Modernisierung—das Modell, das zu Runway und Deadline passt.",
+    "subheading": "Vom Seed-MVP bis zur Enterprise-Modernisierung—das Modell, das zu Budget und Deadline passt.",
     "items": [
       {
-        "title": "Senior Embed",
+        "title": "Senior-Einbindung",
         "badge": "Flexibel",
         "description": "2–5 Tage/Woche im Squad: Architektur, Reviews und Lieferung neben Ihrem Team."
       },
@@ -95,17 +95,17 @@
   },
   "certifications": {
     "heading": "Zertifikate",
-    "subheading": "Verifizierbare Credentials auf freeCodeCamp.org",
+    "subheading": "Verifizierbare Zertifikate auf freeCodeCamp.org",
     "verifyLabel": "Zertifikat ansehen",
     "items": [
       {
-        "title": "JavaScript Algorithms and Data Structures",
+        "title": "JavaScript-Algorithmen und Datenstrukturen",
         "issuer": "freeCodeCamp",
         "date": "Aug 2018",
         "slug": "javascript-algorithms-and-data-structures"
       },
       {
-        "title": "Back End Development and APIs",
+        "title": "Backend-Entwicklung und APIs",
         "issuer": "freeCodeCamp",
         "date": "Okt 2018",
         "slug": "back-end-development-and-apis"
@@ -122,7 +122,7 @@
     "RAG / LLM",
     "PostgreSQL",
     "MongoDB",
-    "Microservices",
+    "Mikroservices",
     "AWS",
     "Azure",
     "Docker",
@@ -134,28 +134,28 @@
   },
   "projects": [
     {
-      "title": "Baker Hughes — Oil & Gas Optimierung",
+      "title": "Baker Hughes — Öl- & Gas-Optimierung",
       "tag": "Enterprise",
-      "problem": "Globales Engineering brauchte wartbare Microservices und moderne UIs in einem Multi-Region-Programm.",
-      "role": "Senior Software Engineer",
-      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
-      "outcome": "Optimierungs-Microservices und Angular-Frontends mit CI/CD über Regionen und Vendor."
+      "problem": "Globales Engineering brauchte wartbare Mikroservices und moderne UIs in einem Multi-Region-Programm.",
+      "role": "Senior Softwareentwickler",
+      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Mikroservices · Docker · ArgoCD",
+      "outcome": "Optimierungs-Mikroservices und Angular-Frontends mit CI/CD über Regionen und Anbieter."
     },
     {
       "title": "NeIO — Enterprise-RAG-Pipeline",
-      "tag": "KI · Featured",
+      "tag": "KI · Schwerpunkt",
       "problem": "Enterprise-Teams brauchten verlässliche Antworten auf internes Wissen—keinen Chatbot mit Halluzinationen vor Kunden.",
-      "role": "Senior Backend Engineer (Codvo.ai)",
+      "role": "Senior Backend-Entwickler (Codvo.ai)",
       "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · Embeddings · Vektor-Retrieval · ArgoCD",
-      "outcome": "End-to-End-RAG in Produktion: Ingestion, Chunking, Retrieval, LLM-APIs mit Tests und GitOps."
+      "outcome": "End-to-End-RAG in Produktion: Aufnahme, Chunking, Retrieval, LLM-APIs mit Tests und GitOps."
     },
     {
       "title": "IApp — Fintech-Versicherungsplattform",
       "tag": "Fintech · USA",
-      "problem": "Versicherungsbetrieb brauchte zuverlässige Claims und Audits in Skala—mit Compliance und festen Launch-Daten.",
-      "role": "Senior Backend Engineer (Codvo.ai · US-Kunde)",
+      "problem": "Versicherungsbetrieb brauchte zuverlässige Schadensfälle und Audits in Skala—mit Compliance und festen Launch-Daten.",
+      "role": "Senior Backend-Entwickler (Codvo.ai · US-Kunde)",
       "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
-      "outcome": "Backend für Claims und Audit-Flows live; containerisierte Pipelines, die der Kunde prüfen konnte."
+      "outcome": "Backend für Schadensfälle und Audit-Flows live; containerisierte Pipelines, die der Kunde prüfen konnte."
     }
   ],
   "experience": {
@@ -163,43 +163,43 @@
     "roles": [
       {
         "company": "Codvo.ai",
-        "title": "Senior Software Engineer",
+        "title": "Senior Softwareentwickler",
         "period": "Sep 2023 – heute",
         "badge": "Aktuell",
-        "detail": "Remote · Backend, RAG/KI und Stakeholder-Lieferung für US-Kunden (Finance, Oil & Gas). Produktions-Releases. Mentoring."
+        "detail": "Remote · Backend, RAG/KI und Stakeholder-Lieferung für US-Kunden (Finanzen, Öl & Gas). Produktions-Releases. Mentoring."
       },
       {
         "company": "Turbotic",
-        "title": "Software Engineer",
+        "title": "Softwareentwickler",
         "period": "Okt 2021 – Aug 2023",
         "badge": "EU-Startup",
         "detail": "Schwedisches Startup · Architektur & APIs für Automatisierungs-Orchestrierung."
       },
       {
         "company": "Grazitti Interactive",
-        "title": "Software Engineer",
+        "title": "Softwareentwickler",
         "period": "Feb 2020 – Sep 2021",
-        "badge": "Search & APIs",
-        "detail": "SearchUnify · API-Crawler, ElasticSearch, Monolith-zu-Microservices."
+        "badge": "Suche & APIs",
+        "detail": "SearchUnify · API-Crawler, ElasticSearch, Monolith zu Mikroservices."
       },
       {
         "company": "Bursys",
-        "title": "Software Engineer",
+        "title": "Softwareentwickler",
         "period": "Jan 2018 – Feb 2020",
         "badge": "Enterprise",
-        "detail": "Logistik & Oil & Gas · Node/Java-APIs, WebSockets, AWS ECS—Grundlage der 8-Jahre-Spur."
+        "detail": "Logistik & Öl/Gas · Node/Java-APIs, WebSockets, AWS ECS—Grundlage der 8-Jahre-Spur."
       }
     ]
   },
   "about": {
     "heading": "Über mich",
-    "p1": "Ich bin der Engineer, den Kunden rufen, wenn die Deadline real ist und der Stack komplex—Backend, Frontends und KI aus einer Hand, klar für nicht-technische Stakeholder, Systeme, die Ihr Team ohne mich betreibt.",
-    "p2": "{years} Jahre in Produktion in Fintech, Logistik, Oil & Gas und KI-Plattformen. C3 AI zertifiziert · M.Sc. IT (GPA 3.7) · Employee of the Month · Hacktoberfest.",
+    "p1": "Ich bin der Entwickler, den Kunden rufen, wenn die Deadline real ist und der Stack komplex ist—Backend, Frontends und KI aus einer Hand, klar für nicht-technische Stakeholder, Systeme, die Ihr Team ohne mich betreibt.",
+    "p2": "{years} Jahre in Produktion in Fintech, Logistik, Öl & Gas und KI-Plattformen. C3 AI zertifiziert · M.Sc. IT (GPA 3.7) · Mitarbeiter des Monats · Hacktoberfest.",
     "languagesHeading": "Sprachen",
     "spoken": ["Englisch (fließend)", "Hindi (Muttersprache)", "Punjabi (Muttersprache)", "Spanisch (Grundkenntnisse)"],
     "currentlyHeading": "Aktuell",
     "credentialBadges": ["Remote", "C3 AI zertifiziert", "freeCodeCamp", "M.Sc. IT"],
-    "remoteLabel": "Senior Engineer @ Codvo.ai",
+    "remoteLabel": "Senior-Entwickler @ Codvo.ai",
     "educationHeading": "Ausbildung",
     "education": [
       "M.Sc. Information Technology — SCD Govt. College (GPA 3.7)",
@@ -208,9 +208,9 @@
   },
   "contact": {
     "heading": "Erzählen Sie, was Sie bauen",
-    "subheading": "Timeline und Stack teilen—Ich antworte innerhalb von 24 Stunden mit ehrlicher Einschätzung zu Fit, Scope und ersten Schritten.",
+    "subheading": "Zeitplan und Stack teilen—Ich antworte innerhalb von 24 Stunden mit ehrlicher Einschätzung zu Passung, Umfang und ersten Schritten.",
     "gridLabel": "Auch hier",
-    "promise": "Kein Sales-Blabla · NDA-freundlich · Sie sprechen mit dem Engineer, der liefert",
+    "promise": "Kein Verkaufsblabla · NDA-freundlich · Sie sprechen mit dem Entwickler, der liefert",
     "email": "E-Mail",
     "linkedin": "LinkedIn",
     "github": "GitHub",

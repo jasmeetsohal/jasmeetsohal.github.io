@@ -55,10 +55,46 @@ function initLangSelect() {
   });
 }
 
-async function loadLocale(lang) {
+let enLocaleCache = null;
+
+function isEmptyObject(value) {
+  return (
+    value &&
+    typeof value === "object" &&
+    !Array.isArray(value) &&
+    Object.keys(value).length === 0
+  );
+}
+
+/** Fill gaps from English when a locale file has partial/empty nested objects. */
+function mergeLocale(en, loc) {
+  if (loc === undefined || loc === null) return en;
+  if (isEmptyObject(loc)) return en;
+  if (Array.isArray(loc)) {
+    return loc.map((item, i) => mergeLocale(en?.[i], item));
+  }
+  if (typeof loc === "object") {
+    const keys = new Set([...Object.keys(en || {}), ...Object.keys(loc)]);
+    const out = {};
+    for (const key of keys) {
+      out[key] = mergeLocale(en?.[key], loc[key]);
+    }
+    return out;
+  }
+  return loc || en;
+}
+
+async function fetchLocaleFile(lang) {
   const res = await fetch(`./i18n/${lang}.json`);
   if (!res.ok) throw new Error(`Locale ${lang} not found`);
   return res.json();
+}
+
+async function loadLocale(lang) {
+  if (!enLocaleCache) enLocaleCache = await fetchLocaleFile("en");
+  if (lang === "en") return enLocaleCache;
+  const locale = await fetchLocaleFile(lang);
+  return mergeLocale(enLocaleCache, locale);
 }
 
 function interpolate(text, vars) {

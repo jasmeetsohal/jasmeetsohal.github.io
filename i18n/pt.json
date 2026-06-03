@@ -23,12 +23,12 @@
   },
   "hero": {
     "eyebrow": "Equipas fintech e enterprise nos EUA · 8 anos em produção",
-    "roleLine": "Engenheiro de software sénior · Full-stack e IA",
+    "roleLine": "Engenheiro de Software Sénior · Full-stack e IA",
     "title": "O seu próximo release a tempo—",
     "titleEm": "backend, frontends e IA incluídos",
-    "tagline": "Ajudo fundadores e líderes de engenharia a transformar roadmaps em software pronto para receita: APIs escaláveis, frontends de produto polidos e RAG em produção—não demos que travam a ronda de financiamento.",
+    "tagline": "Ajudo founders e engineering leads a transformar roadmaps em software pronto para receita: APIs escaláveis, frontends de produto polidos e RAG que funciona em produção—não demos que travam a ronda de financiamento.",
     "location": "Bangalore · Compatível com EUA e UE",
-    "availability": "Remoto a tempo inteiro · Contrato · Parcial",
+    "availability": "Remoto a tempo inteiro · Contrato · Fractional",
     "ctaPrimary": "Iniciar conversa",
     "ctaSecondary": "Ver trabalhos",
     "resumeLink": "Descarregar CV (PDF)"
@@ -40,54 +40,57 @@
     "Clientes EUA e globais"
   ],
   "statsDisplay": [
-    {
-      "num": "8",
-      "label": "Anos a entregar software"
-    },
-    {
-      "num": "C3",
-      "label": "IA certificada"
-    },
-    {
-      "num": "EUA",
-      "label": "Clientes enterprise e fintech"
-    },
-    {
-      "num": "RAG",
-      "label": "Em produção"
-    }
+    { "num": "8", "label": "Anos a entregar software" },
+    { "num": "C3", "label": "IA certificada" },
+    { "num": "EUA", "label": "Clientes enterprise e fintech" },
+    { "num": "RAG", "label": "Em produção" }
   ],
-  "proofStrip": [
-    "Fintech e seguros",
-    "UIs de produto enterprise",
-    "RAG / LLM enterprise",
-    "Petróleo e gás · startup UE"
-  ],
+  "proofStrip": ["Fintech e seguros", "UIs de produto enterprise", "RAG / LLM enterprise", "Oil & gas · startup UE"],
   "value": {
     "heading": "Porque os clientes me contratam",
-    "subheading": "Recebe um responsável sénior—não um ticket no backlog. Atualizações claras, estimativas honestas e código que a equipa mantém depois.",
+    "subheading": "Recebe um owner sénior—não um ticket no backlog. Atualizações claras, estimativas honestas e código que a equipa mantém depois.",
     "items": [
-      {},
       {
-        "badge": "Stack completo"
+        "title": "Time-to-market mais rápido",
+        "badge": "Velocidade",
+        "description": "MVPs e funcionalidades críticas em semanas, com âmbito defensável perante investidores."
       },
       {
-        "description": "RAG em produção com respostas fundamentadas, guardrails e observability—para legal e produto."
+        "title": "Clareza full-stack",
+        "badge": "Full-stack",
+        "description": "8 anos em backend e frontends de produto—um engenheiro que alinha APIs, UI e dados."
       },
       {
-        "badge": "Remoto"
+        "title": "IA com confiança",
+        "badge": "IA em produção",
+        "description": "RAG em produção com respostas fundamentadas, guardrails e observability—for legal e produto."
+      },
+      {
+        "title": "Feito para equipas globais",
+        "badge": "Remote-first",
+        "description": "Inglês fluente, async no seu fuso horário, acesso direto—sem camadas de agência."
       }
     ]
   },
   "offers": {
     "heading": "Modelos para a sua fase",
-    "subheading": "De MVP inicial a modernização enterprise—o modelo que combina com orçamento e prazo.",
+    "subheading": "De MVP seed a modernização enterprise—o modelo que combina com runway e prazo.",
     "items": [
       {
-        "title": "Integração sénior"
+        "title": "Senior embed",
+        "badge": "Flexível",
+        "description": "2–5 dias/semana na squad: arquitetura, reviews e entrega com a equipa."
       },
-      {},
-      {}
+      {
+        "title": "MVP e build full-stack",
+        "badge": "MVP",
+        "description": "APIs Nest.js/Node mais UI moderna, auth, dados e CI/CD—pronto para clientes piloto."
+      },
+      {
+        "title": "Integração IA / RAG",
+        "badge": "RAG / LLM",
+        "description": "Pesquisa, Q&A ou agentes nos seus documentos—com avaliação para compliance."
+      }
     ]
   },
   "certifications": {
@@ -96,13 +99,13 @@
     "verifyLabel": "Ver certificado",
     "items": [
       {
-        "title": "Algoritmos e estruturas de dados em JavaScript",
+        "title": "JavaScript Algorithms and Data Structures",
         "issuer": "freeCodeCamp",
         "date": "Ago 2018",
         "slug": "javascript-algorithms-and-data-structures"
       },
       {
-        "title": "Desenvolvimento back-end e APIs",
+        "title": "Back End Development and APIs",
         "issuer": "freeCodeCamp",
         "date": "Out 2018",
         "slug": "back-end-development-and-apis"
@@ -131,48 +134,71 @@
   },
   "projects": [
     {
-      "title": "Baker Hughes — Otimização petróleo e gás",
-      "role": "Engenheiro de software sénior"
+      "title": "Baker Hughes — Otimização oil & gas",
+      "tag": "Enterprise",
+      "problem": "Engenharia global precisava de microserviços mantíveis e UIs modernas num programa multi-região.",
+      "role": "Engenheiro de software sénior",
+      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
+      "outcome": "Microserviços de otimização e frontends Angular com CI/CD em programa multi-região."
     },
     {
+      "title": "NeIO — Pipeline RAG enterprise",
       "tag": "IA · Destaque",
-      "role": "Engenheiro backend sénior (Codvo.ai)"
+      "problem": "Equipas enterprise precisavam de respostas fiáveis sobre conhecimento interno—não outro chatbot que alucina perante clientes.",
+      "role": "Engenheiro backend sénior (Codvo.ai)",
+      "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · vector retrieval · ArgoCD",
+      "outcome": "RAG end-to-end em produção: ingestão, chunking, retrieval, APIs LLM com testes e GitOps."
     },
     {
-      "role": "Engenheiro backend sénior (Codvo.ai · cliente EUA)"
+      "title": "IApp — Plataforma fintech de seguros",
+      "tag": "Fintech · EUA",
+      "problem": "Operações de seguros precisavam de sinistros e auditoria fiáveis em escala—compliance e datas de lançamento fixas.",
+      "role": "Engenheiro backend sénior (Codvo.ai · cliente EUA)",
+      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
+      "outcome": "Backend de sinistros e auditoria em produção; pipelines containerizados auditáveis pelo cliente."
     }
   ],
   "experience": {
     "heading": "8 anos de entrega",
     "roles": [
       {
-        "detail": "Remoto · Backend, RAG/IA e entrega com stakeholders para clientes EUA (finanças, petróleo e gás). Releases em produção. Mentoria."
+        "company": "Codvo.ai",
+        "title": "Engenheiro de Software Sénior",
+        "period": "Set 2023 – presente",
+        "badge": "Atual",
+        "detail": "Remoto · Backend, RAG/IA e entrega com stakeholders para clientes EUA (finanças, oil & gas). Releases em produção. Mentoria."
       },
-      {},
-      {},
       {
-        "detail": "Logística e petróleo e gás · APIs Node/Java, WebSockets, AWS ECS—início de 8 anos de trajetória."
+        "company": "Turbotic",
+        "title": "Engenheiro de Software",
+        "period": "Out 2021 – Ago 2023",
+        "badge": "Startup UE",
+        "detail": "Startup sueca · Arquitetura e APIs para orquestração de automação."
+      },
+      {
+        "company": "Grazitti Interactive",
+        "title": "Engenheiro de Software",
+        "period": "Fev 2020 – Set 2021",
+        "badge": "Search e APIs",
+        "detail": "SearchUnify · Crawlers API, ElasticSearch, migração monólito para microserviços."
+      },
+      {
+        "company": "Bursys",
+        "title": "Engenheiro de Software",
+        "period": "Jan 2018 – Fev 2020",
+        "badge": "Enterprise",
+        "detail": "Logística e oil & gas · APIs Node/Java, WebSockets, AWS ECS—início de 8 anos de trajetória."
       }
     ]
   },
   "about": {
     "heading": "Sobre mim",
     "p1": "O engenheiro que os clientes chamam quando o prazo é real e o stack é complexo—backend, frontends e IA, claro para stakeholders não técnicos, sistemas que a equipa opera sem mim.",
-    "p2": "{years} anos em produção em fintech, logística, petróleo e gás e plataformas de IA. C3 AI · M.Sc. IT (GPA 3.7) · Funcionário do mês · Hacktoberfest.",
+    "p2": "{years} anos em produção em fintech, logística, oil & gas e plataformas de IA. C3 AI · M.Sc. IT (GPA 3.7) · Funcionário do mês · Hacktoberfest.",
     "languagesHeading": "Idiomas",
-    "spoken": [
-      "Inglês (fluente)",
-      "Hindi (nativo)",
-      "Punjabi (nativo)",
-      "Espanhol (iniciante)"
-    ],
+    "spoken": ["Inglês (fluente)", "Hindi (nativo)", "Punjabi (nativo)", "Espanhol (iniciante)"],
     "currentlyHeading": "Agora",
-    "credentialBadges": [
-      "Remoto",
-      "C3 AI",
-      "freeCodeCamp",
-      "M.Sc. IT"
-    ],
+    "credentialBadges": ["Remoto", "C3 AI", "freeCodeCamp", "M.Sc. IT"],
     "remoteLabel": "Engenheiro sénior @ Codvo.ai",
     "educationHeading": "Formação",
     "education": [

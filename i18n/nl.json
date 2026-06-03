@@ -2,7 +2,7 @@
   "lang": "nl",
   "meta": {
     "title": "Jasmeet Singh — Senior Engineer · 8 jaar · Full-stack & AI",
-    "description": "Senior full-stack engineer met 8 jaar ervaring voor Amerikaanse en internationale klanten—Node.js, TypeScript, productie-RAG en MVPs. Op afstand · C3 AI gecertificeerd."
+    "description": "Senior full-stack engineer met 8 jaar ervaring voor Amerikaanse en internationale klanten—Node.js, TypeScript, productie-RAG en MVPs. Remote · C3 AI gecertificeerd."
   },
   "nav": {
     "work": "Werk",
@@ -23,12 +23,12 @@
   },
   "hero": {
     "eyebrow": "Vertrouwd door Amerikaanse fintech & enterprise · 8 jaar in productie",
-    "roleLine": "Senior softwareontwikkelaar · Full-stack & AI",
+    "roleLine": "Senior Software Engineer · Full-stack & AI",
     "title": "Uw volgende release op tijd—",
     "titleEm": "backend, frontends en AI inbegrepen",
-      "tagline": "Ik help oprichters en technische leads roadmaps om te zetten in omzetklare software: schaalbare API's, verzorgde product-frontends en RAG die echt in productie draait—geen demo's die uw financiering vertragen.",
+    "tagline": "Ik help founders en engineering leads roadmaps om te zetten in omzetklare software: schaalbare API's, verzorgde product-frontends en RAG die echt in productie draait—geen demo's die uw funding vertragen.",
     "location": "Bangalore · Overlap met VS & EU",
-    "availability": "Fulltime op afstand · Contract · Deeltijd",
+    "availability": "Fulltime remote · Contract · Fractional",
     "ctaPrimary": "Gesprek starten",
     "ctaSecondary": "Bekijk referenties",
     "resumeLink": "CV downloaden (PDF)"
@@ -40,69 +40,72 @@
     "VS & internationale klanten"
   ],
   "statsDisplay": [
-    {
-      "num": "8",
-      "label": "Jaar software leveren"
-    },
-    {
-      "num": "C3",
-      "label": "AI gecertificeerd"
-    },
-    {
-      "num": "VS",
-      "label": "Enterprise & fintech klanten"
-    },
-    {
-      "num": "RAG",
-      "label": "Live in productie"
-    }
+    { "num": "8", "label": "Jaar software leveren" },
+    { "num": "C3", "label": "AI gecertificeerd" },
+    { "num": "VS", "label": "Enterprise & fintech klanten" },
+    { "num": "RAG", "label": "Live in productie" }
   ],
-  "proofStrip": [
-    "Fintech & verzekeringen",
-    "Enterprise product-UI's",
-    "Enterprise RAG / LLM",
-    "Olie & gas · EU-startup"
-  ],
+  "proofStrip": ["Fintech & verzekeringen", "Enterprise product-UI's", "Enterprise RAG / LLM", "Oil & gas · EU-startup"],
   "value": {
     "heading": "Waarom klanten mij inhuren",
-    "subheading": "U krijgt een senior verantwoordelijke—geen backlog-ticket. Duidelijke updates, eerlijke schattingen en code die uw team onderhoudt na mijn vertrek.",
+    "subheading": "U krijgt een senior owner—geen backlog-ticket. Duidelijke updates, eerlijke schattingen en code die uw team onderhoudt na mijn vertrek.",
     "items": [
-      {},
       {
-        "badge": "Volledige stack"
+        "title": "Sneller naar de markt",
+        "badge": "Snelheid",
+        "description": "MVP's en kritieke features in weken, met scope die u kunt verdedigen bij investeerders."
       },
       {
+        "title": "Full-stack helderheid",
+        "badge": "Full-stack",
+        "description": "8 jaar backend en product-frontends—één engineer die API's, UI en data op één lijn brengt."
+      },
+      {
+        "title": "AI met vertrouwen",
+        "badge": "Productie-AI",
         "description": "Productie-RAG met onderbouwde antwoorden, guardrails en observability—voor legal en product."
       },
       {
-        "badge": "Op afstand"
+        "title": "Gebouwd voor globale teams",
+        "badge": "Remote-first",
+        "description": "Vloeiend Engels, async in uw tijdzone, direct contact—zonder agency-lagen."
       }
     ]
   },
   "offers": {
     "heading": "Engagementen voor uw fase",
-    "subheading": "Van seed-MVP tot enterprise-modernisering—het model dat past bij budget en deadline.",
+    "subheading": "Van seed-MVP tot enterprise-modernisering—het model dat past bij runway en deadline.",
     "items": [
       {
-        "title": "Senior inbedding"
+        "title": "Senior embed",
+        "badge": "Flexibel",
+        "description": "2–5 dagen/week in uw squad: architectuur, reviews en shipping naast uw team."
       },
-      {},
-      {}
+      {
+        "title": "MVP & full-stack build",
+        "badge": "MVP",
+        "description": "Nest.js/Node API's plus moderne UI, auth, datalaag en CI/CD—klaar voor pilotklanten."
+      },
+      {
+        "title": "AI / RAG integratie",
+        "badge": "RAG / LLM",
+        "description": "Zoeken, Q&A of agents op uw documenten—met evaluatie voor compliance."
+      }
     ]
   },
   "certifications": {
     "heading": "Certificeringen",
-    "subheading": "Verifieerbare certificaten op freeCodeCamp.org",
+    "subheading": "Verifieerbare credentials op freeCodeCamp.org",
     "verifyLabel": "Certificaat bekijken",
     "items": [
       {
-        "title": "JavaScript-algoritmen en datastructuren",
+        "title": "JavaScript Algorithms and Data Structures",
         "issuer": "freeCodeCamp",
         "date": "Aug 2018",
         "slug": "javascript-algorithms-and-data-structures"
       },
       {
-        "title": "Backend-ontwikkeling en API's",
+        "title": "Back End Development and APIs",
         "issuer": "freeCodeCamp",
         "date": "Okt 2018",
         "slug": "back-end-development-and-apis"
@@ -131,54 +134,71 @@
   },
   "projects": [
     {
-      "title": "Baker Hughes — Olie & gas optimalisatie",
-      "role": "Senior softwareontwikkelaar"
+      "title": "Baker Hughes — Oil & gas optimalisatie",
+      "tag": "Enterprise",
+      "problem": "Globale engineering had onderhoudbare microservices en moderne UI's nodig in een multi-regio programma.",
+      "role": "Senior software engineer",
+      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
+      "outcome": "Optimalisatie-microservices en Angular-frontends met CI/CD over regio's en vendors."
     },
     {
+      "title": "NeIO — Enterprise RAG-pipeline",
       "tag": "AI · Uitgelicht",
-      "role": "Senior backend engineer (Codvo.ai)"
+      "problem": "Enterprise-teams wilden betrouwbare antwoorden op interne kennis—geen chatbot die hallucineert voor klanten.",
+      "role": "Senior backend engineer (Codvo.ai)",
+      "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · vector retrieval · ArgoCD",
+      "outcome": "End-to-end RAG in productie: ingestion, chunking, retrieval, LLM-API's met tests en GitOps."
     },
     {
-      "role": "Senior backend engineer (Codvo.ai · VS-klant)"
+      "title": "IApp — Fintech verzekeringsplatform",
+      "tag": "Fintech · VS",
+      "problem": "Verzekeringsoperaties hadden betrouwbare claims en auditing op schaal nodig—met compliance en vaste launchdata.",
+      "role": "Senior backend engineer (Codvo.ai · VS-klant)",
+      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
+      "outcome": "Backend voor claims en audit live; gecontaineriseerde pipelines die de klant kon auditen."
     }
   ],
   "experience": {
     "heading": "8 jaar levering",
     "roles": [
       {
-        "title": "Senior softwareontwikkelaar",
-        "detail": "Op afstand · Backend, RAG/AI en stakeholder-levering voor VS-klanten (financiën, olie & gas). Productie-releases. Begeleiding."
+        "company": "Codvo.ai",
+        "title": "Senior Software Engineer",
+        "period": "Sep 2023 – heden",
+        "badge": "Huidig",
+        "detail": "Remote · Backend, RAG/AI en stakeholder-levering voor VS-klanten (finance, oil & gas). Productie-releases. Mentoring."
       },
       {
-        "title": "Software engineer"
+        "company": "Turbotic",
+        "title": "Software Engineer",
+        "period": "Okt 2021 – Aug 2023",
+        "badge": "EU-startup",
+        "detail": "Zweedse startup · Architectuur & API's voor automatisering-orchestratie."
       },
       {
-        "title": "Software engineer"
+        "company": "Grazitti Interactive",
+        "title": "Software Engineer",
+        "period": "Feb 2020 – Sep 2021",
+        "badge": "Search & API's",
+        "detail": "SearchUnify · API-crawlers, ElasticSearch, monoliet naar microservices."
       },
       {
-        "title": "Softwareontwikkelaar",
-        "detail": "Logistiek & olie/gas · Node/Java API's, WebSockets, AWS ECS—basis van 8 jaar track record."
+        "company": "Bursys",
+        "title": "Software Engineer",
+        "period": "Jan 2018 – Feb 2020",
+        "badge": "Enterprise",
+        "detail": "Logistiek & oil & gas · Node/Java API's, WebSockets, AWS ECS—basis van 8 jaar track record."
       }
     ]
   },
   "about": {
     "heading": "Over mij",
     "p1": "De engineer die klanten bellen als de deadline echt is en de stack rommelig is—backend, frontends en AI, helder voor niet-technische stakeholders, systemen die uw team zonder mij draait.",
-    "p2": "{years} jaar in productie in fintech, logistiek, olie & gas en AI-platforms. C3 AI gecertificeerd · M.Sc. IT (GPA 3.7) · Medewerker van de maand · Hacktoberfest.",
+    "p2": "{years} jaar in productie in fintech, logistiek, oil & gas en AI-platforms. C3 AI gecertificeerd · M.Sc. IT (GPA 3.7) · Employee of the Month · Hacktoberfest.",
     "languagesHeading": "Talen",
-    "spoken": [
-      "Engels (vloeiend)",
-      "Hindi (moedertaal)",
-      "Punjabi (moedertaal)",
-      "Spaans (beginner)"
-    ],
+    "spoken": ["Engels (vloeiend)", "Hindi (moedertaal)", "Punjabi (moedertaal)", "Spaans (beginner)"],
     "currentlyHeading": "Nu",
-    "credentialBadges": [
-      "Remote",
-      "C3 AI gecertificeerd",
-      "freeCodeCamp",
-      "M.Sc. IT"
-    ],
+    "credentialBadges": ["Remote", "C3 AI gecertificeerd", "freeCodeCamp", "M.Sc. IT"],
     "remoteLabel": "Senior engineer @ Codvo.ai",
     "educationHeading": "Opleiding",
     "education": [
@@ -188,9 +208,9 @@
   },
   "contact": {
     "heading": "Vertel wat u bouwt",
-    "subheading": "Deel planning en stack—ik antwoord binnen 24 uur met eerlijke inschatting van match, scope en eerste stappen.",
+    "subheading": "Deel timeline en stack—ik antwoord binnen 24 uur met eerlijke fit, scope en eerste stappen.",
     "gridLabel": "Ook op",
-    "promise": "Geen verkooppraat · NDA-vriendelijk · U spreekt met de engineer die levert",
+    "promise": "Geen salespraat · NDA-vriendelijk · U spreekt met de engineer die levert",
     "email": "E-mail",
     "linkedin": "LinkedIn",
     "github": "GitHub",

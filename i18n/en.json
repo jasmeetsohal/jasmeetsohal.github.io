@@ -108,12 +108,12 @@
   },
   "projects": [
     {
-      "title": "IApp — Fintech insurance platform",
-      "tag": "Fintech · U.S.",
-      "problem": "Insurance operations needed reliable claims and auditing at scale—with compliance pressure and fixed launch dates.",
-      "role": "Senior backend engineer (Codvo.ai · U.S. client)",
-      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
-      "outcome": "Backend services for claims and audit flows live in production; containerized pipelines and releases the client could audit."
+      "title": "Baker Hughes — Oil & gas optimization",
+      "tag": "Enterprise",
+      "problem": "Global engineering needed maintainable microservices and modern UIs on a multi-region program.",
+      "role": "Senior software engineer",
+      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
+      "outcome": "Optimization microservices and Angular frontends shipped with CI/CD on a program spanning regions and vendors."
     },
     {
       "title": "NeIO — Enterprise RAG pipeline",
@@ -124,12 +124,12 @@
       "outcome": "End-to-end RAG in production: ingestion, chunking, retrieval, and LLM APIs with tests and GitOps—ready for real user load."
     },
     {
-      "title": "Baker Hughes — Oil & gas optimization",
-      "tag": "Enterprise",
-      "problem": "Global engineering needed maintainable microservices and modern UIs on a multi-region program.",
-      "role": "Senior software engineer",
-      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
-      "outcome": "Optimization microservices and Angular frontends shipped with CI/CD on a program spanning regions and vendors."
+      "title": "IApp — Fintech insurance platform",
+      "tag": "Fintech · U.S.",
+      "problem": "Insurance operations needed reliable claims and auditing at scale—with compliance pressure and fixed launch dates.",
+      "role": "Senior backend engineer (Codvo.ai · U.S. client)",
+      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
+      "outcome": "Backend services for claims and audit flows live in production; containerized pipelines and releases the client could audit."
     }
   ],
   "experience": {

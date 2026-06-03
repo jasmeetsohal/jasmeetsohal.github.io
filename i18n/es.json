@@ -109,12 +109,12 @@
   },
   "projects": [
     {
-      "title": "IApp — Plataforma fintech de seguros",
-      "tag": "Fintech · EE. UU.",
-      "problem": "Operaciones de seguros necesitaban reclamaciones y auditoría fiables a escala—con compliance y fechas fijas.",
-      "role": "Ingeniero backend senior (Codvo.ai · cliente EE. UU.)",
-      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
-      "outcome": "Servicios de reclamaciones y auditoría en producción; pipelines containerizados auditables por el cliente."
+      "title": "Baker Hughes — Optimización oil & gas",
+      "tag": "Enterprise",
+      "problem": "Ingeniería global necesitaba microservicios mantenibles y UIs modernas en programa multi-región.",
+      "role": "Ingeniero de software senior",
+      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservicios · Docker · ArgoCD",
+      "outcome": "Microservicios de optimización y frontends Angular entregados con CI/CD en programa multi-región."
     },
     {
       "title": "NeIO — Pipeline RAG enterprise",
@@ -125,12 +125,12 @@
       "outcome": "RAG end-to-end en producción: ingesta, fragmentación, recuperación y APIs LLM con pruebas y GitOps."
     },
     {
-      "title": "Baker Hughes — Optimización oil & gas",
-      "tag": "Enterprise",
-      "problem": "Ingeniería global necesitaba microservicios mantenibles y UIs modernas en programa multi-región.",
-      "role": "Ingeniero de software senior",
-      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservicios · Docker · ArgoCD",
-      "outcome": "Microservicios de optimización y frontends Angular entregados con CI/CD en programa multi-región."
+      "title": "IApp — Plataforma fintech de seguros",
+      "tag": "Fintech · EE. UU.",
+      "problem": "Operaciones de seguros necesitaban reclamaciones y auditoría fiables a escala—con compliance y fechas fijas.",
+      "role": "Ingeniero backend senior (Codvo.ai · cliente EE. UU.)",
+      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
+      "outcome": "Servicios de reclamaciones y auditoría en producción; pipelines containerizados auditables por el cliente."
     }
   ],
   "experience": {

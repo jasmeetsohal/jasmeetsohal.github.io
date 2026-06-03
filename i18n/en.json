@@ -2,7 +2,7 @@
   "lang": "en",
   "meta": {
     "title": "Jasmeet Singh — Senior Software Engineer",
-    "description": "Senior Software Engineer with 7+ years in backend architecture, microservices, and fintech. Node.js, TypeScript, Nest.js, AWS, Azure. Remote-ready for U.S., EU, and international teams. Certified C3 AI Developer."
+    "description": "Senior Software Engineer with 7+ years in backend architecture, microservices, RAG pipelines, and fintech. Node.js, TypeScript, Python, AWS, Azure. Remote-ready for international teams. Certified C3 AI Developer."
   },
   "nav": {
     "work": "Work",
@@ -14,7 +14,7 @@
     "eyebrow": "Bangalore · Remote · {years} years · C3 AI Certified",
     "title": "Senior Software Engineer",
     "titleEm": "backend & microservices for global product teams",
-    "tagline": "I build and scale Node.js / TypeScript backends for fintech, logistics, oil & gas, and AI platforms — currently leading delivery for U.S. clients, with clear communication across time zones.",
+    "tagline": "I build and scale Node.js / TypeScript backends and production RAG pipelines for fintech, logistics, oil & gas, and AI platforms — currently leading delivery for U.S. clients, with clear communication across time zones.",
     "location": "Bangalore, India (IST, UTC+5:30)",
     "availability": "Open to remote full-time & contracts — U.S., EU, UK, LATAM (flexible overlap)",
     "ctaPrimary": "Get in touch",
@@ -25,6 +25,7 @@
     "Nest.js",
     "TypeScript",
     "Python",
+    "RAG / LLM",
     "PostgreSQL",
     "MongoDB",
     "Microservices",
@@ -48,11 +49,11 @@
       "outcome": "Delivered backend services for claims and audit flows; production deployments with containerized pipelines."
     },
     {
-      "title": "NeIO — Smart AI assistance platform",
-      "problem": "Enterprise teams needed microservices for anomaly detection, HR automation, and plant monitoring.",
-      "role": "Senior backend engineer",
-      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Python · React · ArgoCD · Jest",
-      "outcome": "Built and integrated backend microservices with tested APIs and GitOps-style delivery."
+      "title": "NeIO — Enterprise RAG pipeline",
+      "problem": "Enterprise teams needed grounded AI answers over internal documents and operational data—not unreliable generic chatbot responses.",
+      "role": "Senior backend engineer (Codvo.ai)",
+      "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · vector retrieval · React · ArgoCD · Jest",
+      "outcome": "Designed and delivered a production RAG pipeline: document ingestion, chunking, embedding, retrieval, and LLM orchestration via secure APIs—with tests and GitOps deployment."
     },
     {
       "title": "Baker Hughes — Oil & gas optimization",
@@ -69,7 +70,7 @@
         "company": "Codvo.ai",
         "title": "Senior Software Engineer",
         "period": "Sep 2023 – Present",
-        "detail": "Remote · Leading backend for U.S. clients in finance and oil & gas. Certified C3 AI Developer; customer-facing requirements and delivery."
+        "detail": "Remote · Leading backend and RAG/AI pipelines for U.S. clients in finance and oil & gas. Certified C3 AI Developer; customer-facing requirements and delivery."
       },
       {
         "company": "Turbotic",
@@ -93,7 +94,7 @@
   },
   "about": {
     "heading": "About",
-    "p1": "Senior Software Engineer with {years} years in backend architecture, microservices, and full-stack delivery across fintech, logistics, oil & gas, and AI-driven platforms. Expert in Node.js, TypeScript, Nest.js, PostgreSQL, AWS, and Azure.",
+    "p1": "Senior Software Engineer with {years} years in backend architecture, microservices, RAG/LLM pipelines, and full-stack delivery across fintech, logistics, oil & gas, and AI-driven platforms. Expert in Node.js, TypeScript, Python, Nest.js, PostgreSQL, AWS, and Azure.",
     "p2": "Certified C3 AI Developer with experience in team leadership, system design, and customer engagement. M.Sc. Information Technology (GPA 3.7). Employee of the Month (March 2019); Hacktoberfest contributor.",
     "languagesHeading": "Languages",
     "spoken": ["English (fluent)", "Hindi (native)", "Punjabi (native)", "Spanish (beginner)"],

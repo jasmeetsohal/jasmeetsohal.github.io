@@ -2,7 +2,7 @@
   "lang": "es",
   "meta": {
     "title": "Jasmeet Singh — Ingeniero de Software Senior",
-    "description": "Ingeniero de Software Senior con más de 7 años en arquitectura backend, microservicios y fintech. Node.js, TypeScript, Nest.js, AWS, Azure. Remoto para equipos en EE. UU., UE e internacionales. Desarrollador C3 AI certificado."
+    "description": "Ingeniero de Software Senior con más de 7 años en arquitectura backend, microservicios, pipelines RAG y fintech. Node.js, TypeScript, Python, AWS, Azure. Remoto para equipos internacionales. Desarrollador C3 AI certificado."
   },
   "nav": {
     "work": "Proyectos",
@@ -14,7 +14,7 @@
     "eyebrow": "Bangalore · Remoto · {years} años · C3 AI certificado",
     "title": "Ingeniero de Software Senior",
     "titleEm": "backend y microservicios para equipos globales",
-    "tagline": "Desarrollo y escalo backends en Node.js / TypeScript para fintech, logística, petróleo y gas y plataformas de IA — actualmente liderando entregas para clientes en EE. UU., con comunicación clara entre zonas horarias.",
+    "tagline": "Desarrollo y escalo backends en Node.js / TypeScript y pipelines RAG en producción para fintech, logística, petróleo y gas y plataformas de IA — liderando entregas para clientes en EE. UU., con comunicación clara entre zonas horarias.",
     "location": "Bangalore, India (IST, UTC+5:30)",
     "availability": "Abierto a tiempo completo remoto y contratos — EE. UU., UE, Reino Unido, LATAM (horarios flexibles)",
     "ctaPrimary": "Contactar",
@@ -25,6 +25,7 @@
     "Nest.js",
     "TypeScript",
     "Python",
+    "RAG / LLM",
     "PostgreSQL",
     "MongoDB",
     "Microservicios",
@@ -48,11 +49,11 @@
       "outcome": "Servicios backend para reclamaciones y auditoría; despliegues en producción con pipelines containerizados."
     },
     {
-      "title": "NeIO — Plataforma de asistencia IA",
-      "problem": "Equipos enterprise necesitaban microservicios para detección de anomalías, automatización de RR. HH. y monitoreo de plantas.",
-      "role": "Ingeniero backend senior",
-      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Python · React · ArgoCD · Jest",
-      "outcome": "Microservicios backend integrados con APIs probadas y entrega estilo GitOps."
+      "title": "NeIO — Pipeline RAG enterprise",
+      "problem": "Equipos enterprise necesitaban respuestas de IA fundamentadas en documentos internos y datos operativos—not chatbots genéricos poco fiables.",
+      "role": "Ingeniero backend senior (Codvo.ai)",
+      "stack": "Python · Node.js · Nest.js · TypeScript · PostgreSQL · embeddings · recuperación vectorial · React · ArgoCD · Jest",
+      "outcome": "Diseñé y entregué un pipeline RAG en producción: ingesta, fragmentación, embeddings, recuperación y orquestación LLM vía APIs seguras, con pruebas y despliegue GitOps."
     },
     {
       "title": "Baker Hughes — Optimización oil & gas",
@@ -69,7 +70,7 @@
         "company": "Codvo.ai",
         "title": "Ingeniero de Software Senior",
         "period": "Sep 2023 – Presente",
-        "detail": "Remoto · Backend para clientes en EE. UU. (finanzas y oil & gas). Desarrollador C3 AI certificado; requisitos y entrega con el cliente."
+        "detail": "Remoto · Backend y pipelines RAG/IA para clientes en EE. UU. (finanzas y oil & gas). Desarrollador C3 AI certificado; requisitos y entrega con el cliente."
       },
       {
         "company": "Turbotic",
@@ -93,7 +94,7 @@
   },
   "about": {
     "heading": "Sobre mí",
-    "p1": "Ingeniero de Software Senior con {years} años en arquitectura backend, microservicios y entrega full-stack en fintech, logística, oil & gas y plataformas con IA. Experto en Node.js, TypeScript, Nest.js, PostgreSQL, AWS y Azure.",
+    "p1": "Ingeniero de Software Senior con {years} años en arquitectura backend, microservicios, pipelines RAG/LLM y entrega full-stack en fintech, logística, oil & gas y plataformas con IA. Experto en Node.js, TypeScript, Python, Nest.js, PostgreSQL, AWS y Azure.",
     "p2": "Desarrollador C3 AI certificado con liderazgo de equipo, diseño de sistemas y contacto con clientes. M.Sc. en Tecnologías de la Información (GPA 3.7). Empleado del mes (marzo 2019); contribuidor Hacktoberfest.",
     "languagesHeading": "Idiomas",
     "spoken": ["Inglés (fluido)", "Hindi (nativo)", "Punjabi (nativo)", "Español (principiante)"],

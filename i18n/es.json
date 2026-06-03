@@ -19,6 +19,11 @@
     "role": "Rol",
     "outcome": "Resultado"
   },
+  "businessCard": {
+    "tagline": "Full-stack e IA · Remoto para clientes globales",
+    "cta": "Ver portafolio",
+    "hint": "Haz clic en la tarjeta para ver proyectos, experiencia y contacto"
+  },
   "skipLink": "Saltar al contenido",
   "openBadge": "Disponible para nuevos clientes · Remoto",
   "hero": {

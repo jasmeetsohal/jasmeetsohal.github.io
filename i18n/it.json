@@ -13,6 +13,11 @@
     "contact": "Contatto",
     "hire": "Parliamone"
   },
+  "businessCard": {
+    "tagline": "Full-stack e IA · Remoto per clienti globali",
+    "cta": "Vedi portfolio",
+    "hint": "Clicca la card per progetti, esperienza e contatto"
+  },
   "skipLink": "Vai al contenuto",
   "openBadge": "Disponibile per nuovi clienti · Remoto",
   "profileImageAlt": "Foto profilo di {name}",

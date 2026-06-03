@@ -35,6 +35,30 @@
     <div class="ambient ambient-2" aria-hidden="true"></div>
     <div class="bg-grid" aria-hidden="true"></div>
     <div class="noise" aria-hidden="true"></div>
+
+    <aside id="biz-card" class="biz-card" aria-labelledby="biz-card-name">
+      <div class="biz-card__frame">
+        <button type="button" class="biz-card__surface" id="biz-card-open" aria-describedby="biz-card-hint">
+          <span class="biz-card__shine" aria-hidden="true"></span>
+          <figure class="biz-card__avatar">
+            <img id="biz-card-photo" src="images/profile.png" alt="" width="120" height="120" />
+            <span class="biz-card__status-dot" aria-hidden="true"></span>
+          </figure>
+          <h1 class="biz-card__name" id="biz-card-name">Jasmeet Singh</h1>
+          <p class="biz-card__role" id="biz-card-role"></p>
+          <p class="biz-card__tagline" id="biz-card-tagline"></p>
+          <span class="biz-card__badge" id="biz-card-status"></span>
+          <span class="biz-card__cta" id="biz-card-cta">View portfolio</span>
+          <span class="biz-card__hint" id="biz-card-hint"></span>
+        </button>
+        <div class="biz-card__quick">
+          <a class="biz-card__quick-link" id="biz-card-email" href="mailto:jasmeet.singh.tech.dev@gmail.com">Email</a>
+          <a class="biz-card__quick-link" id="biz-card-linkedin" href="https://www.linkedin.com/in/jasmeetsohal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </aside>
+
+    <div id="portfolio-shell" class="portfolio-shell">
     <div class="open-banner" id="open-banner">
       <span class="open-dot" aria-hidden="true"></span>
       <span id="open-badge-text">Open to opportunities</span>
@@ -208,6 +232,7 @@
     <footer class="site-footer">
       <p>© <span id="year"></span> <span id="footer-name">Jasmeet Singh</span> — <span id="footer-text"></span></p>
     </footer>
+    </div>
 
     <script src="main.js" type="module"></script>
   </body>

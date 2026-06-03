@@ -1495,3 +1495,229 @@ main {
     font-size: 0.72rem;
   }
 }
+
+/* —— First-visit business card —— */
+.biz-card {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: rgba(7, 8, 12, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+body.is-intro .biz-card {
+  display: flex;
+}
+
+.biz-card__frame {
+  width: min(100%, 22rem);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.85rem;
+}
+
+.biz-card__surface {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 1.75rem 1.5rem 1.35rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(165deg, var(--surface) 0%, var(--bg-panel) 100%);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  cursor: pointer;
+  font-family: var(--sans);
+  transition:
+    transform 0.25s var(--ease),
+    border-color 0.25s var(--ease),
+    box-shadow 0.25s var(--ease);
+}
+
+.biz-card__surface:hover {
+  transform: translateY(-3px);
+  border-color: rgba(142, 180, 232, 0.35);
+  box-shadow: 0 20px 48px -16px rgba(0, 0, 0, 0.55);
+}
+
+.biz-card__surface:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.biz-card__shine {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(142, 180, 232, 0.08) 0%,
+    transparent 42%,
+    rgba(196, 176, 138, 0.05) 100%
+  );
+  pointer-events: none;
+}
+
+.biz-card__avatar {
+  margin: 0 0 1rem;
+  position: relative;
+}
+
+.biz-card__avatar img {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-strong);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.biz-card__status-dot {
+  position: absolute;
+  right: 6%;
+  bottom: 6%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #6eb896;
+  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 3px rgba(110, 184, 150, 0.25);
+}
+
+.biz-card__name {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.biz-card__role {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.biz-card__tagline {
+  margin: 0.5rem 0 0;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-width: 18rem;
+}
+
+.biz-card__badge {
+  display: inline-block;
+  margin-top: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.biz-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.1rem;
+  padding: 0.65rem 1.15rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--bg);
+  background: var(--text);
+  border-radius: 999px;
+}
+
+.biz-card__cta::after {
+  content: "→";
+  transition: transform 0.2s ease;
+}
+
+.biz-card__surface:hover .biz-card__cta::after {
+  transform: translateX(3px);
+}
+
+.biz-card__hint {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.72rem;
+  color: var(--text-subtle);
+  letter-spacing: 0.02em;
+}
+
+.biz-card__quick {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.biz-card__quick-link {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.biz-card__quick-link:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+  background: var(--surface-hover);
+}
+
+body.is-intro .portfolio-shell {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+body.is-intro {
+  overflow: hidden;
+}
+
+body.is-portfolio-open .portfolio-shell {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.45s var(--ease) 0.08s;
+}
+
+body.is-portfolio-open .biz-card {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.04) translateY(-16px);
+  transition:
+    opacity 0.4s var(--ease),
+    transform 0.4s var(--ease);
+}
+
+body.is-portfolio-open .biz-card.biz-card--gone {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.is-portfolio-open .portfolio-shell,
+  body.is-portfolio-open .biz-card,
+  .biz-card__surface {
+    transition: none;
+  }
+}

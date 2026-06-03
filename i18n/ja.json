@@ -13,6 +13,11 @@
     "contact": "連絡",
     "hire": "お話ししましょう"
   },
+  "businessCard": {
+    "tagline": "フルスタック & AI · グローバル向けリモート",
+    "cta": "ポートフォリオを見る",
+    "hint": "カードをクリックして実績・経歴・連絡先へ"
+  },
   "skipLink": "本文へスキップ",
   "openBadge": "新規クライアント受付中 · リモート",
   "profileImageAlt": "{name}のプロフィール写真",

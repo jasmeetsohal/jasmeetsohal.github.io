@@ -1,5 +1,6 @@
 const SUPPORTED = ["en", "es", "de", "fr", "nl", "pl", "it", "pt", "ja"];
 const STORAGE_KEY = "portfolio-lang";
+const INTRO_KEY = "portfolio-intro-seen";
 
 const BROWSER_LANG_PREFIXES = [
   ["ja", "ja"],
@@ -127,6 +128,114 @@ function mailtoLink() {
 }
 
 let currentLang = detectLanguage();
+
+function shouldShowIntro() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("view") === "portfolio") return false;
+  if (params.get("view") === "card") {
+    localStorage.removeItem(INTRO_KEY);
+    return true;
+  }
+  return !localStorage.getItem(INTRO_KEY);
+}
+
+function openPortfolio() {
+  localStorage.setItem(INTRO_KEY, "1");
+  const shell = document.getElementById("portfolio-shell");
+  const bizCard = document.getElementById("biz-card");
+
+  document.body.classList.remove("is-intro");
+  document.body.classList.add("is-portfolio-open");
+  shell?.removeAttribute("inert");
+  bizCard?.setAttribute("aria-hidden", "true");
+
+  syncStickyOffsets();
+  initNavSpy();
+  window.scrollTo(0, 0);
+
+  const skip = document.getElementById("skip-link");
+  if (skip) skip.setAttribute("href", "#main-content");
+
+  window.setTimeout(() => {
+    bizCard?.classList.add("biz-card--gone");
+  }, 450);
+}
+
+function initIntro() {
+  const shell = document.getElementById("portfolio-shell");
+  const bizCard = document.getElementById("biz-card");
+  const openBtn = document.getElementById("biz-card-open");
+
+  if (!shouldShowIntro()) {
+    document.body.classList.add("is-portfolio-open");
+    bizCard?.classList.add("biz-card--gone");
+    bizCard?.setAttribute("aria-hidden", "true");
+    return;
+  }
+
+  document.body.classList.add("is-intro");
+  shell?.setAttribute("inert", "");
+  bizCard?.removeAttribute("aria-hidden");
+
+  const skip = document.getElementById("skip-link");
+  if (skip) {
+    skip.setAttribute("href", "#");
+    skip.addEventListener("click", (e) => {
+      if (!document.body.classList.contains("is-intro")) return;
+      e.preventDefault();
+      openPortfolio();
+    });
+  }
+
+  openBtn?.addEventListener("click", openPortfolio);
+
+  document.querySelectorAll(".biz-card__quick-link").forEach((link) => {
+    link.addEventListener("click", (e) => e.stopPropagation());
+  });
+}
+
+function applyBusinessCard(t, mailto) {
+  const card = t.businessCard || {};
+  const nameEl = document.getElementById("biz-card-name");
+  if (nameEl) nameEl.textContent = config.name;
+
+  const roleEl = document.getElementById("biz-card-role");
+  if (roleEl) roleEl.textContent = t.hero?.roleLine || "";
+
+  const taglineEl = document.getElementById("biz-card-tagline");
+  if (taglineEl) taglineEl.textContent = card.tagline || "";
+
+  const statusEl = document.getElementById("biz-card-status");
+  if (statusEl) statusEl.textContent = t.openBadge || "";
+
+  const ctaEl = document.getElementById("biz-card-cta");
+  if (ctaEl) ctaEl.textContent = card.cta || "View portfolio";
+
+  const hintEl = document.getElementById("biz-card-hint");
+  if (hintEl) hintEl.textContent = card.hint || "";
+
+  const photo = document.getElementById("biz-card-photo");
+  if (photo) {
+    if (config.profileImage) photo.src = config.profileImage;
+    photo.alt = t.profileImageAlt
+      ? interpolate(t.profileImageAlt, { name: config.name })
+      : `Profile photo of ${config.name}`;
+  }
+
+  const emailLink = document.getElementById("biz-card-email");
+  if (emailLink) {
+    emailLink.href = mailto;
+    emailLink.textContent = t.contact?.email || "Email";
+  }
+
+  const linkedinLink = document.getElementById("biz-card-linkedin");
+  if (linkedinLink && config.linkedin) {
+    linkedinLink.href = config.linkedin;
+    linkedinLink.textContent = t.contact?.linkedin || "LinkedIn";
+  }
+}
+
+initIntro();
 
 function applyImages(t) {
   const profileAlt = t.profileImageAlt
@@ -509,14 +618,17 @@ async function applyLocale(lang) {
   }
 
   applyImages(t);
+  applyBusinessCard(t, mailto);
 
   const url = new URL(window.location.href);
   url.searchParams.set("lang", lang);
   history.replaceState({}, "", url);
 
   document.body.classList.add("is-ready");
-  syncStickyOffsets();
-  initNavSpy();
+  if (!document.body.classList.contains("is-intro")) {
+    syncStickyOffsets();
+    initNavSpy();
+  }
 }
 
 function syncStickyOffsets() {

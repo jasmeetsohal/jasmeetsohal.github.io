@@ -19,6 +19,11 @@
     "role": "Role",
     "outcome": "Outcome"
   },
+  "businessCard": {
+    "tagline": "Full-stack & AI · Remote for global clients",
+    "cta": "View portfolio",
+    "hint": "Click the card to explore projects, experience & contact"
+  },
   "skipLink": "Skip to content",
   "openBadge": "Available for new clients · Remote",
   "hero": {

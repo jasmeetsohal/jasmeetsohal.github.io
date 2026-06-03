@@ -13,6 +13,11 @@
     "contact": "Contact",
     "hire": "Laten we praten"
   },
+  "businessCard": {
+    "tagline": "Full-stack & AI · Remote voor internationale klanten",
+    "cta": "Bekijk portfolio",
+    "hint": "Klik op de kaart voor projecten, ervaring en contact"
+  },
   "skipLink": "Naar inhoud",
   "openBadge": "Beschikbaar voor nieuwe opdrachten · Remote",
   "profileImageAlt": "Profielfoto van {name}",

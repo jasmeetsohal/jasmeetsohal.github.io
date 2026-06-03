@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" id="meta-description" />
+    <meta name="author" content="Jasmeet Singh" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" id="og-title" />
+    <meta property="og:description" content="" id="og-description" />
+    <link rel="alternate" hreflang="en" href="?lang=en" />
+    <link rel="alternate" hreflang="es" href="?lang=es" />
+    <link rel="alternate" hreflang="x-default" href="?lang=en" />
+    <title id="doc-title">Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JS</text></svg>" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#top" id="logo-name">Jasmeet Singh</a>
+      <nav class="nav" aria-label="Primary" id="main-nav"></nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-labelledby="lang-label">
+          <span class="lang-label" id="lang-label">Language</span>
+          <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow" id="hero-eyebrow"></p>
+        <h1>
+          <span id="hero-title"></span>
+          <em id="hero-title-em"></em>
+        </h1>
+        <p class="lead" id="hero-tagline"></p>
+        <div class="hero-meta">
+          <span class="pill" id="hero-location"></span>
+          <span class="pill pill-accent" id="hero-availability"></span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact" id="hero-cta-primary"></a>
+          <a class="btn btn-ghost" href="#work" id="hero-cta-secondary"></a>
+          <a class="btn btn-ghost" href="Jasmeet-Singh-Resume.pdf" id="hero-cta-resume" download></a>
+        </div>
+        <div class="hero-stats" aria-hidden="true">
+          <div class="stat"><span class="stat-num" id="stat-years">7+</span><span class="stat-label" data-i18n-stat="years">Years</span></div>
+          <div class="stat"><span class="stat-num">U.S.</span><span class="stat-label" data-i18n-stat="clients">Clients</span></div>
+          <div class="stat"><span class="stat-num">C3</span><span class="stat-label" data-i18n-stat="ai">AI Certified</span></div>
+        </div>
+      </section>
+
+      <section class="skills-band" aria-label="Technologies">
+        <ul class="skills-list" id="skills-list"></ul>
+      </section>
+
+      <section class="section" id="work">
+        <header class="section-head">
+          <h2 id="work-heading"></h2>
+          <p id="work-subheading"></p>
+        </header>
+        <div class="projects" id="projects"></div>
+      </section>
+
+      <section class="section section-panel" id="experience">
+        <header class="section-head">
+          <h2 id="experience-heading"></h2>
+        </header>
+        <div class="timeline" id="experience-timeline"></div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="about-layout">
+          <div class="about-main">
+            <h2 id="about-heading"></h2>
+            <p id="about-p1"></p>
+            <p id="about-p2"></p>
+          </div>
+          <aside class="about-card">
+            <h3 id="about-lang-heading"></h3>
+            <ul id="about-spoken"></ul>
+            <h3 id="about-current-heading"></h3>
+            <p class="remote-badge" id="about-remote"></p>
+            <p class="about-avail" id="about-availability"></p>
+            <h3 id="about-edu-heading"></h3>
+            <ul id="about-education"></ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-cta" id="contact">
+        <h2 id="contact-heading"></h2>
+        <p id="contact-subheading"></p>
+        <div class="contact-grid" id="contact-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> <span id="footer-name">Jasmeet Singh</span> — <span id="footer-text"></span></p>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

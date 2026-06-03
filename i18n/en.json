@@ -1,0 +1,127 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Jasmeet Singh — Senior Software Engineer",
+    "description": "Senior Software Engineer with 7+ years in backend architecture, microservices, and fintech. Node.js, TypeScript, Nest.js, AWS, Azure. Remote-ready for U.S., EU, and international teams. Certified C3 AI Developer."
+  },
+  "nav": {
+    "work": "Work",
+    "experience": "Experience",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Bangalore · Remote · {years} years · C3 AI Certified",
+    "title": "Senior Software Engineer",
+    "titleEm": "backend & microservices for global product teams",
+    "tagline": "I build and scale Node.js / TypeScript backends for fintech, logistics, oil & gas, and AI platforms — currently leading delivery for U.S. clients, with clear communication across time zones.",
+    "location": "Bangalore, India (IST, UTC+5:30)",
+    "availability": "Open to remote full-time & contracts — U.S., EU, UK, LATAM (flexible overlap)",
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "View selected work"
+  },
+  "skills": [
+    "Node.js",
+    "Nest.js",
+    "TypeScript",
+    "Python",
+    "PostgreSQL",
+    "MongoDB",
+    "Microservices",
+    "AWS",
+    "Azure",
+    "Docker",
+    "Kubernetes",
+    "Angular",
+    "React"
+  ],
+  "work": {
+    "heading": "Selected work",
+    "subheading": "Recent platforms from fintech, AI, and industrial clients — aligned with my resume."
+  },
+  "projects": [
+    {
+      "title": "IApp — Fintech insurance platform",
+      "problem": "Insurance operations needed reliable claims management and auditing workflows at scale.",
+      "role": "Senior backend engineer (Codvo.ai · U.S. client)",
+      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Docker · Azure CI/CD",
+      "outcome": "Delivered backend services for claims and audit flows; production deployments with containerized pipelines."
+    },
+    {
+      "title": "NeIO — Smart AI assistance platform",
+      "problem": "Enterprise teams needed microservices for anomaly detection, HR automation, and plant monitoring.",
+      "role": "Senior backend engineer",
+      "stack": "PostgreSQL · Nest.js · Node.js · TypeScript · Python · React · ArgoCD · Jest",
+      "outcome": "Built and integrated backend microservices with tested APIs and GitOps-style delivery."
+    },
+    {
+      "title": "Baker Hughes — Oil & gas optimization",
+      "problem": "Industrial optimization required maintainable microservices and strong frontend–backend coordination.",
+      "role": "Senior software engineer",
+      "stack": "Angular · Node.js · TypeScript · PostgreSQL · Microservices · Docker · ArgoCD",
+      "outcome": "Shipped microservices for optimization workflows with CI/CD and cross-team delivery on a global program."
+    }
+  ],
+  "experience": {
+    "heading": "Professional experience",
+    "roles": [
+      {
+        "company": "Codvo.ai",
+        "title": "Senior Software Engineer",
+        "period": "Sep 2023 – Present",
+        "detail": "Remote · Leading backend for U.S. clients in finance and oil & gas. Certified C3 AI Developer; customer-facing requirements and delivery."
+      },
+      {
+        "company": "Turbotic",
+        "title": "Software Engineer",
+        "period": "Oct 2021 – Aug 2023",
+        "detail": "Swedish startup · System architecture and APIs for automation orchestration (UiPath, Blue Prism, Automation Anywhere)."
+      },
+      {
+        "company": "Grazitti Interactive",
+        "title": "Software Engineer",
+        "period": "Feb 2020 – Sep 2021",
+        "detail": "SearchUnify · API crawlers, ElasticSearch optimization, monolith-to-microservices migration."
+      },
+      {
+        "company": "Bursys",
+        "title": "Software Engineer",
+        "period": "Jan 2018 – Feb 2020",
+        "detail": "Logistics & oil & gas · Node/Java APIs, WebSockets, AWS ECS, C/C++ address validation addons."
+      }
+    ]
+  },
+  "about": {
+    "heading": "About",
+    "p1": "Senior Software Engineer with {years} years in backend architecture, microservices, and full-stack delivery across fintech, logistics, oil & gas, and AI-driven platforms. Expert in Node.js, TypeScript, Nest.js, PostgreSQL, AWS, and Azure.",
+    "p2": "Certified C3 AI Developer with experience in team leadership, system design, and customer engagement. M.Sc. Information Technology (GPA 3.7). Employee of the Month (March 2019); Hacktoberfest contributor.",
+    "languagesHeading": "Languages",
+    "spoken": ["English (fluent)", "Hindi (native)", "Punjabi (native)"],
+    "currentlyHeading": "Currently",
+    "remoteLabel": "Senior engineer @ Codvo.ai",
+    "educationHeading": "Education",
+    "education": [
+      "M.Sc. Information Technology — SCD Govt. College, Ludhiana (2015–2017), GPA 3.7",
+      "BCA Computer Applications — KLSD College, Ludhiana (2012–2015), GPA 3.3"
+    ]
+  },
+  "contact": {
+    "heading": "Let's work together",
+    "subheading": "Open to senior engineering roles and remote consulting for international startups and enterprises.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "resume": "Resume",
+    "resumeValue": "Download PDF →",
+    "whatsapp": "WhatsApp",
+    "whatsappValue": "Message →",
+    "linkedinValue": "Profile →",
+    "githubValue": "Repositories →"
+  },
+  "footer": "Available for international remote opportunities.",
+  "langSwitch": {
+    "label": "Language",
+    "en": "English",
+    "es": "Español"
+  }
+}

@@ -16,21 +16,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JS</text></svg>" />
   </head>
   <body>
+    <div class="ambient ambient-1" aria-hidden="true"></div>
+    <div class="ambient ambient-2" aria-hidden="true"></div>
     <div class="bg-grid" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
     <div class="open-banner" id="open-banner">
       <span class="open-dot" aria-hidden="true"></span>
       <span id="open-badge-text"></span>
     </div>
 
     <header class="site-header">
-      <a class="logo" href="#top" id="logo-name">Jasmeet Singh</a>
+      <a class="logo" href="#top">
+        <span class="logo-mark" aria-hidden="true">JS</span>
+        <span id="logo-name">Jasmeet Singh</span>
+      </a>
       <nav class="nav" aria-label="Primary" id="main-nav"></nav>
       <div class="header-actions">
         <a class="btn btn-header" href="#contact" id="header-hire-cta"></a>
@@ -87,7 +93,10 @@
             </div>
           </div>
           <figure class="hero-profile">
-            <img id="profile-image" src="" alt="" width="280" height="280" loading="eager" />
+            <div class="profile-frame">
+              <div class="profile-ring" aria-hidden="true"></div>
+              <img id="profile-image" src="" alt="" width="320" height="400" loading="eager" />
+            </div>
           </figure>
         </div>
       </section>
@@ -96,43 +105,47 @@
         <ul class="proof-list" id="proof-list"></ul>
       </section>
 
-      <section class="section" id="why-me">
+      <section class="section reveal" id="why-me">
         <header class="section-head section-head-center">
+          <span class="section-tag" data-section-tag="why"></span>
           <h2 id="value-heading"></h2>
           <p id="value-subheading"></p>
         </header>
         <div class="value-grid" id="value-grid"></div>
       </section>
 
-      <section class="section section-panel" id="offers">
+      <section class="section section-panel reveal" id="offers">
         <header class="section-head section-head-center">
+          <span class="section-tag" data-section-tag="offers"></span>
           <h2 id="offers-heading"></h2>
           <p id="offers-subheading"></p>
         </header>
         <div class="offers-grid" id="offers-grid"></div>
       </section>
 
-      <section class="skills-band" aria-labelledby="skills-label">
+      <section class="skills-band reveal" aria-labelledby="skills-label">
         <p class="skills-label" id="skills-label"></p>
         <ul class="skills-list" id="skills-list"></ul>
       </section>
 
-      <section class="section" id="work">
+      <section class="section reveal" id="work">
         <header class="section-head">
+          <span class="section-tag" data-section-tag="work"></span>
           <h2 id="work-heading"></h2>
           <p id="work-subheading"></p>
         </header>
         <div class="projects" id="projects"></div>
       </section>
 
-      <section class="section section-panel" id="experience">
+      <section class="section section-panel reveal" id="experience">
         <header class="section-head">
+          <span class="section-tag" data-section-tag="experience"></span>
           <h2 id="experience-heading"></h2>
         </header>
         <div class="timeline" id="experience-timeline"></div>
       </section>
 
-      <section class="section" id="about">
+      <section class="section reveal" id="about">
         <div class="about-layout">
           <div class="about-main">
             <h2 id="about-heading"></h2>
@@ -152,7 +165,7 @@
         </div>
       </section>
 
-      <section class="section section-cta" id="contact">
+      <section class="section section-cta reveal" id="contact">
         <div class="cta-panel">
           <h2 id="contact-heading"></h2>
           <p id="contact-subheading"></p>

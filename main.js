@@ -282,6 +282,13 @@ async function applyLocale(lang) {
     btn.setAttribute("aria-pressed", isActive ? "true" : "false");
   });
 
+  if (t.sectionTags) {
+    document.querySelectorAll("[data-section-tag]").forEach((el) => {
+      const key = el.getAttribute("data-section-tag");
+      if (t.sectionTags[key]) el.textContent = t.sectionTags[key];
+    });
+  }
+
   applyImages(lang);
 
   const url = new URL(window.location.href);
@@ -309,3 +316,21 @@ if (menuToggle && nav) {
 }
 
 await applyLocale(currentLang);
+
+const revealEls = document.querySelectorAll(".reveal");
+if (revealEls.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
+  );
+  revealEls.forEach((el) => observer.observe(el));
+} else {
+  revealEls.forEach((el) => el.classList.add("is-visible"));
+}

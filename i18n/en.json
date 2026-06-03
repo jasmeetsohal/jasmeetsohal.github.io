@@ -173,6 +173,12 @@
     "linkedinValue": "Connect →",
     "githubValue": "38+ repos →"
   },
+  "sectionTags": {
+    "why": "Expertise",
+    "offers": "Services",
+    "work": "Portfolio",
+    "experience": "Experience"
+  },
   "footer": "Building for startups and teams worldwide.",
   "langSwitch": {
     "label": "Language",

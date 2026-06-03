@@ -53,18 +53,60 @@ function applyImages(lang) {
     heroBg.style.backgroundImage = `url("${config.heroBackground}")`;
   }
 
-  for (const id of ["profile-image", "about-profile-image"]) {
-    const img = document.getElementById(id);
-    if (img && config.profileImage) {
-      img.src = config.profileImage;
-      img.alt = profileAlt;
-    }
+  const img = document.getElementById("profile-image");
+  if (img && config.profileImage) {
+    img.src = config.profileImage;
+    img.alt = profileAlt;
   }
 
   const ogImage = document.getElementById("og-image");
   if (ogImage && config.profileImage) {
     ogImage.content = new URL(config.profileImage, window.location.href).href;
   }
+}
+
+function renderStats(stats) {
+  const ids = ["stat-1", "stat-2", "stat-3", "stat-4"];
+  stats.slice(0, 4).forEach((s, i) => {
+    const el = document.getElementById(ids[i]);
+    if (!el) return;
+    el.innerHTML = `<span class="stat-num">${escapeHtml(s.num)}</span><span class="stat-label">${escapeHtml(s.label)}</span>`;
+  });
+}
+
+let navScrollHandler = null;
+
+function initNavSpy() {
+  if (navScrollHandler) {
+    window.removeEventListener("scroll", navScrollHandler);
+  }
+
+  const getState = () => {
+    const navLinks = document.querySelectorAll("#main-nav a");
+    const sections = [...navLinks]
+      .map((link) => {
+        const id = link.getAttribute("href")?.slice(1);
+        const section = id ? document.getElementById(id) : null;
+        return section ? { link, section } : null;
+      })
+      .filter(Boolean);
+    return { navLinks, sections };
+  };
+
+  navScrollHandler = () => {
+    const { navLinks, sections } = getState();
+    if (!sections.length) return;
+    const scrollY = window.scrollY + 140;
+    let current = sections[0];
+    for (const item of sections) {
+      if (item.section.offsetTop <= scrollY) current = item;
+    }
+    navLinks.forEach((l) => l.classList.remove("is-active"));
+    current.link.classList.add("is-active");
+  };
+
+  window.addEventListener("scroll", navScrollHandler, { passive: true });
+  navScrollHandler();
 }
 
 async function applyLocale(lang) {
@@ -83,19 +125,14 @@ async function applyLocale(lang) {
   document.getElementById("og-title").content = t.meta.title;
   document.getElementById("og-description").content = t.meta.description;
 
+  const skip = document.getElementById("skip-link");
+  if (skip && t.skipLink) skip.textContent = t.skipLink;
+
   document.getElementById("open-badge-text").textContent = t.openBadge;
   document.getElementById("logo-name").textContent = config.name;
   document.getElementById("footer-name").textContent = config.name;
   document.getElementById("footer-text").textContent = t.footer;
   document.getElementById("year").textContent = String(new Date().getFullYear());
-  document.getElementById("stat-years").textContent = years;
-
-  if (t.stats) {
-    document.querySelectorAll("[data-i18n-stat]").forEach((el) => {
-      const key = el.getAttribute("data-i18n-stat");
-      if (t.stats[key]) el.textContent = t.stats[key];
-    });
-  }
 
   document.getElementById("lang-label").textContent = t.langSwitch.label;
 
@@ -107,19 +144,21 @@ async function applyLocale(lang) {
 
   const nav = document.getElementById("main-nav");
   nav.innerHTML = `
-    <a href="#why-me">${escapeHtml(t.nav.why)}</a>
     <a href="#work">${escapeHtml(t.nav.work)}</a>
+    <a href="#why-me">${escapeHtml(t.nav.why)}</a>
+    <a href="#offers">${escapeHtml(t.nav.services)}</a>
     <a href="#experience">${escapeHtml(t.nav.experience)}</a>
     <a href="#about">${escapeHtml(t.nav.about)}</a>
     <a href="#contact">${escapeHtml(t.nav.contact)}</a>
   `;
 
+  const roleEl = document.getElementById("hero-role");
+  if (roleEl && t.hero.roleLine) roleEl.textContent = t.hero.roleLine;
+
   document.getElementById("hero-eyebrow").textContent = interpolate(t.hero.eyebrow, vars);
   document.getElementById("hero-title").textContent = t.hero.title;
   document.getElementById("hero-title-em").textContent = t.hero.titleEm;
   document.getElementById("hero-tagline").textContent = t.hero.tagline;
-  const proofLine = document.getElementById("hero-proof-line");
-  if (proofLine && t.hero.proofLine) proofLine.textContent = t.hero.proofLine;
   document.getElementById("hero-location").textContent = t.hero.location;
   document.getElementById("hero-availability").textContent = t.hero.availability;
 
@@ -129,47 +168,17 @@ async function applyLocale(lang) {
 
   document.getElementById("hero-cta-secondary").textContent = t.hero.ctaSecondary;
 
-  const resumeCta = document.getElementById("hero-cta-resume");
-  if (resumeCta && config.resume) {
-    resumeCta.href = config.resume;
-    resumeCta.textContent = lang === "es" ? "Descargar CV" : "Download CV";
-    resumeCta.setAttribute("download", "");
+  const resumeLink = document.getElementById("hero-resume-link");
+  if (resumeLink && config.resume && t.hero.resumeLink) {
+    resumeLink.href = config.resume;
+    resumeLink.textContent = t.hero.resumeLink;
+    resumeLink.setAttribute("download", "");
   }
+
+  if (t.statsDisplay) renderStats(t.statsDisplay);
 
   document.getElementById("proof-list").innerHTML = t.proofStrip
     .map((item) => `<li>${escapeHtml(item)}</li>`)
-    .join("");
-
-  document.getElementById("value-heading").textContent = t.value.heading;
-  document.getElementById("value-subheading").textContent = t.value.subheading;
-  document.getElementById("value-grid").innerHTML = t.value.items
-    .map(
-      (item, i) => `
-    <article class="value-card">
-      <span class="value-num" aria-hidden="true">0${i + 1}</span>
-      <h3>${escapeHtml(item.title)}</h3>
-      <p>${escapeHtml(item.description)}</p>
-    </article>
-  `
-    )
-    .join("");
-
-  document.getElementById("offers-heading").textContent = t.offers.heading;
-  document.getElementById("offers-subheading").textContent = t.offers.subheading;
-  document.getElementById("offers-grid").innerHTML = t.offers.items
-    .map(
-      (item) => `
-    <article class="offer-card">
-      <h3>${escapeHtml(item.title)}</h3>
-      <p>${escapeHtml(item.description)}</p>
-    </article>
-  `
-    )
-    .join("");
-
-  document.getElementById("skills-label").textContent = t.skillsLabel;
-  document.getElementById("skills-list").innerHTML = t.skills
-    .map((s) => `<li>${escapeHtml(s)}</li>`)
     .join("");
 
   document.getElementById("work-heading").textContent = t.work.heading;
@@ -202,6 +211,38 @@ async function applyLocale(lang) {
     </article>
   `;
     })
+    .join("");
+
+  document.getElementById("skills-label").textContent = t.skillsLabel;
+  document.getElementById("skills-list").innerHTML = t.skills
+    .map((s) => `<li>${escapeHtml(s)}</li>`)
+    .join("");
+
+  document.getElementById("value-heading").textContent = t.value.heading;
+  document.getElementById("value-subheading").textContent = t.value.subheading;
+  document.getElementById("value-grid").innerHTML = t.value.items
+    .map(
+      (item, i) => `
+    <article class="value-card">
+      <span class="value-num" aria-hidden="true">0${i + 1}</span>
+      <h3>${escapeHtml(item.title)}</h3>
+      <p>${escapeHtml(item.description)}</p>
+    </article>
+  `
+    )
+    .join("");
+
+  document.getElementById("offers-heading").textContent = t.offers.heading;
+  document.getElementById("offers-subheading").textContent = t.offers.subheading;
+  document.getElementById("offers-grid").innerHTML = t.offers.items
+    .map(
+      (item) => `
+    <article class="offer-card">
+      <h3>${escapeHtml(item.title)}</h3>
+      <p>${escapeHtml(item.description)}</p>
+    </article>
+  `
+    )
     .join("");
 
   document.getElementById("experience-heading").textContent = t.experience.heading;
@@ -240,9 +281,18 @@ async function applyLocale(lang) {
   document.getElementById("contact-subheading").textContent = t.contact.subheading;
   document.getElementById("contact-promise").textContent = t.contact.promise;
 
+  const emailLink = document.getElementById("contact-email-link");
+  if (emailLink) {
+    emailLink.href = mailto;
+    emailLink.textContent = config.email;
+  }
+
   const contactMain = document.getElementById("contact-main-cta");
   contactMain.textContent = t.hero.ctaPrimary;
   contactMain.href = mailto;
+
+  const gridLabel = document.getElementById("contact-grid-label");
+  if (gridLabel && t.contact.gridLabel) gridLabel.textContent = t.contact.gridLabel;
 
   const floating = document.getElementById("floating-cta");
   if (floating) {
@@ -254,14 +304,6 @@ async function applyLocale(lang) {
   const whatsappHref = config.whatsapp ? escapeHtml(config.whatsapp) : "#";
 
   document.getElementById("contact-grid").innerHTML = `
-    <a class="contact-card featured" href="${mailto}">
-      <span class="label">${escapeHtml(t.contact.email)}</span>
-      <span class="value">${escapeHtml(config.email)}</span>
-    </a>
-    <a class="contact-card" href="${resumeHref}" download>
-      <span class="label">${escapeHtml(t.contact.resume)}</span>
-      <span class="value">${escapeHtml(t.contact.resumeValue)}</span>
-    </a>
     <a class="contact-card" href="${escapeHtml(config.linkedin)}" target="_blank" rel="noopener noreferrer">
       <span class="label">${escapeHtml(t.contact.linkedin)}</span>
       <span class="value">${escapeHtml(t.contact.linkedinValue)}</span>
@@ -273,6 +315,10 @@ async function applyLocale(lang) {
     <a class="contact-card" href="${whatsappHref}" target="_blank" rel="noopener noreferrer">
       <span class="label">${escapeHtml(t.contact.whatsapp)}</span>
       <span class="value">${escapeHtml(t.contact.whatsappValue)}</span>
+    </a>
+    <a class="contact-card" href="${resumeHref}" download>
+      <span class="label">${escapeHtml(t.contact.resume)}</span>
+      <span class="value">${escapeHtml(t.contact.resumeValue)}</span>
     </a>
   `;
 
@@ -294,6 +340,9 @@ async function applyLocale(lang) {
   const url = new URL(window.location.href);
   url.searchParams.set("lang", lang);
   history.replaceState({}, "", url);
+
+  document.body.classList.add("is-ready");
+  initNavSpy();
 }
 
 document.querySelectorAll(".lang-btn").forEach((btn) => {

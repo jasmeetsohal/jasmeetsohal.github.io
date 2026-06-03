@@ -7,29 +7,32 @@
   "nav": {
     "work": "Proyectos",
     "why": "Por qué yo",
+    "services": "Servicios",
     "experience": "Experiencia",
     "about": "Sobre mí",
     "contact": "Contacto",
     "hire": "Hablemos"
   },
+  "skipLink": "Saltar al contenido",
   "openBadge": "Abierto a oportunidades",
   "hero": {
-    "eyebrow": "Disponible para startups y equipos internacionales · {years} años · Remoto",
+    "eyebrow": "Abierto a startups y equipos globales · Remoto",
+    "roleLine": "Ingeniero de Software Senior",
     "title": "Entrego backends en producción",
-    "titleEm": "y funciones de IA en las que equipos globales confían",
-    "tagline": "Ingeniero senior para startups y scale-ups que necesitan velocidad sin caos—Node.js, TypeScript, Python, pipelines RAG y comunicación asíncrona clara entre zonas EE. UU., UE y APAC.",
-    "location": "Bangalore · Solapamiento con horarios EE. UU. y UE",
-    "availability": "Tiempo completo remoto · Contrato · Fraccional (2–3 días/semana)",
-    "ctaPrimary": "Iniciar conversación",
-    "ctaSecondary": "Ver casos de estudio",
-    "proofLine": "Fintech, IA e industria para clientes en EE. UU. y Europa"
+    "titleEm": "y sistemas de IA en los que confían equipos globales",
+    "tagline": "Node.js, TypeScript, Python y RAG en producción—para startups y equipos internacionales que necesitan un ingeniero senior con comunicación clara y entregas reales.",
+    "location": "Bangalore · Horario compatible con EE. UU. y UE",
+    "availability": "Remoto tiempo completo · Contrato · Fraccional",
+    "ctaPrimary": "Escríbeme",
+    "ctaSecondary": "Ver proyectos",
+    "resumeLink": "Descargar CV (PDF)"
   },
-  "stats": {
-    "years": "Años entregando",
-    "clients": "Trabajo con EE. UU.",
-    "ai": "C3 AI certificado",
-    "startup": "Exp. startup"
-  },
+  "statsDisplay": [
+    { "num": "7+", "label": "Años de experiencia" },
+    { "num": "EE. UU.", "label": "Entrega a clientes" },
+    { "num": "RAG", "label": "En producción" },
+    { "num": "C3", "label": "IA certificado" }
+  ],
   "proofStrip": ["Fintech y seguros", "RAG / LLM enterprise", "SaaS oil & gas", "Startup sueca en crecimiento"],
   "value": {
     "heading": "Por qué me contactan",
@@ -161,8 +164,9 @@
   },
   "contact": {
     "heading": "Cuando quieras, aquí estoy",
-    "subheading": "Cuéntame qué estás construyendo—respondo en 24 horas con encaje honesto y próximos pasos.",
-    "promise": "Sin spam de solo recruiters · Conversación directa · Compatible con NDA",
+    "subheading": "Cuéntame qué estás construyendo. Respondo en 24 horas.",
+    "gridLabel": "También en",
+    "promise": "Conversación directa · Compatible con NDA · Sin spam",
     "email": "Correo",
     "linkedin": "LinkedIn",
     "github": "GitHub",
@@ -177,7 +181,8 @@
     "why": "Experiencia",
     "offers": "Servicios",
     "work": "Portafolio",
-    "experience": "Trayectoria"
+    "experience": "Trayectoria",
+    "about": "Sobre mí"
   },
   "footer": "Construyendo para startups y equipos en todo el mundo.",
   "langSwitch": {

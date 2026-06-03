@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" id="meta-description" />
+    <meta name="description" content="Senior Software Engineer — Node.js, TypeScript, RAG pipelines. Remote for startups and international teams." />
     <meta name="author" content="Jasmeet Singh" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="" id="og-title" />
@@ -12,7 +12,7 @@
     <link rel="alternate" hreflang="en" href="?lang=en" />
     <link rel="alternate" hreflang="es" href="?lang=es" />
     <link rel="alternate" hreflang="x-default" href="?lang=en" />
-    <title id="doc-title">Portfolio</title>
+    <title id="doc-title">Jasmeet Singh — Senior Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,13 +23,14 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JS</text></svg>" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content" id="skip-link">Skip to content</a>
     <div class="ambient ambient-1" aria-hidden="true"></div>
     <div class="ambient ambient-2" aria-hidden="true"></div>
     <div class="bg-grid" aria-hidden="true"></div>
     <div class="noise" aria-hidden="true"></div>
     <div class="open-banner" id="open-banner">
       <span class="open-dot" aria-hidden="true"></span>
-      <span id="open-badge-text"></span>
+      <span id="open-badge-text">Open to opportunities</span>
     </div>
 
     <header class="site-header">
@@ -39,7 +40,7 @@
       </a>
       <nav class="nav" aria-label="Primary" id="main-nav"></nav>
       <div class="header-actions">
-        <a class="btn btn-header" href="#contact" id="header-hire-cta"></a>
+        <a class="btn btn-header" href="mailto:jasmeetsohal93@gmail.com" id="header-hire-cta">Let's talk</a>
         <div class="lang-switch" role="group" aria-labelledby="lang-label">
           <span class="lang-label" id="lang-label">Language</span>
           <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
@@ -51,19 +52,19 @@
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero" id="hero-section">
+    <main id="main-content">
+      <section class="hero" id="hero-section" aria-labelledby="hero-title">
         <div class="hero-bg" id="hero-bg" aria-hidden="true"></div>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-inner">
           <div class="hero-content">
             <p class="eyebrow" id="hero-eyebrow"></p>
+            <p class="hero-role" id="hero-role"></p>
             <h1>
               <span id="hero-title" class="hero-title-main"></span>
               <em id="hero-title-em"></em>
             </h1>
             <p class="lead" id="hero-tagline"></p>
-            <p class="hero-proof-line" id="hero-proof-line"></p>
             <div class="hero-meta">
               <span class="pill" id="hero-location"></span>
               <span class="pill pill-accent" id="hero-availability"></span>
@@ -71,31 +72,21 @@
             <div class="hero-actions">
               <a class="btn btn-primary" href="#contact" id="hero-cta-primary"></a>
               <a class="btn btn-ghost" href="#work" id="hero-cta-secondary"></a>
-              <a class="btn btn-ghost" href="Jasmeet-Singh-Resume.pdf" id="hero-cta-resume" download></a>
             </div>
-            <div class="hero-stats">
-              <div class="stat">
-                <span class="stat-num" id="stat-years">7+</span>
-                <span class="stat-label" data-i18n-stat="years">Years</span>
-              </div>
-              <div class="stat">
-                <span class="stat-num">U.S.</span>
-                <span class="stat-label" data-i18n-stat="clients">Clients</span>
-              </div>
-              <div class="stat">
-                <span class="stat-num">C3</span>
-                <span class="stat-label" data-i18n-stat="ai">AI</span>
-              </div>
-              <div class="stat">
-                <span class="stat-num">SE</span>
-                <span class="stat-label" data-i18n-stat="startup">Startup</span>
-              </div>
+            <p class="hero-resume-line">
+              <a href="Jasmeet-Singh-Resume.pdf" id="hero-resume-link" download></a>
+            </p>
+            <div class="hero-stats" aria-label="Highlights">
+              <div class="stat" id="stat-1"></div>
+              <div class="stat" id="stat-2"></div>
+              <div class="stat" id="stat-3"></div>
+              <div class="stat" id="stat-4"></div>
             </div>
           </div>
           <figure class="hero-profile">
             <div class="profile-frame">
               <div class="profile-ring" aria-hidden="true"></div>
-              <img id="profile-image" src="" alt="" width="320" height="400" loading="eager" />
+              <img id="profile-image" src="images/profile.png" alt="Jasmeet Singh" width="320" height="400" loading="eager" />
             </div>
           </figure>
         </div>
@@ -103,6 +94,21 @@
 
       <section class="proof-strip" aria-label="Domains">
         <ul class="proof-list" id="proof-list"></ul>
+      </section>
+
+      <!-- UX: Proof of work first — recruiters scan projects before marketing copy -->
+      <section class="section reveal" id="work">
+        <header class="section-head">
+          <span class="section-tag" data-section-tag="work"></span>
+          <h2 id="work-heading"></h2>
+          <p id="work-subheading"></p>
+        </header>
+        <div class="projects" id="projects"></div>
+      </section>
+
+      <section class="skills-band reveal" aria-labelledby="skills-label">
+        <p class="skills-label" id="skills-label"></p>
+        <ul class="skills-list" id="skills-list"></ul>
       </section>
 
       <section class="section reveal" id="why-me">
@@ -123,20 +129,6 @@
         <div class="offers-grid" id="offers-grid"></div>
       </section>
 
-      <section class="skills-band reveal" aria-labelledby="skills-label">
-        <p class="skills-label" id="skills-label"></p>
-        <ul class="skills-list" id="skills-list"></ul>
-      </section>
-
-      <section class="section reveal" id="work">
-        <header class="section-head">
-          <span class="section-tag" data-section-tag="work"></span>
-          <h2 id="work-heading"></h2>
-          <p id="work-subheading"></p>
-        </header>
-        <div class="projects" id="projects"></div>
-      </section>
-
       <section class="section section-panel reveal" id="experience">
         <header class="section-head">
           <span class="section-tag" data-section-tag="experience"></span>
@@ -146,14 +138,16 @@
       </section>
 
       <section class="section reveal" id="about">
+        <header class="section-head">
+          <span class="section-tag" data-section-tag="about"></span>
+          <h2 id="about-heading"></h2>
+        </header>
         <div class="about-layout">
           <div class="about-main">
-            <h2 id="about-heading"></h2>
             <p id="about-p1"></p>
             <p id="about-p2"></p>
           </div>
           <aside class="about-card">
-            <img class="about-profile" id="about-profile-image" src="" alt="" width="120" height="120" loading="lazy" />
             <h3 id="about-lang-heading"></h3>
             <ul id="about-spoken"></ul>
             <h3 id="about-current-heading"></h3>
@@ -169,14 +163,18 @@
         <div class="cta-panel">
           <h2 id="contact-heading"></h2>
           <p id="contact-subheading"></p>
+          <p class="contact-email-display">
+            <a id="contact-email-link" href="mailto:jasmeetsohal93@gmail.com">jasmeetsohal93@gmail.com</a>
+          </p>
           <p class="contact-promise" id="contact-promise"></p>
           <a class="btn btn-primary btn-large" href="#" id="contact-main-cta"></a>
         </div>
+        <p class="contact-grid-label" id="contact-grid-label"></p>
         <div class="contact-grid" id="contact-grid"></div>
       </section>
     </main>
 
-    <a class="floating-cta" href="#contact" id="floating-cta" aria-label="Contact"></a>
+    <a class="floating-cta" href="#contact" id="floating-cta"></a>
 
     <footer class="site-footer">
       <p>© <span id="year"></span> <span id="footer-name">Jasmeet Singh</span> — <span id="footer-text"></span></p>

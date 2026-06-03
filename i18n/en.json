@@ -7,29 +7,32 @@
   "nav": {
     "work": "Work",
     "why": "Why me",
+    "services": "Services",
     "experience": "Experience",
     "about": "About",
     "contact": "Contact",
     "hire": "Let's talk"
   },
+  "skipLink": "Skip to content",
   "openBadge": "Open to opportunities",
   "hero": {
-    "eyebrow": "Available for startups & international teams · {years} yrs · Remote",
+    "eyebrow": "Open to startups & global teams · Remote",
+    "roleLine": "Senior Software Engineer",
     "title": "I ship production backends",
-    "titleEm": "and AI features global teams can rely on",
-    "tagline": "Senior engineer for startups and scale-ups that need speed without chaos—Node.js, TypeScript, Python, RAG pipelines, and clear async communication across U.S., EU, and APAC time zones.",
-    "location": "Bangalore · Overlap with U.S. & EU hours",
-    "availability": "Remote full-time · Contract · Fractional (2–3 days/week)",
-    "ctaPrimary": "Start a conversation",
-    "ctaSecondary": "See case studies",
-    "proofLine": "Trusted on fintech, AI, and industrial programs for U.S. & European clients"
+    "titleEm": "and AI systems teams trust",
+    "tagline": "Node.js, TypeScript, Python, and production RAG—for startups and international product teams that need a senior engineer who communicates clearly and delivers.",
+    "location": "Bangalore · U.S. & EU hours overlap",
+    "availability": "Full-time remote · Contract · Fractional",
+    "ctaPrimary": "Email me",
+    "ctaSecondary": "View projects",
+    "resumeLink": "Download résumé (PDF)"
   },
-  "stats": {
-    "years": "Years shipping",
-    "clients": "U.S. client work",
-    "ai": "C3 AI certified",
-    "startup": "Startup exp."
-  },
+  "statsDisplay": [
+    { "num": "7+", "label": "Years experience" },
+    { "num": "U.S.", "label": "Client delivery" },
+    { "num": "RAG", "label": "Shipped to prod" },
+    { "num": "C3", "label": "AI certified" }
+  ],
   "proofStrip": ["Fintech & insurance", "Enterprise RAG / LLM", "Oil & gas SaaS", "Swedish startup scale-up"],
   "value": {
     "heading": "Why teams reach out",
@@ -161,8 +164,9 @@
   },
   "contact": {
     "heading": "Ready when you are",
-    "subheading": "Tell me what you're building—I'll reply within 24 hours with honest fit and next steps.",
-    "promise": "No recruiters-only spam · Direct conversation · NDA-friendly",
+    "subheading": "Tell me what you're building. I'll reply within 24 hours.",
+    "gridLabel": "Also find me on",
+    "promise": "Direct conversation · NDA-friendly · No spam",
     "email": "Email",
     "linkedin": "LinkedIn",
     "github": "GitHub",
@@ -177,7 +181,8 @@
     "why": "Expertise",
     "offers": "Services",
     "work": "Portfolio",
-    "experience": "Experience"
+    "experience": "Experience",
+    "about": "About"
   },
   "footer": "Building for startups and teams worldwide.",
   "langSwitch": {

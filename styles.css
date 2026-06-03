@@ -373,16 +373,88 @@ main {
   text-transform: uppercase;
   color: var(--text-muted);
   margin-bottom: 0.75rem;
-  padding: 0.3rem 0.7rem;
-  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
   border: 1px solid var(--border);
-  background: transparent;
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .section-head-center .section-tag {
   display: table;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Badge system */
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  white-space: nowrap;
+  transition:
+    border-color 0.2s var(--ease),
+    background 0.2s var(--ease),
+    color 0.2s var(--ease);
+}
+
+.badge:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.badge--accent {
+  border-color: rgba(142, 180, 232, 0.35);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.badge--gold {
+  border-color: rgba(196, 176, 138, 0.35);
+  background: rgba(196, 176, 138, 0.1);
+  color: var(--gold);
+}
+
+.badge--success {
+  border-color: rgba(110, 184, 150, 0.35);
+  background: rgba(110, 184, 150, 0.1);
+  color: #8fd4b0;
+}
+
+.badge--muted {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-muted);
+}
+
+.badge--featured {
+  border-color: rgba(142, 180, 232, 0.45);
+  background: rgba(142, 180, 232, 0.14);
+  color: var(--accent);
+}
+
+.badge--skill {
+  font-size: 0.78rem;
+  padding: 0.4rem 0.85rem;
+}
+
+.profile-badges {
+  margin-top: 0.75rem;
 }
 
 .hero {
@@ -629,20 +701,8 @@ main {
   margin-bottom: 2.25rem;
 }
 
-.pill {
-  font-size: 0.8rem;
-  font-weight: 500;
-  padding: 0.4rem 0.85rem;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-}
-
-.pill-accent {
-  border-color: var(--border-strong);
-  background: var(--accent-soft);
-  color: var(--accent);
+.hero-meta {
+  margin-bottom: 1.75rem;
 }
 
 .hero-actions {
@@ -740,20 +800,8 @@ main {
   margin-inline: auto;
 }
 
-.proof-list li {
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border);
+.proof-list .badge {
   color: var(--text);
-  transition: border-color 0.2s ease, background 0.2s ease;
-}
-
-.proof-list li:hover {
-  border-color: var(--border-strong);
-  background: rgba(255, 255, 255, 0.05);
 }
 
 .section-head-center {
@@ -861,23 +909,32 @@ main {
   min-width: 12rem;
 }
 
-.project-tag {
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.3rem 0.65rem;
-  border-radius: 6px;
-  background: var(--bg-panel);
-  color: var(--text-muted);
-  border: 1px solid var(--border);
-  white-space: nowrap;
+.project-badges {
+  margin-bottom: 1rem;
 }
 
-.project-tag-featured {
-  background: var(--accent-soft);
-  color: var(--accent);
-  border-color: rgba(61, 158, 255, 0.4);
+.project-card .stack {
+  display: none;
+}
+
+.value-card .badge {
+  margin-bottom: 0.65rem;
+}
+
+.offer-card .badge {
+  margin-bottom: 0.65rem;
+}
+
+.timeline-badges {
+  margin-bottom: 0.5rem;
+}
+
+.about-card .badge-row {
+  margin-bottom: 0.35rem;
+}
+
+.about-card .badge-row + h3 {
+  margin-top: 1.25rem;
 }
 
 .cta-panel {
@@ -962,19 +1019,7 @@ main {
 }
 
 .skills-list li {
-  font-size: 0.82rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--text);
-  transition: border-color 0.2s ease, color 0.2s ease;
-}
-
-.skills-list li:hover {
-  border-color: var(--border-strong);
-  color: var(--text);
+  list-style: none;
 }
 
 .section {
@@ -1178,13 +1223,6 @@ main {
 }
 
 .remote-badge {
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  padding: 0.35rem 0.75rem;
-  background: var(--accent-soft);
-  color: var(--accent);
-  border-radius: 6px;
   margin: 0;
 }
 

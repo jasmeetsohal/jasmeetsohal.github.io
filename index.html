@@ -80,12 +80,13 @@
                 </p>
                 <p class="hero-role" id="hero-role"></p>
                 <p class="profile-bio eyebrow" id="hero-eyebrow"></p>
+                <ul class="badge-row profile-badges" id="hero-badges" aria-label="Highlights"></ul>
               </div>
             </div>
             <p class="lead" id="hero-tagline"></p>
-            <div class="hero-meta">
-              <span class="pill" id="hero-location"></span>
-              <span class="pill pill-accent" id="hero-availability"></span>
+            <div class="badge-row hero-meta" id="hero-meta">
+              <span class="badge badge--muted" id="hero-location"></span>
+              <span class="badge badge--accent" id="hero-availability"></span>
             </div>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#contact" id="hero-cta-primary"></a>
@@ -161,12 +162,13 @@
           </div>
           <aside class="about-card">
             <h3 id="about-lang-heading"></h3>
-            <ul id="about-spoken"></ul>
+            <div class="badge-row" id="about-spoken" role="list"></div>
             <h3 id="about-current-heading"></h3>
+            <div class="badge-row" id="about-credentials" role="list"></div>
             <p class="remote-badge" id="about-remote"></p>
             <p class="about-avail" id="about-availability"></p>
             <h3 id="about-edu-heading"></h3>
-            <ul id="about-education"></ul>
+            <div class="badge-row" id="about-education" role="list"></div>
           </aside>
         </div>
       </section>

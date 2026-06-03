@@ -35,6 +35,20 @@ function escapeHtml(text) {
   return d.innerHTML;
 }
 
+const BADGE_TONES = ["accent", "gold", "success", "muted"];
+
+function badgeHtml(label, tone = "") {
+  const toneClass = tone ? ` badge--${tone}` : "";
+  return `<span class="badge${toneClass}">${escapeHtml(label)}</span>`;
+}
+
+function badgeRowHtml(labels, tone = "") {
+  if (!labels?.length) return "";
+  return `<div class="badge-row" role="list">${labels
+    .map((label) => `<span role="listitem">${badgeHtml(label, tone)}</span>`)
+    .join("")}</div>`;
+}
+
 function mailtoLink() {
   const subject = encodeURIComponent(config.mailtoSubject || "Hello");
   return `mailto:${config.email}?subject=${subject}`;
@@ -182,6 +196,17 @@ async function applyLocale(lang) {
 
   const avatarStatus = document.getElementById("avatar-status");
   if (avatarStatus) avatarStatus.setAttribute("title", t.openBadge);
+
+  const heroBadges = document.getElementById("hero-badges");
+  if (heroBadges && t.heroBadges?.length) {
+    heroBadges.innerHTML = t.heroBadges
+      .map(
+        (label, i) =>
+          `<li>${badgeHtml(label, BADGE_TONES[i % BADGE_TONES.length])}</li>`
+      )
+      .join("");
+  }
+
   document.getElementById("hero-tagline").textContent = t.hero.tagline;
   document.getElementById("hero-location").textContent = t.hero.location;
   document.getElementById("hero-availability").textContent = t.hero.availability;
@@ -202,7 +227,7 @@ async function applyLocale(lang) {
   if (t.statsDisplay) renderStats(t.statsDisplay);
 
   document.getElementById("proof-list").innerHTML = t.proofStrip
-    .map((item) => `<li>${escapeHtml(item)}</li>`)
+    .map((item) => `<li>${badgeHtml(item)}</li>`)
     .join("");
 
   document.getElementById("work-heading").textContent = t.work.heading;
@@ -215,10 +240,17 @@ async function applyLocale(lang) {
 
   document.getElementById("projects").innerHTML = t.projects
     .map((p) => {
-      const tagClass =
-        p.tag && /featured|destacado/i.test(p.tag) ? " project-tag-featured" : "";
-      const tagHtml = p.tag
-        ? `<span class="project-tag${tagClass}">${escapeHtml(p.tag)}</span>`
+      const tagHtml = p.tag ? badgeHtml(p.tag, "featured") : "";
+      const stackItems = p.stack
+        ? p.stack
+            .split("·")
+            .map((s) => s.trim())
+            .filter(Boolean)
+        : [];
+      const stackBadges = stackItems.length
+        ? `<div class="badge-row project-badges" role="list">${stackItems
+            .map((s) => `<span role="listitem">${badgeHtml(s, "skill")}</span>`)
+            .join("")}</div>`
         : "";
       return `
     <article class="project-card">
@@ -226,7 +258,8 @@ async function applyLocale(lang) {
         <h3>${escapeHtml(p.title)}</h3>
         ${tagHtml}
       </div>
-      <p class="stack">${escapeHtml(p.stack)}</p>
+      ${stackBadges}
+      <p class="stack" hidden>${escapeHtml(p.stack)}</p>
       <dl class="project-grid">
         <div><dt>${labels.problem}</dt><dd>${escapeHtml(p.problem)}</dd></div>
         <div><dt>${labels.role}</dt><dd>${escapeHtml(p.role)}</dd></div>
@@ -239,7 +272,7 @@ async function applyLocale(lang) {
 
   document.getElementById("skills-label").textContent = t.skillsLabel;
   document.getElementById("skills-list").innerHTML = t.skills
-    .map((s) => `<li>${escapeHtml(s)}</li>`)
+    .map((s) => `<li>${badgeHtml(s, "skill")}</li>`)
     .join("");
 
   document.getElementById("value-heading").textContent = t.value.heading;
@@ -249,6 +282,7 @@ async function applyLocale(lang) {
       (item, i) => `
     <article class="value-card">
       <span class="value-num" aria-hidden="true">0${i + 1}</span>
+      ${item.badge ? badgeHtml(item.badge, BADGE_TONES[i % BADGE_TONES.length]) : ""}
       <h3>${escapeHtml(item.title)}</h3>
       <p>${escapeHtml(item.description)}</p>
     </article>
@@ -260,8 +294,9 @@ async function applyLocale(lang) {
   document.getElementById("offers-subheading").textContent = t.offers.subheading;
   document.getElementById("offers-grid").innerHTML = t.offers.items
     .map(
-      (item) => `
+      (item, i) => `
     <article class="offer-card">
+      ${item.badge ? badgeHtml(item.badge, BADGE_TONES[(i + 1) % BADGE_TONES.length]) : ""}
       <h3>${escapeHtml(item.title)}</h3>
       <p>${escapeHtml(item.description)}</p>
     </article>
@@ -275,7 +310,10 @@ async function applyLocale(lang) {
       (r) => `
     <article class="timeline-item">
       <div class="timeline-meta">
-        <span class="timeline-period">${escapeHtml(r.period)}</span>
+        <div class="badge-row timeline-badges" role="list">
+          <span role="listitem">${badgeHtml(r.period, "muted")}</span>
+          ${r.badge ? `<span role="listitem">${badgeHtml(r.badge, "accent")}</span>` : ""}
+        </div>
       </div>
       <div class="timeline-body">
         <h3>${escapeHtml(r.title)} · ${escapeHtml(r.company)}</h3>
@@ -291,14 +329,23 @@ async function applyLocale(lang) {
   document.getElementById("about-p2").textContent = interpolate(t.about.p2, vars);
   document.getElementById("about-lang-heading").textContent = t.about.languagesHeading;
   document.getElementById("about-current-heading").textContent = t.about.currentlyHeading;
-  document.getElementById("about-remote").textContent = t.about.remoteLabel;
+  const aboutRemote = document.getElementById("about-remote");
+  if (aboutRemote) aboutRemote.innerHTML = badgeHtml(t.about.remoteLabel, "accent");
   document.getElementById("about-availability").textContent = t.hero.availability;
+
+  const credBadges = document.getElementById("about-credentials");
+  if (credBadges && t.about.credentialBadges?.length) {
+    credBadges.innerHTML = t.about.credentialBadges
+      .map((label, i) => `<span role="listitem">${badgeHtml(label, BADGE_TONES[i % BADGE_TONES.length])}</span>`)
+      .join("");
+  }
+
   document.getElementById("about-spoken").innerHTML = t.about.spoken
-    .map((l) => `<li>${escapeHtml(l)}</li>`)
+    .map((l) => `<span role="listitem">${badgeHtml(l, "muted")}</span>`)
     .join("");
   document.getElementById("about-edu-heading").textContent = t.about.educationHeading;
   document.getElementById("about-education").innerHTML = t.about.education
-    .map((e) => `<li>${escapeHtml(e)}</li>`)
+    .map((e) => `<span role="listitem">${badgeHtml(e, "gold")}</span>`)
     .join("");
 
   document.getElementById("contact-heading").textContent = t.contact.heading;

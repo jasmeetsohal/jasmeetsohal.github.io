@@ -27,6 +27,12 @@
     "ctaSecondary": "Ver trabajos",
     "resumeLink": "Descargar CV (PDF)"
   },
+  "heroBadges": [
+    "8 años de experiencia",
+    "C3 AI certificado",
+    "Clientes EE. UU. y globales",
+    "Full-stack · IA"
+  ],
   "statsDisplay": [
     { "num": "8", "label": "Años entregando software" },
     { "num": "C3", "label": "IA certificado" },
@@ -40,18 +46,22 @@
     "items": [
       {
         "title": "Menos tiempo al mercado",
+        "badge": "Velocidad",
         "description": "MVPs y features críticos en semanas, con alcance defendible ante inversores y stakeholders."
       },
       {
         "title": "Claridad full-stack",
+        "badge": "Full-stack",
         "description": "8 años en backend y frontends de producto—un ingeniero alinea APIs, UI y datos sin huecos."
       },
       {
         "title": "IA con confianza",
+        "badge": "IA en producción",
         "description": "RAG en producción con respuestas fundamentadas y observabilidad—para que producto y legal aprueben."
       },
       {
         "title": "Hecho para equipos globales",
+        "badge": "Remoto",
         "description": "Inglés fluido, async que respeta tu zona horaria y acceso directo—sin capas de agencia."
       }
     ]
@@ -62,14 +72,17 @@
     "items": [
       {
         "title": "Senior integrado",
+        "badge": "Flexible",
         "description": "2–5 días/semana en tu squad: arquitectura, reviews y entrega junto a tu equipo."
       },
       {
         "title": "MVP y build full-stack",
+        "badge": "MVP",
         "description": "APIs Nest.js/Node más UI moderna, auth, datos y CI/CD—listo para pilotos."
       },
       {
         "title": "Integración AI / RAG",
+        "badge": "RAG / LLM",
         "description": "Búsqueda, Q&A o agentes sobre tus documentos, con evaluación que compliance puede validar."
       }
     ]
@@ -127,24 +140,28 @@
         "company": "Codvo.ai",
         "title": "Ingeniero de Software Senior",
         "period": "Sep 2023 – Presente",
+        "badge": "Actual",
         "detail": "Remoto · Backend, RAG/IA y entrega con stakeholders para clientes EE. UU. (finanzas, oil & gas). Releases en producción. Mentoría."
       },
       {
         "company": "Turbotic",
         "title": "Ingeniero de Software",
         "period": "Oct 2021 – Ago 2023",
+        "badge": "Startup UE",
         "detail": "Startup sueca · Arquitectura y APIs para orquestación de automatización."
       },
       {
         "company": "Grazitti Interactive",
         "title": "Ingeniero de Software",
         "period": "Feb 2020 – Sep 2021",
+        "badge": "Search y APIs",
         "detail": "SearchUnify · Crawlers API, ElasticSearch, migración a microservicios."
       },
       {
         "company": "Bursys",
         "title": "Ingeniero de Software",
         "period": "Ene 2018 – Feb 2020",
+        "badge": "Enterprise",
         "detail": "Logística y oil & gas · APIs Node/Java, WebSockets, AWS ECS—inicio de trayectoria de 8 años."
       }
     ]
@@ -156,6 +173,7 @@
     "languagesHeading": "Idiomas",
     "spoken": ["Inglés (fluido)", "Hindi (nativo)", "Punjabi (nativo)", "Español (principiante)"],
     "currentlyHeading": "Ahora",
+    "credentialBadges": ["Remoto", "C3 AI certificado", "M.Sc. IT"],
     "remoteLabel": "Ingeniero senior @ Codvo.ai",
     "educationHeading": "Formación",
     "education": [

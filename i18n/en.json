@@ -26,6 +26,12 @@
     "ctaSecondary": "See proof of work",
     "resumeLink": "Download résumé (PDF)"
   },
+  "heroBadges": [
+    "8 years experience",
+    "C3 AI certified",
+    "U.S. & global clients",
+    "Full-stack · AI"
+  ],
   "statsDisplay": [
     { "num": "8", "label": "Years shipping software" },
     { "num": "C3", "label": "AI certified" },
@@ -39,18 +45,22 @@
     "items": [
       {
         "title": "Faster time-to-market",
+        "badge": "Speed",
         "description": "MVPs and critical features in weeks, with scope you can defend to investors and stakeholders."
       },
       {
         "title": "Full-stack clarity",
+        "badge": "Full-stack",
         "description": "8 years across backend and product frontends—one engineer who aligns APIs, UI, and data so nothing falls through the cracks."
       },
       {
         "title": "AI that earns trust",
+        "badge": "Production AI",
         "description": "Production RAG with grounded answers, guardrails, and observability—so legal and product can sign off, not just engineering."
       },
       {
         "title": "Built for global teams",
+        "badge": "Remote-first",
         "description": "Fluent English, async updates that respect your timezone, and direct access—no agency layers or surprise handoffs."
       }
     ]
@@ -61,14 +71,17 @@
     "items": [
       {
         "title": "Senior embed",
+        "badge": "Flexible",
         "description": "2–5 days/week inside your squad: architecture, reviews, and shipping alongside your team."
       },
       {
         "title": "MVP & full-stack build",
+        "badge": "MVP",
         "description": "Nest.js/Node APIs plus modern UI, auth, data layer, and CI/CD—ready for pilot customers."
       },
       {
         "title": "AI / RAG integration",
+        "badge": "RAG / LLM",
         "description": "Search, Q&A, or agents on your docs and product data—with evaluation and rollout your compliance team can trust."
       }
     ]
@@ -126,24 +139,28 @@
         "company": "Codvo.ai",
         "title": "Senior Software Engineer",
         "period": "Sep 2023 – Present",
+        "badge": "Current",
         "detail": "Remote · Backend, RAG/AI, and stakeholder delivery for U.S. clients (finance, oil & gas). Customer calls, requirements, production releases. Mentoring juniors."
       },
       {
         "company": "Turbotic",
         "title": "Software Engineer",
         "period": "Oct 2021 – Aug 2023",
+        "badge": "EU startup",
         "detail": "Swedish startup · Architecture & APIs for automation orchestration (UiPath, Blue Prism, Automation Anywhere)."
       },
       {
         "company": "Grazitti Interactive",
         "title": "Software Engineer",
         "period": "Feb 2020 – Sep 2021",
+        "badge": "Search & APIs",
         "detail": "SearchUnify · API crawlers, ElasticSearch, monolith-to-microservices migration."
       },
       {
         "company": "Bursys",
         "title": "Software Engineer",
         "period": "Jan 2018 – Feb 2020",
+        "badge": "Enterprise",
         "detail": "Logistics & oil & gas · Node/Java APIs, WebSockets, AWS ECS—foundation of 8-year track record."
       }
     ]
@@ -155,6 +172,7 @@
     "languagesHeading": "Languages",
     "spoken": ["English (fluent)", "Hindi (native)", "Punjabi (native)", "Spanish (beginner)"],
     "currentlyHeading": "Now",
+    "credentialBadges": ["Remote", "C3 AI certified", "M.Sc. IT"],
     "remoteLabel": "Senior engineer @ Codvo.ai",
     "educationHeading": "Education",
     "education": [

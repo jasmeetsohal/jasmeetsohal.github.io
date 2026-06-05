@@ -52,12 +52,29 @@
     "U.S. & global clients"
   ],
   "statsDisplay": [
-    { "num": "8", "label": "Years shipping software" },
-    { "num": "C3", "label": "AI certified" },
-    { "num": "U.S.", "label": "Enterprise & fintech clients" },
-    { "num": "RAG", "label": "Live in production" }
+    {
+      "num": "8",
+      "label": "Years shipping software"
+    },
+    {
+      "num": "C3",
+      "label": "AI certified"
+    },
+    {
+      "num": "U.S.",
+      "label": "Enterprise & fintech clients"
+    },
+    {
+      "num": "RAG",
+      "label": "Live in production"
+    }
   ],
-  "proofStrip": ["Fintech & insurance", "Enterprise product UIs", "Enterprise RAG / LLM", "Oil & gas · EU startup scale-up"],
+  "proofStrip": [
+    "Fintech & insurance",
+    "Enterprise product UIs",
+    "Enterprise RAG / LLM",
+    "Oil & gas · EU startup scale-up"
+  ],
   "value": {
     "heading": "Why clients hire me",
     "subheading": "You get a senior owner—not a backlog ticket. Clear updates, honest estimates, and code your team can maintain after I roll off.",
@@ -116,6 +133,13 @@
         "date": "Oct 2025",
         "image": "images/turbotic-hackathon-2025.png",
         "highlight": "Among the first 1,000 to put Turbotic AI to the test — Oct 3–7, 2025"
+      },
+      {
+        "title": "Chingu Voyage 12",
+        "issuer": "Chingu Cohorts",
+        "date": "Nov 2019",
+        "image": "images/chingu-voyage-12-2019.png",
+        "highlight": "Completed Pre-Work Solo Project and the six-week Voyage program"
       },
       {
         "title": "JavaScript Algorithms and Data Structures",
@@ -217,9 +241,20 @@
     "p1": "I'm the engineer clients call when the deadline is real and the stack is messy—someone who owns backend, frontends, and AI delivery, speaks plainly to non-technical stakeholders, and leaves systems your team can run without me.",
     "p2": "{years} years in production across fintech, logistics, oil & gas, and AI platforms. C3 AI certified · M.Sc. IT (GPA 3.7) · Employee of the Month · Hacktoberfest contributor.",
     "languagesHeading": "Languages",
-    "spoken": ["English (fluent)", "Hindi (native)", "Punjabi (native)", "Spanish (beginner)"],
+    "spoken": [
+      "English (fluent)",
+      "Hindi (native)",
+      "Punjabi (native)",
+      "Spanish (beginner)"
+    ],
     "currentlyHeading": "Now",
-    "credentialBadges": ["Remote", "C3 AI certified", "Turbotic hackathon", "freeCodeCamp", "M.Sc. IT"],
+    "credentialBadges": [
+      "Remote",
+      "C3 AI certified",
+      "Turbotic hackathon",
+      "freeCodeCamp",
+      "M.Sc. IT"
+    ],
     "remoteLabel": "Senior engineer @ Codvo.ai",
     "educationHeading": "Education",
     "education": [

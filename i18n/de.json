@@ -52,12 +52,29 @@
     "US- & globale Kunden"
   ],
   "statsDisplay": [
-    { "num": "8", "label": "Jahre Software-Lieferung" },
-    { "num": "C3", "label": "KI zertifiziert" },
-    { "num": "US", "label": "Enterprise- & Fintech-Kunden" },
-    { "num": "RAG", "label": "Live in Produktion" }
+    {
+      "num": "8",
+      "label": "Jahre Software-Lieferung"
+    },
+    {
+      "num": "C3",
+      "label": "KI zertifiziert"
+    },
+    {
+      "num": "US",
+      "label": "Enterprise- & Fintech-Kunden"
+    },
+    {
+      "num": "RAG",
+      "label": "Live in Produktion"
+    }
   ],
-  "proofStrip": ["Fintech & Versicherung", "Enterprise-Produkt-UIs", "Enterprise-RAG / LLM", "Öl & Gas · EU-Startup"],
+  "proofStrip": [
+    "Fintech & Versicherung",
+    "Enterprise-Produkt-UIs",
+    "Enterprise-RAG / LLM",
+    "Öl & Gas · EU-Startup"
+  ],
   "value": {
     "heading": "Warum Kunden mich beauftragen",
     "subheading": "Sie bekommen einen erfahrenen Verantwortlichen—kein Backlog-Ticket. Klare Updates, ehrliche Schätzungen und Code, den Ihr Team nach meinem Ausscheiden wartet.",
@@ -116,6 +133,13 @@
         "date": "Okt 2025",
         "image": "images/turbotic-hackathon-2025.png",
         "highlight": "Unter den ersten 1.000, die Turbotic AI getestet haben — 3.–7. Okt 2025"
+      },
+      {
+        "title": "Chingu Voyage 12",
+        "issuer": "Chingu Cohorts",
+        "date": "Nov 2019",
+        "image": "images/chingu-voyage-12-2019.png",
+        "highlight": "Pre-Work Solo Project und das sechswöchige Voyage-Programm abgeschlossen"
       },
       {
         "title": "JavaScript-Algorithmen und Datenstrukturen",
@@ -217,9 +241,20 @@
     "p1": "Ich bin der Entwickler, den Kunden rufen, wenn die Deadline real ist und der Stack komplex ist—Backend, Frontends und KI aus einer Hand, klar für nicht-technische Stakeholder, Systeme, die Ihr Team ohne mich betreibt.",
     "p2": "{years} Jahre in Produktion in Fintech, Logistik, Öl & Gas und KI-Plattformen. C3 AI zertifiziert · M.Sc. IT (GPA 3.7) · Mitarbeiter des Monats · Hacktoberfest.",
     "languagesHeading": "Sprachen",
-    "spoken": ["Englisch (fließend)", "Hindi (Muttersprache)", "Punjabi (Muttersprache)", "Spanisch (Grundkenntnisse)"],
+    "spoken": [
+      "Englisch (fließend)",
+      "Hindi (Muttersprache)",
+      "Punjabi (Muttersprache)",
+      "Spanisch (Grundkenntnisse)"
+    ],
     "currentlyHeading": "Aktuell",
-    "credentialBadges": ["Remote", "C3 AI zertifiziert", "Turbotic Hackathon", "freeCodeCamp", "M.Sc. IT"],
+    "credentialBadges": [
+      "Remote",
+      "C3 AI zertifiziert",
+      "Turbotic Hackathon",
+      "freeCodeCamp",
+      "M.Sc. IT"
+    ],
     "remoteLabel": "Senior-Entwickler @ Codvo.ai",
     "educationHeading": "Ausbildung",
     "education": [

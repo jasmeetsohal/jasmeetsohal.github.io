@@ -52,12 +52,29 @@
     "Clientes EE. UU. y globales"
   ],
   "statsDisplay": [
-    { "num": "8", "label": "Años entregando software" },
-    { "num": "C3", "label": "IA certificado" },
-    { "num": "EE. UU.", "label": "Clientes enterprise y fintech" },
-    { "num": "RAG", "label": "En producción" }
+    {
+      "num": "8",
+      "label": "Años entregando software"
+    },
+    {
+      "num": "C3",
+      "label": "IA certificado"
+    },
+    {
+      "num": "EE. UU.",
+      "label": "Clientes enterprise y fintech"
+    },
+    {
+      "num": "RAG",
+      "label": "En producción"
+    }
   ],
-  "proofStrip": ["Fintech y seguros", "UIs de producto enterprise", "RAG / LLM enterprise", "Oil & gas · startup UE"],
+  "proofStrip": [
+    "Fintech y seguros",
+    "UIs de producto enterprise",
+    "RAG / LLM enterprise",
+    "Oil & gas · startup UE"
+  ],
   "value": {
     "heading": "Por qué me contratan",
     "subheading": "Obtienes un owner senior—no un ticket en el backlog. Actualizaciones claras, estimaciones honestas y código que tu equipo mantiene después.",
@@ -116,6 +133,13 @@
         "date": "Oct 2025",
         "image": "images/turbotic-hackathon-2025.png",
         "highlight": "Entre los primeros 1.000 en poner a prueba Turbotic AI — 3–7 oct 2025"
+      },
+      {
+        "title": "Chingu Voyage 12",
+        "issuer": "Chingu Cohorts",
+        "date": "Nov 2019",
+        "image": "images/chingu-voyage-12-2019.png",
+        "highlight": "Completó el Pre-Work Solo Project y el programa Voyage de seis semanas"
       },
       {
         "title": "Algoritmos y estructuras de datos en JavaScript",
@@ -217,9 +241,20 @@
     "p1": "Soy el ingeniero al que llaman cuando la fecha es real y el stack es complejo—alguien que asume backend, frontends e IA, habla claro con stakeholders no técnicos y deja sistemas que tu equipo opera sin mí.",
     "p2": "{years} años en producción en fintech, logística, oil & gas y plataformas de IA. C3 AI certificado · M.Sc. IT (GPA 3.7) · Empleado del mes · Hacktoberfest.",
     "languagesHeading": "Idiomas",
-    "spoken": ["Inglés (fluido)", "Hindi (nativo)", "Punjabi (nativo)", "Español (principiante)"],
+    "spoken": [
+      "Inglés (fluido)",
+      "Hindi (nativo)",
+      "Punjabi (nativo)",
+      "Español (principiante)"
+    ],
     "currentlyHeading": "Ahora",
-    "credentialBadges": ["Remoto", "C3 AI certificado", "Hackathon Turbotic", "freeCodeCamp", "M.Sc. IT"],
+    "credentialBadges": [
+      "Remoto",
+      "C3 AI certificado",
+      "Hackathon Turbotic",
+      "freeCodeCamp",
+      "M.Sc. IT"
+    ],
     "remoteLabel": "Ingeniero senior @ Codvo.ai",
     "educationHeading": "Formación",
     "education": [

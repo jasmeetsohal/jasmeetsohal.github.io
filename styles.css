@@ -1119,7 +1119,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 

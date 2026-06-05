@@ -52,12 +52,29 @@
     "Klienci z USA i globalnie"
   ],
   "statsDisplay": [
-    { "num": "8", "label": "Lat dostarczania software" },
-    { "num": "C3", "label": "AI certyfikat" },
-    { "num": "USA", "label": "Klienci enterprise i fintech" },
-    { "num": "RAG", "label": "W produkcji" }
+    {
+      "num": "8",
+      "label": "Lat dostarczania software"
+    },
+    {
+      "num": "C3",
+      "label": "AI certyfikat"
+    },
+    {
+      "num": "USA",
+      "label": "Klienci enterprise i fintech"
+    },
+    {
+      "num": "RAG",
+      "label": "W produkcji"
+    }
   ],
-  "proofStrip": ["Fintech i ubezpieczenia", "UI produktów enterprise", "Enterprise RAG / LLM", "Oil & gas · startup UE"],
+  "proofStrip": [
+    "Fintech i ubezpieczenia",
+    "UI produktów enterprise",
+    "Enterprise RAG / LLM",
+    "Oil & gas · startup UE"
+  ],
   "value": {
     "heading": "Dlaczego klienci mnie zatrudniają",
     "subheading": "Senior owner—a nie ticket w backlogu. Jasne statusy, uczciwe estymaty i kod, który zespół utrzyma po moim wyjściu.",
@@ -116,6 +133,13 @@
         "date": "Paź 2025",
         "image": "images/turbotic-hackathon-2025.png",
         "highlight": "Wśród pierwszych 1 000, którzy przetestowali Turbotic AI — 3–7 paź 2025"
+      },
+      {
+        "title": "Chingu Voyage 12",
+        "issuer": "Chingu Cohorts",
+        "date": "Lis 2019",
+        "image": "images/chingu-voyage-12-2019.png",
+        "highlight": "Ukończono Pre-Work Solo Project i sześciotygodniowy program Voyage"
       },
       {
         "title": "JavaScript Algorithms and Data Structures",
@@ -217,9 +241,20 @@
     "p1": "Inżynier, którego wołają, gdy deadline jest realny, a stack skomplikowany—backend, frontendy i AI, jasno dla nietechnicznych stakeholderów, systemy działające bez mnie.",
     "p2": "{years} lat w produkcji w fintech, logistyce, oil & gas i platformach AI. C3 AI · M.Sc. IT (GPA 3.7) · Pracownik miesiąca · Hacktoberfest.",
     "languagesHeading": "Języki",
-    "spoken": ["Angielski (biegle)", "Hindi (ojczysty)", "Pendżabski (ojczysty)", "Hiszpański (podstawy)"],
+    "spoken": [
+      "Angielski (biegle)",
+      "Hindi (ojczysty)",
+      "Pendżabski (ojczysty)",
+      "Hiszpański (podstawy)"
+    ],
     "currentlyHeading": "Teraz",
-    "credentialBadges": ["Zdalnie", "C3 AI", "Hackathon Turbotic", "freeCodeCamp", "M.Sc. IT"],
+    "credentialBadges": [
+      "Zdalnie",
+      "C3 AI",
+      "Hackathon Turbotic",
+      "freeCodeCamp",
+      "M.Sc. IT"
+    ],
     "remoteLabel": "Senior engineer @ Codvo.ai",
     "educationHeading": "Edukacja",
     "education": [

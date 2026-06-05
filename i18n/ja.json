@@ -52,12 +52,29 @@
     "米国・グローバルクライアント"
   ],
   "statsDisplay": [
-    { "num": "8", "label": "ソフトウェア提供年数" },
-    { "num": "C3", "label": "AI認定" },
-    { "num": "米国", "label": "エンタープライズ・フィンテック" },
-    { "num": "RAG", "label": "本番稼働" }
+    {
+      "num": "8",
+      "label": "ソフトウェア提供年数"
+    },
+    {
+      "num": "C3",
+      "label": "AI認定"
+    },
+    {
+      "num": "米国",
+      "label": "エンタープライズ・フィンテック"
+    },
+    {
+      "num": "RAG",
+      "label": "本番稼働"
+    }
   ],
-  "proofStrip": ["フィンテック・保険", "エンタープライズUI", "エンタープライズ RAG / LLM", "Oil & gas · EUスタートアップ"],
+  "proofStrip": [
+    "フィンテック・保険",
+    "エンタープライズUI",
+    "エンタープライズ RAG / LLM",
+    "Oil & gas · EUスタートアップ"
+  ],
   "value": {
     "heading": "クライアントが選ぶ理由",
     "subheading": "バックログのチケットではなくシニアオーナー。明確な進捗、正直な見積もり、離脱後もチームが保守できるコード。",
@@ -116,6 +133,13 @@
         "date": "2025年10月",
         "image": "images/turbotic-hackathon-2025.png",
         "highlight": "Turbotic AIを試した最初の1,000人のひとり — 2025年10月3–7日"
+      },
+      {
+        "title": "Chingu Voyage 12",
+        "issuer": "Chingu Cohorts",
+        "date": "2019年11月",
+        "image": "images/chingu-voyage-12-2019.png",
+        "highlight": "Pre-Workソロプロジェクトと6週間のVoyageプログラムを修了"
       },
       {
         "title": "JavaScript Algorithms and Data Structures",
@@ -217,9 +241,20 @@
     "p1": "期限が現実的でスタックが複雑なときに呼ばれるエンジニア—バックエンド、フロント、AIを一貫して担い、非技術ステークホルダーにも分かりやすく、離脱後もチームが運用できるシステムを残します。",
     "p2": "フィンテック、物流、oil & gas、AIプラットフォームで本番{years}年。C3 AI認定 · M.Sc. IT (GPA 3.7) · 社員表彰 · Hacktoberfest。",
     "languagesHeading": "言語",
-    "spoken": ["英語（流暢）", "ヒンディー語（母語）", "パンジャーブ語（母語）", "スペイン語（初級）"],
+    "spoken": [
+      "英語（流暢）",
+      "ヒンディー語（母語）",
+      "パンジャーブ語（母語）",
+      "スペイン語（初級）"
+    ],
     "currentlyHeading": "現在",
-    "credentialBadges": ["リモート", "C3 AI", "Turboticハッカソン", "freeCodeCamp", "M.Sc. IT"],
+    "credentialBadges": [
+      "リモート",
+      "C3 AI",
+      "Turboticハッカソン",
+      "freeCodeCamp",
+      "M.Sc. IT"
+    ],
     "remoteLabel": "シニアエンジニア @ Codvo.ai",
     "educationHeading": "学歴",
     "education": [

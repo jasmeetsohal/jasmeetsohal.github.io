@@ -52,12 +52,29 @@
     "VS & internationale klanten"
   ],
   "statsDisplay": [
-    { "num": "8", "label": "Jaar software leveren" },
-    { "num": "C3", "label": "AI gecertificeerd" },
-    { "num": "VS", "label": "Enterprise & fintech klanten" },
-    { "num": "RAG", "label": "Live in productie" }
+    {
+      "num": "8",
+      "label": "Jaar software leveren"
+    },
+    {
+      "num": "C3",
+      "label": "AI gecertificeerd"
+    },
+    {
+      "num": "VS",
+      "label": "Enterprise & fintech klanten"
+    },
+    {
+      "num": "RAG",
+      "label": "Live in productie"
+    }
   ],
-  "proofStrip": ["Fintech & verzekeringen", "Enterprise product-UI's", "Enterprise RAG / LLM", "Oil & gas · EU-startup"],
+  "proofStrip": [
+    "Fintech & verzekeringen",
+    "Enterprise product-UI's",
+    "Enterprise RAG / LLM",
+    "Oil & gas · EU-startup"
+  ],
   "value": {
     "heading": "Waarom klanten mij inhuren",
     "subheading": "U krijgt een senior owner—geen backlog-ticket. Duidelijke updates, eerlijke schattingen en code die uw team onderhoudt na mijn vertrek.",
@@ -116,6 +133,13 @@
         "date": "Okt 2025",
         "image": "images/turbotic-hackathon-2025.png",
         "highlight": "Een van de eerste 1.000 die Turbotic AI testten — 3–7 okt 2025"
+      },
+      {
+        "title": "Chingu Voyage 12",
+        "issuer": "Chingu Cohorts",
+        "date": "Nov 2019",
+        "image": "images/chingu-voyage-12-2019.png",
+        "highlight": "Pre-Work Solo Project en het zesweken Voyage-programma voltooid"
       },
       {
         "title": "JavaScript Algorithms and Data Structures",
@@ -217,9 +241,20 @@
     "p1": "De engineer die klanten bellen als de deadline echt is en de stack rommelig is—backend, frontends en AI, helder voor niet-technische stakeholders, systemen die uw team zonder mij draait.",
     "p2": "{years} jaar in productie in fintech, logistiek, oil & gas en AI-platforms. C3 AI gecertificeerd · M.Sc. IT (GPA 3.7) · Employee of the Month · Hacktoberfest.",
     "languagesHeading": "Talen",
-    "spoken": ["Engels (vloeiend)", "Hindi (moedertaal)", "Punjabi (moedertaal)", "Spaans (beginner)"],
+    "spoken": [
+      "Engels (vloeiend)",
+      "Hindi (moedertaal)",
+      "Punjabi (moedertaal)",
+      "Spaans (beginner)"
+    ],
     "currentlyHeading": "Nu",
-    "credentialBadges": ["Remote", "C3 AI gecertificeerd", "Turbotic hackathon", "freeCodeCamp", "M.Sc. IT"],
+    "credentialBadges": [
+      "Remote",
+      "C3 AI gecertificeerd",
+      "Turbotic hackathon",
+      "freeCodeCamp",
+      "M.Sc. IT"
+    ],
     "remoteLabel": "Senior engineer @ Codvo.ai",
     "educationHeading": "Opleiding",
     "education": [

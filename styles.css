@@ -498,9 +498,9 @@ main {
   stroke-width: 1.6;
 }
 
-.badge--icon.badge--gold svg ellipse {
+.badge--icon.badge--gold svg .guitar-body {
   fill: currentColor;
-  fill-opacity: 0.08;
+  fill-opacity: 0.1;
 }
 
 .profile-badges {

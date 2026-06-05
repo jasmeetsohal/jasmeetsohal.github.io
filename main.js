@@ -124,7 +124,7 @@ function badgeRowHtml(labels, tone = "") {
 
 const LIFE_ICONS = {
   code: `<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
-  guitar: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.25v5.75"/><path d="M9.75 8h4.5"/><path d="M7.25 9.25c-2.35 0-4.25 2.15-4.25 4.85 0 2.95 2.55 5.35 5.75 5.35h1.5c3.2 0 5.75-2.4 5.75-5.35 0-2.7-1.9-4.85-4.25-4.85z"/><circle cx="12" cy="14.75" r="1.35"/><path d="M10.25 8.25 11.5 12M13.75 8.25 12.5 12"/></svg>`,
+  guitar: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.75 2.25h6.5"/><path d="M9.75 2.25v1.5M12 2.25v1.5M14.25 2.25v1.5"/><path d="M11.35 3.75h1.3v4.1"/><path d="M10.1 4.35v10.2M12 4.35v10.2M13.9 4.35v10.2"/><ellipse cx="12" cy="15.35" rx="5.65" ry="4.85"/><circle cx="12" cy="14.85" r="1.25"/><path d="M9.1 17.65h5.8"/></svg>`,
   book: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h6"/></svg>`,
   swim: `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="6" r="2"/><path d="M4 14c2-1 3.5-1 6 0s4 1 6 0"/><path d="M2 18c2.5-1 5-1 8 0s5.5 1 8 0"/></svg>`,
 };

@@ -492,6 +492,12 @@ main {
   stroke-linejoin: round;
 }
 
+.badge--icon.badge--gold svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke-width: 1.65;
+}
+
 .profile-badges {
   margin-top: 0.75rem;
 }

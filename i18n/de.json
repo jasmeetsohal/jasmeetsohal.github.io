@@ -107,9 +107,16 @@
   },
   "certifications": {
     "heading": "Zertifikate",
-    "subheading": "Verifizierbare Zertifikate auf freeCodeCamp.org",
+    "subheading": "Verifizierbare Zertifikate — Klick auf eine Karte für das volle Zertifikat",
     "verifyLabel": "Zertifikat ansehen",
     "items": [
+      {
+        "title": "Turbotic Online-Hackathon 2025",
+        "issuer": "Turbotic",
+        "date": "Okt 2025",
+        "image": "images/turbotic-hackathon-2025.png",
+        "highlight": "Unter den ersten 1.000, die Turbotic AI getestet haben — 3.–7. Okt 2025"
+      },
       {
         "title": "JavaScript-Algorithmen und Datenstrukturen",
         "issuer": "freeCodeCamp",
@@ -210,7 +217,7 @@
     "languagesHeading": "Sprachen",
     "spoken": ["Englisch (fließend)", "Hindi (Muttersprache)", "Punjabi (Muttersprache)", "Spanisch (Grundkenntnisse)"],
     "currentlyHeading": "Aktuell",
-    "credentialBadges": ["Remote", "C3 AI zertifiziert", "freeCodeCamp", "M.Sc. IT"],
+    "credentialBadges": ["Remote", "C3 AI zertifiziert", "Turbotic Hackathon", "freeCodeCamp", "M.Sc. IT"],
     "remoteLabel": "Senior-Entwickler @ Codvo.ai",
     "educationHeading": "Ausbildung",
     "education": [

@@ -500,18 +500,32 @@ async function applyLocale(lang) {
     const verifyLabel = t.certifications.verifyLabel || "View certificate";
 
     document.getElementById("cert-grid").innerHTML = t.certifications.items
-      .map(
-        (cert, i) => `
-    <article class="cert-card">
+      .map((cert) => {
+        const verifyHref = cert.slug
+          ? `https://www.freecodecamp.org/certification/${fccUser}/${cert.slug}`
+          : cert.href || cert.image || "#";
+        const imageBlock = cert.image
+          ? `<a class="cert-thumb" href="${escapeHtml(verifyHref)}" target="_blank" rel="noopener noreferrer">
+        <img src="${escapeHtml(cert.image)}" alt="${escapeHtml(cert.title)}" loading="lazy" width="400" height="283" />
+      </a>`
+          : "";
+        const highlight = cert.highlight
+          ? `<p class="cert-highlight">${escapeHtml(cert.highlight)}</p>`
+          : "";
+
+        return `
+    <article class="cert-card${cert.image ? " cert-card--image" : ""}">
+      ${imageBlock}
       <div class="cert-card-head">
         ${badgeHtml(cert.issuer, "gold")}
         <span class="cert-date">${escapeHtml(cert.date)}</span>
       </div>
       <h3>${escapeHtml(cert.title)}</h3>
-      <a class="cert-verify" href="https://www.freecodecamp.org/certification/${escapeHtml(fccUser)}/${escapeHtml(cert.slug)}" target="_blank" rel="noopener noreferrer">${escapeHtml(verifyLabel)} →</a>
+      ${highlight}
+      <a class="cert-verify" href="${escapeHtml(verifyHref)}" target="_blank" rel="noopener noreferrer">${escapeHtml(verifyLabel)} →</a>
     </article>
-  `
-      )
+  `;
+      })
       .join("");
   }
 

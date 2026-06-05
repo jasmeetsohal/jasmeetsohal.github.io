@@ -107,9 +107,16 @@
   },
   "certifications": {
     "heading": "Certificações",
-    "subheading": "Credenciais verificáveis em freeCodeCamp.org",
+    "subheading": "Credenciais verificáveis — clique em qualquer cartão para ver o certificado",
     "verifyLabel": "Ver certificado",
     "items": [
+      {
+        "title": "Hackathon online Turbotic 2025",
+        "issuer": "Turbotic",
+        "date": "Out 2025",
+        "image": "images/turbotic-hackathon-2025.png",
+        "highlight": "Entre os primeiros 1.000 a testar o Turbotic AI — 3–7 out 2025"
+      },
       {
         "title": "JavaScript Algorithms and Data Structures",
         "issuer": "freeCodeCamp",
@@ -210,7 +217,7 @@
     "languagesHeading": "Idiomas",
     "spoken": ["Inglês (fluente)", "Hindi (nativo)", "Punjabi (nativo)", "Espanhol (iniciante)"],
     "currentlyHeading": "Agora",
-    "credentialBadges": ["Remoto", "C3 AI", "freeCodeCamp", "M.Sc. IT"],
+    "credentialBadges": ["Remoto", "C3 AI", "Hackathon Turbotic", "freeCodeCamp", "M.Sc. IT"],
     "remoteLabel": "Engenheiro sénior @ Codvo.ai",
     "educationHeading": "Formação",
     "education": [

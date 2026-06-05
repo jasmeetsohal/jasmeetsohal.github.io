@@ -107,9 +107,16 @@
   },
   "certifications": {
     "heading": "資格",
-    "subheading": "freeCodeCamp.orgで検証可能",
+    "subheading": "検証済みの資格 — カードをクリックで証明書を表示",
     "verifyLabel": "証明書を見る",
     "items": [
+      {
+        "title": "Turbotic オンラインハッカソン 2025",
+        "issuer": "Turbotic",
+        "date": "2025年10月",
+        "image": "images/turbotic-hackathon-2025.png",
+        "highlight": "Turbotic AIを試した最初の1,000人のひとり — 2025年10月3–7日"
+      },
       {
         "title": "JavaScript Algorithms and Data Structures",
         "issuer": "freeCodeCamp",
@@ -210,7 +217,7 @@
     "languagesHeading": "言語",
     "spoken": ["英語（流暢）", "ヒンディー語（母語）", "パンジャーブ語（母語）", "スペイン語（初級）"],
     "currentlyHeading": "現在",
-    "credentialBadges": ["リモート", "C3 AI", "freeCodeCamp", "M.Sc. IT"],
+    "credentialBadges": ["リモート", "C3 AI", "Turboticハッカソン", "freeCodeCamp", "M.Sc. IT"],
     "remoteLabel": "シニアエンジニア @ Codvo.ai",
     "educationHeading": "学歴",
     "education": [

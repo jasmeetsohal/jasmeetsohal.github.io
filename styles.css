@@ -1119,7 +1119,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -1172,6 +1172,55 @@ main {
 .cert-verify:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.cert-card--image {
+  padding: 0;
+  overflow: hidden;
+}
+
+.cert-card--image .cert-card-head,
+.cert-card--image h3,
+.cert-card--image .cert-highlight,
+.cert-card--image .cert-verify {
+  margin-left: 1.35rem;
+  margin-right: 1.35rem;
+}
+
+.cert-card--image .cert-card-head {
+  margin-top: 1rem;
+}
+
+.cert-card--image .cert-verify {
+  display: inline-block;
+  margin-bottom: 1.35rem;
+}
+
+.cert-thumb {
+  display: block;
+  border-bottom: 1px solid var(--border);
+  background: #e8f4fc;
+  transition: opacity 0.2s var(--ease);
+}
+
+.cert-thumb:hover {
+  opacity: 0.92;
+}
+
+.cert-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.414 / 1;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.cert-highlight {
+  margin: -0.35rem 0 0.85rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--text-muted);
 }
 
 #credentials .section-head {

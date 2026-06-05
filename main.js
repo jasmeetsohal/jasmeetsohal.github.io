@@ -504,8 +504,9 @@ async function applyLocale(lang) {
         const verifyHref = cert.slug
           ? `https://www.freecodecamp.org/certification/${fccUser}/${cert.slug}`
           : cert.href || cert.image || "#";
+        const thumbHref = cert.image || verifyHref;
         const imageBlock = cert.image
-          ? `<a class="cert-thumb" href="${escapeHtml(verifyHref)}" target="_blank" rel="noopener noreferrer">
+          ? `<a class="cert-thumb" href="${escapeHtml(thumbHref)}" target="_blank" rel="noopener noreferrer">
         <img src="${escapeHtml(cert.image)}" alt="${escapeHtml(cert.title)}" loading="lazy" width="400" height="283" />
       </a>`
           : "";

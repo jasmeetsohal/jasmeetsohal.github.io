@@ -121,12 +121,14 @@
         "title": "JavaScript Algorithms and Data Structures",
         "issuer": "freeCodeCamp",
         "date": "Aug 2018",
+        "image": "images/fcc-javascript-algorithms-2018.png",
         "slug": "javascript-algorithms-and-data-structures"
       },
       {
         "title": "Back End Development and APIs",
         "issuer": "freeCodeCamp",
         "date": "Okt 2018",
+        "image": "images/fcc-back-end-apis-2018.png",
         "slug": "back-end-development-and-apis"
       }
     ]

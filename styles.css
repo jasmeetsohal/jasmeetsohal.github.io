@@ -1199,7 +1199,7 @@ main {
 .cert-thumb {
   display: block;
   border-bottom: 1px solid var(--border);
-  background: #e8f4fc;
+  background: #eceef2;
   transition: opacity 0.2s var(--ease);
 }
 
@@ -1211,9 +1211,10 @@ main {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1.414 / 1;
-  object-fit: cover;
-  object-position: center top;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.65rem;
 }
 
 .cert-highlight {

@@ -493,14 +493,9 @@ main {
 }
 
 .badge--icon.badge--gold svg {
-  width: 1.3rem;
-  height: 1.3rem;
-  stroke-width: 1.6;
-}
-
-.badge--icon.badge--gold svg .guitar-body {
-  fill: currentColor;
-  fill-opacity: 0.1;
+  width: 1.35rem;
+  height: 1.35rem;
+  stroke-width: 1.55;
 }
 
 .profile-badges {

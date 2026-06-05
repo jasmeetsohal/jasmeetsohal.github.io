@@ -124,7 +124,7 @@ function badgeRowHtml(labels, tone = "") {
 
 const LIFE_ICONS = {
   code: `<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
-  guitar: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.25 2h7.5"/><path d="M9.5 2v1.25M12 2v1.25M14.5 2v1.25"/><path d="M12 3.25v3.9"/><path d="M10.45 4.15v8.85M12 4.15v8.85M13.55 4.15v8.85"/><path class="guitar-body" d="M12 7.15c2.85 0 4.85 1.15 4.85 2.75 0 .85-.7 1.45-2.1 1.65 2.35.25 3.95 1.55 3.95 3.55 0 2.15-2.35 4.05-5.7 4.05-3.35 0-5.7-1.9-5.7-4.05 0-2 1.6-3.3 3.95-3.55-1.4-.2-2.1-.8-2.1-1.65 0-1.6 2-2.75 4.85-2.75z"/><circle cx="12" cy="14.1" r="1.1"/><path d="M9.2 16.45h5.6"/></svg>`,
+  guitar: `<svg viewBox="0 0 24 24" aria-hidden="true"><g transform="rotate(42 12 12)"><path d="M8.5 2.05h7" stroke-linecap="round"/><path d="M8.5 2.3 7.35 3M8.5 3 7.35 3.7M8.5 3.7 7.35 4.4"/><path d="M15.5 2.3 16.65 3M15.5 3 16.65 3.7M15.5 3.7 16.65 4.4"/><path d="M10.9 4.05h2.2v3.45"/><path d="M12 7.5c2.75 0 4.7 1.1 4.7 2.45 0 .78-.62 1.3-1.75 1.45 2.05.22 3.45 1.38 3.45 2.92 0 1.88-2.05 3.42-4.9 3.42-2.85 0-4.9-1.54-4.9-3.42 0-1.54 1.4-2.7 3.45-2.92-1.13-.15-1.75-.67-1.75-1.45 0-1.35 1.95-2.45 4.7-2.45z"/><circle cx="12" cy="11.55" r=".92"/><path d="M9.4 13.95h5.2" stroke-linecap="round"/></g></svg>`,
   book: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h6"/></svg>`,
   swim: `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="6" r="2"/><path d="M4 14c2-1 3.5-1 6 0s4 1 6 0"/><path d="M2 18c2.5-1 5-1 8 0s5.5 1 8 0"/></svg>`,
 };

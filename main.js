@@ -1,6 +1,5 @@
 const SUPPORTED = ["en", "es", "de", "fr", "nl", "pl", "it", "pt", "ja"];
 const STORAGE_KEY = "portfolio-lang";
-const INTRO_KEY = "portfolio-intro-seen";
 
 const BROWSER_LANG_PREFIXES = [
   ["ja", "ja"],
@@ -158,16 +157,10 @@ let currentLang = detectLanguage();
 
 function shouldShowIntro() {
   const params = new URLSearchParams(window.location.search);
-  if (params.get("view") === "portfolio") return false;
-  if (params.get("view") === "card") {
-    localStorage.removeItem(INTRO_KEY);
-    return true;
-  }
-  return !localStorage.getItem(INTRO_KEY);
+  return params.get("view") !== "portfolio";
 }
 
 function openPortfolio() {
-  localStorage.setItem(INTRO_KEY, "1");
   const shell = document.getElementById("portfolio-shell");
   const bizCard = document.getElementById("biz-card");
 
@@ -200,8 +193,10 @@ function initIntro() {
     return;
   }
 
+  document.body.classList.remove("is-portfolio-open");
   document.body.classList.add("is-intro");
   shell?.setAttribute("inert", "");
+  bizCard?.classList.remove("biz-card--gone");
   bizCard?.removeAttribute("aria-hidden");
 
   const skip = document.getElementById("skip-link");

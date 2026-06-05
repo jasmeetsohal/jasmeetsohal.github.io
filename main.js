@@ -590,7 +590,7 @@ async function applyLocale(lang) {
     .join("");
   document.getElementById("about-edu-heading").textContent = t.about.educationHeading;
   document.getElementById("about-education").innerHTML = t.about.education
-    .map((e) => `<span role="listitem">${badgeHtml(e, "gold")}</span>`)
+    .map((e) => `<li>${badgeHtml(e, "gold")}</li>`)
     .join("");
 
   document.getElementById("contact-heading").textContent = t.contact.heading;

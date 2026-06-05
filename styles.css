@@ -1283,11 +1283,28 @@ main {
   max-width: 40rem;
 }
 
-.about-card #about-education li {
-  font-size: 0.88rem;
+.about-card #about-education {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.55rem;
+}
+
+.about-card #about-education [role="listitem"] {
+  display: block;
+  min-width: 0;
+}
+
+.about-card #about-education .badge {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  text-align: left;
   line-height: 1.45;
-  color: var(--text-muted);
-  margin-bottom: 0.65rem;
+  border-radius: var(--radius);
+  padding: 0.55rem 0.75rem;
+  font-size: 0.82rem;
 }
 
 .about-layout {
@@ -1295,6 +1312,10 @@ main {
   grid-template-columns: 1fr minmax(240px, 300px);
   gap: 3rem;
   align-items: start;
+}
+
+.about-layout > * {
+  min-width: 0;
 }
 
 #about .section-head {
@@ -1312,6 +1333,8 @@ main {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .about-card h3 {

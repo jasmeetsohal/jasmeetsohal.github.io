@@ -133,7 +133,7 @@ function lifeBadgeHtml(item, ariaLabel) {
   const icon = LIFE_ICONS[item.icon] || "";
   const toneClass = item.tone ? ` badge--${item.tone}` : "";
   const label = escapeHtml(ariaLabel);
-  return `<li><span class="badge badge--icon${toneClass}" role="img" aria-label="${label}" title="${label}">${icon}</span></li>`;
+  return `<li><span class="badge badge--icon life-badge-tip${toneClass}" role="img" aria-label="${label}" data-tooltip="${label}" tabindex="0" title="${label}">${icon}</span></li>`;
 }
 
 function renderLifeBadges(containerId, t) {

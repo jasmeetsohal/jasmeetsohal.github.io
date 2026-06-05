@@ -482,6 +482,10 @@ main {
   line-height: 0;
 }
 
+.badge--icon {
+  cursor: help;
+}
+
 .badge--icon svg {
   width: 1.15rem;
   height: 1.15rem;
@@ -490,6 +494,63 @@ main {
   stroke-width: 1.75;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.life-badge-tip {
+  position: relative;
+}
+
+.life-badge-tip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 60;
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  padding: 0.4rem 0.65rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+  color: var(--text);
+  background: rgba(17, 20, 28, 0.98);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.15s var(--ease),
+    transform 0.15s var(--ease),
+    visibility 0.15s;
+}
+
+.life-badge-tip::before {
+  content: "";
+  position: absolute;
+  z-index: 59;
+  bottom: calc(100% + 0.2rem);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--border-strong);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s var(--ease), visibility 0.15s;
+}
+
+.life-badge-tip:hover::after,
+.life-badge-tip:hover::before,
+.life-badge-tip:focus-visible::after,
+.life-badge-tip:focus-visible::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.life-badge-tip:hover::after,
+.life-badge-tip:focus-visible::after {
+  transform: translateX(-50%) translateY(0);
 }
 
 .badge--icon.badge--gold svg {

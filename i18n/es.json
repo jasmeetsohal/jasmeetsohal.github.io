@@ -19,6 +19,13 @@
     "role": "Rol",
     "outcome": "Resultado"
   },
+  "lifeBadges": {
+    "groupLabel": "Profesión e intereses",
+    "engineer": "Ingeniero de software",
+    "guitar": "Guitarrista",
+    "books": "Lectura",
+    "swim": "Natación"
+  },
   "businessCard": {
     "tagline": "Full-stack e IA · Remoto para clientes globales",
     "cta": "Ver portafolio",

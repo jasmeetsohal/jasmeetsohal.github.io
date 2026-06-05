@@ -13,6 +13,13 @@
     "contact": "Contact",
     "hire": "Échangeons"
   },
+  "lifeBadges": {
+    "groupLabel": "Profession et centres d'intérêt",
+    "engineer": "Ingénieur logiciel",
+    "guitar": "Guitariste",
+    "books": "Lecture",
+    "swim": "Natation"
+  },
   "businessCard": {
     "tagline": "Full-stack & IA · À distance pour clients internationaux",
     "cta": "Voir le portfolio",

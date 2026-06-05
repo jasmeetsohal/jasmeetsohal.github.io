@@ -11,5 +11,11 @@
   "heroBackground": "images/hero-background.png",
   "profileImage": "images/profile.png",
   "mailtoSubject": "Opportunity — Jasmeet Singh (Senior Engineer)",
-  "freeCodeCampUsername": "jasmeetsohal"
+  "freeCodeCampUsername": "jasmeetsohal",
+  "lifeBadges": [
+    { "id": "engineer", "icon": "code", "tone": "accent" },
+    { "id": "guitar", "icon": "guitar", "tone": "gold" },
+    { "id": "books", "icon": "book", "tone": "muted" },
+    { "id": "swim", "icon": "swim", "tone": "success" }
+  ]
 }

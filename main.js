@@ -122,6 +122,33 @@ function badgeRowHtml(labels, tone = "") {
     .join("")}</div>`;
 }
 
+const LIFE_ICONS = {
+  code: `<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
+  guitar: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.5 2a3.5 3.5 0 0 1 3.2 4.9L19 11.2a2.5 2.5 0 0 1-3.5 3.5l-1.8-1.8"/><path d="M8.8 14.5 6 17.3a2.5 2.5 0 1 1-3.5-3.5l2.8-2.8"/><circle cx="9.5" cy="9.5" r="2.5"/></svg>`,
+  book: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h6"/></svg>`,
+  swim: `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="6" r="2"/><path d="M4 14c2-1 3.5-1 6 0s4 1 6 0"/><path d="M2 18c2.5-1 5-1 8 0s5.5 1 8 0"/></svg>`,
+};
+
+function lifeBadgeHtml(item, ariaLabel) {
+  const icon = LIFE_ICONS[item.icon] || "";
+  const toneClass = item.tone ? ` badge--${item.tone}` : "";
+  const label = escapeHtml(ariaLabel);
+  return `<li><span class="badge badge--icon${toneClass}" role="img" aria-label="${label}" title="${label}">${icon}</span></li>`;
+}
+
+function renderLifeBadges(containerId, t) {
+  const el = document.getElementById(containerId);
+  const badges = config.lifeBadges;
+  if (!el || !badges?.length) return;
+
+  const labels = t.lifeBadges || {};
+  if (labels.groupLabel) el.setAttribute("aria-label", labels.groupLabel);
+
+  el.innerHTML = badges
+    .map((item) => lifeBadgeHtml(item, labels[item.id] || item.id))
+    .join("");
+}
+
 function mailtoLink() {
   const subject = encodeURIComponent(config.mailtoSubject || "Hello");
   return `mailto:${config.email}?subject=${subject}`;
@@ -233,6 +260,8 @@ function applyBusinessCard(t, mailto) {
     linkedinLink.href = config.linkedin;
     linkedinLink.textContent = t.contact?.linkedin || "LinkedIn";
   }
+
+  renderLifeBadges("biz-card-life-badges", t);
 }
 
 initIntro();
@@ -381,6 +410,8 @@ async function applyLocale(lang) {
     const user = config.github.replace(/\/$/, "").split("/").pop() || "";
     heroHandle.innerHTML = `<a href="${escapeHtml(config.github)}" target="_blank" rel="noopener noreferrer">@${escapeHtml(user)}</a>`;
   }
+
+  renderLifeBadges("hero-life-badges", t);
 
   const avatarStatus = document.getElementById("avatar-status");
   if (avatarStatus) avatarStatus.setAttribute("title", t.openBadge);

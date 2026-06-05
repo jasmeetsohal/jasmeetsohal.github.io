@@ -19,6 +19,13 @@
     "role": "Role",
     "outcome": "Outcome"
   },
+  "lifeBadges": {
+    "groupLabel": "Profession and interests",
+    "engineer": "Software engineer",
+    "guitar": "Guitarist",
+    "books": "Reading",
+    "swim": "Swimming"
+  },
   "businessCard": {
     "tagline": "Full-stack & AI · Remote for global clients",
     "cta": "View portfolio",

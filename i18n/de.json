@@ -13,6 +13,13 @@
     "contact": "Kontakt",
     "hire": "Kontakt aufnehmen"
   },
+  "lifeBadges": {
+    "groupLabel": "Beruf und Interessen",
+    "engineer": "Softwareentwickler",
+    "guitar": "Gitarrist",
+    "books": "Lesen",
+    "swim": "Schwimmen"
+  },
   "businessCard": {
     "tagline": "Full-stack & KI · Remote für globale Kunden",
     "cta": "Portfolio ansehen",

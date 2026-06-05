@@ -13,6 +13,13 @@
     "contact": "連絡",
     "hire": "お話ししましょう"
   },
+  "lifeBadges": {
+    "groupLabel": "職業と趣味",
+    "engineer": "ソフトウェアエンジニア",
+    "guitar": "ギタリスト",
+    "books": "読書",
+    "swim": "水泳"
+  },
   "businessCard": {
     "tagline": "フルスタック & AI · グローバル向けリモート",
     "cta": "ポートフォリオを見る",

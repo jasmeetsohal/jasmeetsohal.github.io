@@ -455,6 +455,43 @@ main {
   padding: 0.4rem 0.85rem;
 }
 
+.life-badges {
+  list-style: none;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.profile-identity .life-badges {
+  justify-content: flex-start;
+}
+
+.biz-card__surface .life-badges {
+  margin-top: 0.75rem;
+}
+
+.badge--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  padding: 0;
+  border-radius: 10px;
+  line-height: 0;
+}
+
+.badge--icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .profile-badges {
   margin-top: 0.75rem;
 }
@@ -1421,6 +1458,10 @@ main {
 
   .profile-identity {
     padding-top: 0;
+  }
+
+  .profile-identity .life-badges {
+    justify-content: center;
   }
 
   .hero-avatar img {

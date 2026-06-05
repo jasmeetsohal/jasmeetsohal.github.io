@@ -13,6 +13,13 @@
     "contact": "Contact",
     "hire": "Laten we praten"
   },
+  "lifeBadges": {
+    "groupLabel": "Beroep en interesses",
+    "engineer": "Software engineer",
+    "guitar": "Gitarist",
+    "books": "Lezen",
+    "swim": "Zwemmen"
+  },
   "businessCard": {
     "tagline": "Full-stack & AI · Remote voor internationale klanten",
     "cta": "Bekijk portfolio",
